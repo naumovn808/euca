@@ -3,6 +3,7 @@
 @import "./components/header.scss";
 @import "./components/footer.scss";
 @import "./components/404.scss";
+@import "./components/index/main-head.scss";
 
 * {
 	box-sizing: border-box;
@@ -15,7 +16,7 @@
 body {
 	background-color: #f0f1f5;
 	color: var(--color-bg-primary);
-	font-family: var(--ffM), sans-serif;
+	font-family: var(--ffI), sans-serif;
 	touch-action: manipulation;
 	user-select: auto;
 	font-size: var(--fz);
@@ -26,19 +27,18 @@ body {
 :root {
 	/* colors */
 	--color-default-black: #000;
-	--color-bg-primary: #f0f1f5;
-	--color-bg-secondary: #ffffff;
+	--color-bg-primary: #0B1117;
+	--color-bg-secondary: #141F2A;
 
 	--color-icon: #3f417e;
 
-	--color-text-primary: #313234;
-	--color-text-secondary: #fff;
-	--color-text-gray: #c0c3dc;
+	--color-text-primary: #fff;
+	--color-text-secondary: #FC4739;
+	--color-text-black: #000;
+	--color-text-dark: #353B3D;
+	--color-text-gray: #979EB2;
 
-	--ffG: "Geometria";
-	--ffM: "Montserrat";
-	--ffO: "OpenSans";
-	--ffT: "TacticSans";
+	--ffI: "Inter";
 
 	--fz: max(calc(1 * 1vw), 15px);
 
@@ -50,7 +50,6 @@ body {
 	--offset-l: calc(var(--offset) * 5.5);
 	--offset-m: calc(var(--offset) * 5);
 	--offset-s: calc(var(--offset) * 4);
-	--offset-grid: calc(var(--offset) * 4);
 }
 
 * {
@@ -194,8 +193,8 @@ html {
 	flex-direction: column;
 	align-items: stretch;
 	min-height: 100%;
-	width: 100%;
-	// overflow-x: hidden;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 .title {
