@@ -14,8 +14,8 @@
 }
 
 body {
-	background-color: #f0f1f5;
-	color: var(--color-bg-primary);
+	background-color: var(--color-bg-primary);
+	color: var(--color-text-primary);
 	font-family: var(--ffI), sans-serif;
 	touch-action: manipulation;
 	user-select: auto;
@@ -30,7 +30,7 @@ body {
 	--color-bg-primary: #0B1117;
 	--color-bg-secondary: #141F2A;
 
-	--color-icon: #3f417e;
+	--color-icon: #353B3D;
 
 	--color-text-primary: #fff;
 	--color-text-secondary: #FC4739;

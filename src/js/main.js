@@ -17,5 +17,9 @@ function setSize() {
 }
 
 async function init() {
-	console.log('test')
+	if (document.querySelector(`details`)) {
+        const { closeDropdown } = await import( /* webpackChunkName: "dropdown" */  './utils/tabs.js');
+        closeDropdown();
+    }
+
 }
