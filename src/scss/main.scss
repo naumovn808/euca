@@ -4,6 +4,9 @@
 @import "./components/footer.scss";
 @import "./components/404.scss";
 @import "./components/index/main-head.scss";
+@import "./components/index/directions.scss";
+@import "./components//index/advantages.scss";
+@import "./components/index/news.scss";
 
 * {
 	box-sizing: border-box;
@@ -195,21 +198,4 @@ html {
 	min-height: 100%;
 	width: 100vw;
 	overflow-x: hidden;
-}
-
-.title {
-	font-family: var(--ffG);
-	font-weight: 700;
-	font-size: calc(var(--fz) * 2.3);
-	letter-spacing: -0.03em;
-	text-transform: uppercase;
-	background: linear-gradient(180deg, #32345f 0%, #45478d 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-
-	@media (max-width: 999px) {
-		font-size: calc(var(--fz) * 1.8);
-	}
 }

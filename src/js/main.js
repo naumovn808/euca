@@ -22,4 +22,22 @@ async function init() {
         closeDropdown();
     }
 
+	if (document.querySelector(".header")) {
+		try {
+			const { scrollHeader } = await import(/* webpackChunkName: "scroll-header" */ "./utils/scrollHeader.js");
+			scrollHeader();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
+	if (document.querySelector(".news")) {
+		try {
+			const { sliderNews } = await import(/* webpackChunkName: "sliderNews" */ "./sliders/news-slider.js");
+			sliderNews();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
 }

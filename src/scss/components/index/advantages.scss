@@ -1,0 +1,152 @@
+.advantages {
+	padding: var(--offset-s);
+	min-height: 80vh;
+
+	& h3 {
+		margin-bottom: calc(var(--offset) * 2);
+	}
+
+	&-cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--offset);
+		margin-bottom: var(--offset-xl);
+	}
+
+	&-card {
+		background-color: var(--color-bg-secondary);
+		padding: calc(var(--offset) * 2);
+		border-radius: 0.5em;
+		overflow: hidden;
+
+		&__head {
+			display: flex;
+			align-items: center;
+			gap: calc(var(--offset) * 2);
+			margin-bottom: calc(var(--offset) * 1.5);
+			padding-top: var(--offset);
+			border-top: 0.05em solid #979eb2;
+
+			& svg {
+				width: calc(var(--offset) * 2);
+				height: calc(var(--offset) * 2.5);
+			}
+
+			& b {
+				font-weight: 600;
+				font-size: calc(var(--fz) * 1.5);
+				line-height: 1.2;
+				letter-spacing: -0.06em;
+				color: var(--color-text-primary);
+			}
+		}
+
+		& ul {
+			margin-left: calc(var(--offset) * 4);
+			display: flex;
+			flex-direction: column;
+			gap: calc(var(--offset) * 0.5);
+
+			& li {
+				display: grid;
+				grid-template-columns: 5% 95%;
+				gap: var(--offset);
+
+				& svg {
+					width: var(--offset);
+					height: var(--offset);
+				}
+
+				& p {
+					font-weight: 500;
+					font-size: var(fz);
+					line-height: 124%;
+					color: #979eb2;
+				}
+			}
+		}
+
+	}
+}
+
+
+.advantages {
+
+	&-info {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		gap: var(--offset-s);
+		margin-bottom: var(--offset-s);
+	}
+
+	&-col {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		& h3 {
+			font-weight: 500;
+			font-size: calc(var(--fz) * 2.2);
+			line-height: 1.1;
+			letter-spacing: -0.06em;
+			color: var(--color-text-primary);
+
+			& b {
+				color: var(--color-text-secondary);
+			}
+
+		}
+
+
+		& p {
+			margin-bottom: calc(var(--offset) * 3);
+		}
+
+		& a {
+			margin-bottom: calc(var(--offset) * 4);
+		}
+	}
+
+}
+
+
+.advantages-info__desc {
+	display: grid;
+	grid-template-columns: 5% 95%;
+	gap: var(--offset);
+	padding: calc(var(--offset) * 1.5) 0;
+	border-bottom: 0.05em solid #979eb2;
+
+	&:nth-of-type(1) {
+		border-top: 0.05em solid #979eb2;
+	}
+
+	& svg {
+		width: calc(var(--offset) * 1.5);
+	}
+
+	& p {
+		margin: 0;
+	}
+}
+
+.advantages-info__col {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+
+	& b {
+		font-weight: 500;
+		font-size: calc(var(--fz) * 1.1);
+		line-height: 124%;
+		color: var(--color-text-primary);
+	}
+
+	& p {
+		font-weight: 500;
+		font-size: var(--fz);
+		line-height: 124%;
+		color: #979eb2;
+	}
+}

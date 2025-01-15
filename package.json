@@ -67,6 +67,6 @@
 		"gulp-svgstore": "^9.0.0",
 		"mini-css-extract-plugin": "^2.9.2",
 		"sharp": "^0.33.5",
-		"swiper": "^8.4.7"
+		"swiper": "^11.2.1"
 	}
 }
