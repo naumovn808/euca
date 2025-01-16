@@ -13,6 +13,11 @@ export function scrollHeader() {
 
 		  header.classList.add("header-hide");
 		  header.classList.remove("scroll-header");
+
+		  document.querySelectorAll(`details[open]`).forEach((item) => {
+			item.removeAttribute(`open`);
+		});
+
 		} else {
 
 		  header.classList.remove("header-hide");

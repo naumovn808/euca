@@ -1,21 +1,51 @@
 .news {
 	padding: var(--offset-s);
-	min-height: 60vh;
 	background-color: var(--color-text-primary);
-	border-top-left-radius: 2em;
-	border-top-right-radius: 2em;
-	overflow: hidden;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
 
 	&-slider {
+		overflow-x: hidden;
+		border-top-left-radius: 1em;
+		border-top-right-radius: 1em;
 		height: auto;
-		overflow: hidden;
-		width: 100%;
-		overflow: hidden;
+		flex: 1;
 	}
 
 	&-slide {
 		padding-right: var(--offset);
-		flex: 0 0 30vw;
+		flex: 0 0 33.5%;
+
+
+		& b {
+			font-weight: 600;
+			font-size: calc(var(--fz) * 1.1);
+			line-height: 1.2;
+			color: var(--color-default-black);
+			-webkit-line-clamp: 3;
+			line-clamp: 3;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+
+		}
+
+		& p {
+			font-weight: 500;
+			font-size: calc(var(--fz) * 0.8);
+			line-height: 1.2;
+			color: #787b83;
+			margin-top: calc(var(--offset) * 0.8);
+			margin-bottom: calc(var(--offset) * 1.5);
+			-webkit-line-clamp: 2;
+			line-clamp: 2;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
 	}
 
 	& h3 {
@@ -33,18 +63,54 @@
 		width: 100%;
 	}
 
+	&-desc {
+		padding: 0 calc(--offset * 0.5);
+	}
+
 	&-image {
 		height: auto;
 		border-radius: 1em;
 		overflow: hidden;
 		width: 100%;
-		height: 100%;
+		height: 60%;
+
+		margin-bottom: calc(var(--offset) * 1.5);
 
 		& img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			aspect-ratio: 16/9;
+			transition-duration: 1s;
+			transition-property: transform;
 		}
 	}
 
+}
+
+
+.news-date {
+	display: grid;
+	grid-template-columns: 5% 95%;
+	align-items: center;
+	gap: calc(var(--offset) * 0.3);
+
+	& svg {
+		width: var(--offset);
+		height: var(--offset);
+	}
+
+	& span {
+		font-weight: 400;
+		font-size: calc(var(--fz) * 0.7);
+		line-height: 1.2;
+		color: #787b83;
+	}
+}
+
+
+.news-slide:hover .news-image img,
+.news-slide:focus-within .news-image img,
+.news-slide:focus .news-image img {
+	transform: scale(1.1);
 }

@@ -1,5 +1,5 @@
 import('./helpers/browser-detect.js').then(() => {
-    BrowserDetect.init();
+	BrowserDetect.init();
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,9 +18,9 @@ function setSize() {
 
 async function init() {
 	if (document.querySelector(`details`)) {
-        const { closeDropdown } = await import( /* webpackChunkName: "dropdown" */  './utils/tabs.js');
-        closeDropdown();
-    }
+		const { closeDropdown } = await import( /* webpackChunkName: "dropdown" */  './utils/tabs.js');
+		closeDropdown();
+	}
 
 	if (document.querySelector(".header")) {
 		try {
@@ -35,6 +35,15 @@ async function init() {
 		try {
 			const { sliderNews } = await import(/* webpackChunkName: "sliderNews" */ "./sliders/news-slider.js");
 			sliderNews();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
+	if (document.querySelector(".reviews")) {
+		try {
+			const { sliderReviews } = await import(/* webpackChunkName: "sliderReviews" */ "./sliders/reviews-slider.js");
+			sliderReviews();
 		} catch (e) {
 			console.error("Error loading module", e);
 		}

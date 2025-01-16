@@ -11,6 +11,6 @@ export function sliderNews() {
 			disableOnInteraction: false,
 		},
 		slidesPerView: 3,
-		speed: 800,
+		speed: 1500,
 	});
 }
