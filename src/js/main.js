@@ -49,4 +49,24 @@ async function init() {
 		}
 	}
 
+	if (document.querySelector('.catalog-tabs')) {
+		try {
+			const { catalogTabs } = await import(/* webpackChunkName: "catalogTabs" */ "./catalog-tabs.js");
+			catalogTabs();
+
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
+	if (document.querySelector('.filters-range')) {
+		try {
+			const { filtersRange } = await import(/* webpackChunkName: "catalogTabs" */ "./filters-range.js");
+			filtersRange();
+
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
 }

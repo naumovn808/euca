@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import { filePaths } from './gulp/config/paths.js';
+import replace from 'gulp-replace';
 
 /**
  * Импорт задач
@@ -27,6 +28,14 @@ const handleSCSS = scss.bind(null, isBuild, browserSyncInstance);
 const handleJS = javascript.bind(null, !isBuild, browserSyncInstance);
 const handleImages = images.bind(null, isBuild, browserSyncInstance);
 const handleSprite = createSprite.bind(null, isBuild, browserSyncInstance);
+
+
+const replacePaths = () => {
+	return gulp.src('dist/**/*.html')
+		.pipe(replace('/', './'))
+		.pipe(gulp.dest('build'));
+};
+
 
 /**
  * Последовательная обработка шрифтов
@@ -61,7 +70,7 @@ const mainTasks = gulp.series(fonts, devTasks);
  * Построение сценариев выполнения задач
  * */
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, handleServer));
-const build = gulp.series(reset, mainTasks);
+const build = gulp.series(reset, mainTasks, replacePaths);
 const deployZIP = gulp.series(reset, mainTasks, zip);
 const deployFTP = gulp.series(reset, mainTasks, ftpDeploy);
 

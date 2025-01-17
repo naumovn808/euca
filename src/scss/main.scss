@@ -8,6 +8,8 @@
 @import "./components//index/advantages.scss";
 @import "./components/index/news.scss";
 @import "./components/index/reviews.scss";
+@import "./components/catalog/main-head.scss";
+@import "./components/catalog/catalog-form.scss";
 
 * {
 	box-sizing: border-box;
@@ -198,5 +200,4 @@ html {
 	align-items: stretch;
 	min-height: 100%;
 	width: 100vw;
-	overflow-x: hidden;
 }
