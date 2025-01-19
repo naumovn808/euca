@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	gap: 0.4em;
-	margin-bottom: calc(var(--offset) * 1.5);
+	margin-bottom: var(--offset);
 	font-weight: 400;
 	font-size: calc(var(--fz) * 0.8);
 	line-height: 1.2;
@@ -53,10 +53,10 @@
 	position: relative;
 	z-index: 1;
 	font-weight: 600;
-	font-size: calc(var(--fz) * 0.9);
+	font-size: calc(var(--fz) * 0.8);
 	letter-spacing: -0.03em;
 	color: var(--color-text-primary);
-	padding: calc(var(--offset) * 0.6) calc(var(--offset) * 0.8);
+	padding: calc(var(--offset) * 0.4) calc(var(--offset) * 0.6);
 	transition-duration: 0.5s;
 	transition-property: color;
 
@@ -89,21 +89,21 @@
 	display: flex;
 	gap: var(--offset);
 	align-items: center;
-	padding: calc(var(--offset) * 0.3);
+	padding: calc(var(--offset) * 0.15);
 	padding-left: var(--offset);
 	border-radius: 0.7em;
 	background-color: #F5F5F5;
 	position: relative;
 	z-index: 6;
-	margin-bottom: calc(var(--offset) * 1.5);
+	margin-bottom: var(--offset);
 
 
 }
 
 .search-btn {
 	margin-left: auto;
-	width: calc(var(--offset) * 2.5);
-	height: calc(var(--offset) * 2.5);
+	width: calc(var(--offset) * 1.8);
+	height: calc(var(--offset) * 1.8);
 	border-radius: 0.7em;
 	background-color: var(--color-bg-secondary);
 	display: flex;
@@ -111,8 +111,8 @@
 	justify-content: center;
 
 	& svg {
-		width: calc(var(--offset) * 1.2);
-		height: calc(var(--offset) * 1.2);
+	width: calc(var(--offset) * 0.8);
+	height: calc(var(--offset) * 0.8);
 		stroke: var(--color-text-primary);
 		transition-duration: 0.5s;
 		transition-property: stroke;
@@ -152,7 +152,7 @@
 			line-height: 1;
 			background-color: inherit;
 			font-weight: 500;
-			font-size: calc(var(--offset) * 0.9);
+			font-size: calc(var(--offset) * 0.8);
 			letter-spacing: -0.03em;
 			color: var(--color-text-black);
 

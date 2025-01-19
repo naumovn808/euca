@@ -1,173 +1,149 @@
 <div class="catalog-form">
-	<div class="sticy-wrapper">
-		<div class="navigations">
-			<a href="/index.html">Главная</a>/<a class="active" href="/catalog.html">Каталог участников</a>
-		</div>
+	<div class="filters">
+		<div class="sticy-wrapper">
+			<div class="navigations"><a href="/index.html">Главная</a>/<a class="active" href="/catalog.html">Каталог участников</a></div>
 
-		<div class="catalog-tabs">
-			<div class="button-decor"></div>
-			<button type="button" class="navigations-button" data-tab="location">Расположение</button>
-			<button type="button" class="navigations-button" data-tab="name-company">Расположение</button>
-			<button type="button" class="navigations-button" data-tab="id-search">Расположение</button>
-		</div>
-
-		<form class="search" action="" method="post">
-
-			<div class="input-wrapper">
-
-				<div class="input-row" data-input="location">
-
-					<label for="country">
-
-						<svg width="12" height="15">
-							<use xlink:href="#location"></use>
-						</svg>
-
-						<input type="text" name="" placeholder="Все города" id="country">
-
-					</label>
-
-					<label for="city">
-
-						<svg width="12" height="15">
-							<use xlink:href="#location"></use>
-						</svg>
-
-						<input type="text" name="" placeholder="Все страны" id="city">
-
-					</label>
-
-				</div>
-
-				<div class="input-row" data-input="name-company">
-					<label for="name-company">
-
-						<svg width="12" height="15">
-							<use xlink:href="#location"></use>
-						</svg>
-
-						<input type="text" name="" placeholder="Название компании" id="name-company">
-
-					</label>
-				</div>
-
-				<div class="input-row" data-input="id-search">
-					<label for="id-search">
-
-						<svg width="12" height="15">
-							<use xlink:href="#location"></use>
-						</svg>
-
-						<input type="text" name="" placeholder="Расположение" id="id-search">
-
-					</label>
-
-				</div>
-
-				<button class="search-btn" type="submit">
-					<svg width="24" height="24">
-						<use xlink:href="#search"></use>
-					</svg>
-				</button>
-
+			<div class="catalog-tabs">
+				<div class="button-decor"></div>
+				<button type="button" class="navigations-button" data-tab="location">Расположение</button>
+				<button type="button" class="navigations-button" data-tab="name-company">Расположение</button>
+				<button type="button" class="navigations-button" data-tab="id-search">Расположение</button>
 			</div>
 
-		</form>
+			<form class="search" action="" method="post">
+				<div class="input-wrapper">
+					<div class="input-row" data-input="location">
+						<label for="country">
+							<svg width="12" height="15">
+								<use xlink:href="#location"></use>
+							</svg>
 
-	</div>
+							<input type="text" name="" placeholder="Все города" id="country" />
+						</label>
 
-	<div class="filters">
+						<label for="city">
+							<svg width="12" height="15">
+								<use xlink:href="#location"></use>
+							</svg>
+
+							<input type="text" name="" placeholder="Все страны" id="city" />
+						</label>
+					</div>
+
+					<div class="input-row" data-input="name-company">
+						<label for="name-company">
+							<svg width="12" height="15">
+								<use xlink:href="#location"></use>
+							</svg>
+
+							<input type="text" name="" placeholder="Название компании" id="name-company" />
+						</label>
+					</div>
+
+					<div class="input-row" data-input="id-search">
+						<label for="id-search">
+							<svg width="12" height="15">
+								<use xlink:href="#location"></use>
+							</svg>
+
+							<input type="text" name="" placeholder="Расположение" id="id-search" />
+						</label>
+					</div>
+
+					<button class="search-btn" type="submit">
+						<svg width="24" height="24">
+							<use xlink:href="#search"></use>
+						</svg>
+					</button>
+				</div>
+			</form>
+		</div>
 
 		<form class="filters-directions" action="" method="post">
-
 			<fieldset>
 				<legend>По направлениям</legend>
 
-				<input class="visually-hidden" type="checkbox" id="fcl" name="">
+				<input class="visually-hidden" type="checkbox" id="fcl" name="" />
 				<label for="fcl">FCL</label>
 
-				<input class="visually-hidden" type="checkbox" id="lcl" name="">
+				<input class="visually-hidden" type="checkbox" id="lcl" name="" />
 				<label for="lcl">LCL</label>
 
-				<input class="visually-hidden" type="checkbox" name="" id="inter">
+				<input class="visually-hidden" type="checkbox" name="" id="inter" />
 				<label for="inter">Intermodal</label>
 
-				<input class="visually-hidden" type="checkbox" name="" id="special">
+				<input class="visually-hidden" type="checkbox" name="" id="special" />
 				<label for="special">Special Container</label>
-
-
 			</fieldset>
-
 		</form>
 
 		<form class="filters-range" action="" method="">
 			<fieldset>
 				<legend>Срок на платформе</legend>
 
-
 				<div class="range-wrapper">
-
 					<div class="range-row">
-
 						<span class="min-hanler"></span>
 
 						<div class="range-line"></div>
 
 						<span class="max-handler"></span>
-
 					</div>
 
 					<div class="numbers-row">
-
 						<label for="minValue">
-							<input type="number" id="minValue" name="minValue" min="0" max="15" value="3" readonly
-								onchange="updateFormData(event)">
+							<input
+								type="number"
+								id="minValue"
+								name="minValue"
+								min="0"
+								max="15"
+								value="3"
+								readonly
+								onchange="updateFormData(event)"
+							/>
 						</label>
 						<label for="maxValue">
-							<input type="number" id="maxValue" name="maxValue" min="0" max="15" value="10" readonly
-								onchange="updateFormData(event)">
+							<input
+								type="number"
+								id="maxValue"
+								name="maxValue"
+								min="0"
+								max="15"
+								value="10"
+								readonly
+								onchange="updateFormData(event)"
+							/>
 						</label>
 					</div>
 				</div>
-
 			</fieldset>
 		</form>
 
-
 		<form class="filters-directions filters-status" action="" method="post">
-
 			<fieldset>
 				<legend>По статусу</legend>
 
-				<input class="visually-hidden" type="checkbox" id="free" name="">
+				<input class="visually-hidden" type="checkbox" id="free" name="" />
 				<label for="free">Free</label>
 
-				<input class="visually-hidden" type="checkbox" id="elite" name="">
+				<input class="visually-hidden" type="checkbox" id="elite" name="" />
 				<label for="elite">Elite</label>
 
-				<input class="visually-hidden" type="checkbox" name="" id="premium">
+				<input class="visually-hidden" type="checkbox" name="" id="premium" />
 				<label for="premium">Premium</label>
 
-				<input class="visually-hidden" type="checkbox" name="" id="vip">
+				<input class="visually-hidden" type="checkbox" name="" id="vip" />
 				<label for="vip">Vip</label>
-
-
 			</fieldset>
-
 		</form>
-
-
-
 	</div>
 
-
 	<div class="catalog-content">
-
-
 		<div class="catalog-content__card">
 			<picture>
-				<source srcset="./images/catalog-card.avif">
-				<img src="./images/catalog-card.png" alt="участник" width="210" height="50">
+				<source srcset="./images/catalog-card.avif" />
+				<img src="./images/catalog-card.png" alt="участник" width="210" height="50" />
 			</picture>
 			<div class="catalog-card__info">
 				<div class="catalog-card__title">
@@ -189,8 +165,8 @@
 
 		<div class="catalog-content__card">
 			<picture>
-				<source srcset="./images/catalog-card.avif">
-				<img src="./images/catalog-card.png" alt="участник" width="210" height="50">
+				<source srcset="./images/catalog-card.avif" />
+				<img src="./images/catalog-card.png" alt="участник" width="210" height="50" />
 			</picture>
 			<div class="catalog-card__info">
 				<div class="catalog-card__title">
@@ -212,8 +188,8 @@
 
 		<div class="catalog-content__card">
 			<picture>
-				<source srcset="./images/catalog-card.avif">
-				<img src="./images/catalog-card.png" alt="участник" width="210" height="50">
+				<source srcset="./images/catalog-card.avif" />
+				<img src="./images/catalog-card.png" alt="участник" width="210" height="50" />
 			</picture>
 			<div class="catalog-card__info">
 				<div class="catalog-card__title">
@@ -235,8 +211,8 @@
 
 		<div class="catalog-content__card">
 			<picture>
-				<source srcset="./images/catalog-card.avif">
-				<img src="./images/catalog-card.png" alt="участник" width="210" height="50">
+				<source srcset="./images/catalog-card.avif" />
+				<img src="./images/catalog-card.png" alt="участник" width="210" height="50" />
 			</picture>
 			<div class="catalog-card__info">
 				<div class="catalog-card__title">
@@ -258,8 +234,8 @@
 
 		<div class="catalog-content__card">
 			<picture>
-				<source srcset="./images/catalog-card.avif">
-				<img src="./images/catalog-card.png" alt="участник" width="210" height="50">
+				<source srcset="./images/catalog-card.avif" />
+				<img src="./images/catalog-card.png" alt="участник" width="210" height="50" />
 			</picture>
 			<div class="catalog-card__info">
 				<div class="catalog-card__title">
@@ -281,8 +257,8 @@
 
 		<div class="catalog-content__card">
 			<picture>
-				<source srcset="./images/catalog-card.avif">
-				<img src="./images/catalog-card.png" alt="участник" width="210" height="50">
+				<source srcset="./images/catalog-card.avif" />
+				<img src="./images/catalog-card.png" alt="участник" width="210" height="50" />
 			</picture>
 			<div class="catalog-card__info">
 				<div class="catalog-card__title">
@@ -304,8 +280,8 @@
 
 		<div class="catalog-content__card">
 			<picture>
-				<source srcset="./images/catalog-card.avif">
-				<img src="./images/catalog-card.png" alt="участник" width="210" height="50">
+				<source srcset="./images/catalog-card.avif" />
+				<img src="./images/catalog-card.png" alt="участник" width="210" height="50" />
 			</picture>
 			<div class="catalog-card__info">
 				<div class="catalog-card__title">
@@ -327,8 +303,8 @@
 
 		<div class="catalog-content__card">
 			<picture>
-				<source srcset="./images/catalog-card.avif">
-				<img src="./images/catalog-card.png" alt="участник" width="210" height="50">
+				<source srcset="./images/catalog-card.avif" />
+				<img src="./images/catalog-card.png" alt="участник" width="210" height="50" />
 			</picture>
 			<div class="catalog-card__info">
 				<div class="catalog-card__title">
@@ -347,19 +323,16 @@
 			</div>
 			<a class="catalog-card__link" href="/catalog-inner.html">Подробнее о компании</a>
 		</div>
-
 	</div>
 
 	<div class="catalog-new-members">
-
 		<div class="members-title">Новые участники</div>
 
 		<div class="members-cards">
-
 			<div class="members-card">
 				<picture>
-					<source srcset="./images/members.avif">
-					<img src="./images/members.png" alt="новый участник" width="40" height="90">
+					<source srcset="./images/members.avif" />
+					<img src="./images/members.png" alt="новый участник" width="40" height="90" />
 				</picture>
 				<b>Apex International Inc</b>
 				<span>Free</span>
@@ -374,8 +347,8 @@
 
 			<div class="members-card">
 				<picture>
-					<source srcset="./images/members.avif">
-					<img src="./images/members.png" alt="новый участник" width="40" height="90">
+					<source srcset="./images/members.avif" />
+					<img src="./images/members.png" alt="новый участник" width="40" height="90" />
 				</picture>
 				<b>Apex International Inc</b>
 				<span>Free</span>
@@ -390,8 +363,8 @@
 
 			<div class="members-card">
 				<picture>
-					<source srcset="./images/members.avif">
-					<img src="./images/members.png" alt="новый участник" width="40" height="90">
+					<source srcset="./images/members.avif" />
+					<img src="./images/members.png" alt="новый участник" width="40" height="90" />
 				</picture>
 				<b>Apex International Inc</b>
 				<span>Free</span>
@@ -406,8 +379,8 @@
 
 			<div class="members-card">
 				<picture>
-					<source srcset="./images/members.avif">
-					<img src="./images/members.png" alt="новый участник" width="40" height="90">
+					<source srcset="./images/members.avif" />
+					<img src="./images/members.png" alt="новый участник" width="40" height="90" />
 				</picture>
 				<b>Apex International Inc</b>
 				<span>Free</span>
@@ -422,8 +395,8 @@
 
 			<div class="members-card">
 				<picture>
-					<source srcset="./images/members.avif">
-					<img src="./images/members.png" alt="новый участник" width="40" height="90">
+					<source srcset="./images/members.avif" />
+					<img src="./images/members.png" alt="новый участник" width="40" height="90" />
 				</picture>
 				<b>Apex International Inc</b>
 				<span>Free</span>
@@ -438,8 +411,8 @@
 
 			<div class="members-card">
 				<picture>
-					<source srcset="./images/members.avif">
-					<img src="./images/members.png" alt="новый участник" width="40" height="90">
+					<source srcset="./images/members.avif" />
+					<img src="./images/members.png" alt="новый участник" width="40" height="90" />
 				</picture>
 				<b>Apex International Inc</b>
 				<span>Free</span>
@@ -451,26 +424,18 @@
 					United kingdom
 				</div>
 			</div>
-
 		</div>
 	</div>
-
 </div>
 
-
 <script>
-
-
 	function updateFormData() {
-
-		const minValue = document.getElementById('minValue').value;
-		const maxValue = document.getElementById('maxValue').value;
-
+		const minValue = document.getElementById("minValue").value;
+		const maxValue = document.getElementById("maxValue").value;
 
 		const formData = new FormData();
-		formData.append('minValue', minValue);
-		formData.append('maxValue', maxValue);
-
+		formData.append("minValue", minValue);
+		formData.append("maxValue", maxValue);
 
 		// fetch('/', {
 		//     method: 'POST',
@@ -484,24 +449,7 @@
 		//     console.error('Error:', error);
 		// });
 
-		console.log('Min Value:', minValue);
-		console.log('Max Value:', maxValue);
+		console.log("Min Value:", minValue);
+		console.log("Max Value:", maxValue);
 	}
-
-	const stickyWrapper = document.querySelector('.sticy-wrapper');
-	const catalog = document.querySelector('.catalog');
-
-	window.addEventListener('scroll', () => {
-		const catalogBottom = catalog.getBoundingClientRect().bottom;
-		const viewportHeight = window.innerHeight;
-
-		if (catalogBottom < viewportHeight) {
-			stickyWrapper.style.transform = 'translateY(-150%)';
-			// stickyWrapper.style.bottom = catalog.offsetHeight - stickyWrapper.offsetHeight + 'px';
-		} else {
-			stickyWrapper.style.transform = 'translateY(0)';
-			// stickyWrapper.style.top = '10vh';
-		}
-	});
-
 </script>
