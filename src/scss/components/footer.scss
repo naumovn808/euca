@@ -1,5 +1,5 @@
 .footer {
-	background-color: var(--color-bg-primary);
+	background-color: var(--color-bg-secondary);
 	border-top-left-radius: var(--offset);
 	border-top-right-radius: var(--offset);
 	overflow: hidden;
@@ -65,12 +65,11 @@
 				& svg {
 					width: calc(var(--offset) * 1.2);
 					height: calc(var(--offset) * 1.2);
-					fill: #787B83;
+					fill: #787b83;
 					transition-duration: 0.5s;
 					transition-property: fill;
 				}
 			}
-
 
 			&:hover svg,
 			&:focus-within svg,
@@ -110,7 +109,6 @@
 	letter-spacing: -0.04em;
 	box-shadow: 0 0 0 0.05em var(--color-text-primary);
 
-
 	&:hover,
 	&:focus,
 	&:focus-within {
@@ -124,7 +122,6 @@
 	background-color: #fc4739;
 	box-shadow: 0 0 0 0.05em #fc4739;
 
-
 	&:hover,
 	&:focus,
 	&:focus-within {
@@ -133,12 +130,10 @@
 	}
 }
 
-
 .footer {
 	& a {
 		transition-duration: 0.5s;
 		transition-property: color;
-
 
 		&:hover,
 		&:focus,
