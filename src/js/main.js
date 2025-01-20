@@ -80,12 +80,23 @@ async function init() {
 	}
 
 	if (document.querySelector('.partners')) {
-        try {
-          await import('./sliders/partners.js').then(({ sliderPartners }) => sliderPartners()); // <-- await перед импортом
-        } catch (e) {
-          console.error("Error loading module", e);
-        }
-    }
+		try {
+			const { sliderPartners } = await import(/* webpackChunkName: "sliderPartners" */ './sliders/partners.js')
+			sliderPartners();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
+	if (document.querySelector('.accordions')) {
+		try {
+			const { accordions } = await import(/* webpackChunkName: "accordions" */ './helpers/accordeons.js')
+			accordions();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
 
 
 }

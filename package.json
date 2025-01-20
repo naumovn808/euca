@@ -63,6 +63,7 @@
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
+		"gsap": "^3.12.7",
 		"gulp-cheerio": "^1.0.0",
 		"gulp-svgstore": "^9.0.0",
 		"mini-css-extract-plugin": "^2.9.2",

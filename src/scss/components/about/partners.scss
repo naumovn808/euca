@@ -2,7 +2,8 @@
 	min-height: 50vh;
 	position: relative;
 	padding: var(--offset-s);
-	background-color: var(--colot-text-primary);
+	padding-top: var(--offset);
+	background-color: var(--color-text-primary);
 }
 
 .partner-slider {
@@ -11,7 +12,7 @@
 	overflow: hidden;
 }
 
-.partners-sliders__container {
+.partners-sliders {
 	& button {
 		color: #fff;
 	}
@@ -21,7 +22,102 @@
 	overflow: hidden;
 }
 
-.swiper-wrapper {
+.partner-wrapper {
 	display: flex;
 	align-items: center;
+	margin-bottom: var(--offset);
+}
+
+.partners-sliders {
+	overflow: hidden;
+}
+
+.partner-slider__bottom {
+	margin-left: calc(var(--offset-xl) * -1);
+}
+
+.partners_slide {
+	margin-right: var(--offset);
+	padding: calc(var(--offset) * 1.5);
+	border-radius: 0.3em;
+	background-color: #f5f5f5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: calc(var(--offset) * 11.15);
+	width: 100%;
+	height: calc(var(--offset) * 5.5);
+
+	&:hover img,
+	&:focus img {
+		transform: scale(1.1);
+	}
+
+	& img {
+		height: calc(var(--offset) * 2);
+		width: auto;
+		object-fit: contain;
+		aspect-ratio: 16/6;
+		transition-duration: 0.5s;
+		transition-property: transform;
+	}
+}
+
+.partners-info {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-bottom: calc(var(--offset) * 2);
+}
+
+.partners-wrapp {
+	& b {
+		font-weight: 600;
+		font-size: calc(var(--fz) * 0.9);
+		color: var(--color-text-secondary);
+		display: block;
+		margin-bottom: var(--offset);
+	}
+
+	& h3 {
+		font-weight: 500;
+		font-size: calc(var(--fz) * 2);
+		color: #0b1117;
+	}
+}
+
+.partners-buttons {
+	display: flex;
+	align-items: center;
+	gap: calc(var(--offset) * 0.6);
+}
+
+.partners-btn {
+	width: calc(var(--offset) * 2.3);
+	height: calc(var(--offset) * 2.3);
+	border-radius: 50%;
+	box-shadow: 0 0 0.08em #0b1117;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition-duration: 0.5s;
+	transition-property: background-color, box-shadow;
+
+	&:hover,
+	&:focus {
+		background-color: var(--color-text-secondary);
+		box-shadow: 0 0 0.08em var(--color-text-secondary);
+	}
+	&:hover svg,
+	&:focus svg {
+		stroke: #0b1117;
+	}
+
+	& svg {
+		width: calc(var(--offset) * 0.7);
+		height: calc(var(--offset) * 0.7);
+		stroke: #747e89;
+		transition-duration: 0.5s;
+		transition-property: stroke;
+	}
 }

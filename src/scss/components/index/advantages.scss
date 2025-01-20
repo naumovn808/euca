@@ -50,10 +50,10 @@
 			& li {
 				display: grid;
 				grid-template-columns: 5% 95%;
-				gap: var(--offset);
+				gap: calc(var(--offset) * 0.6);
 
 				& svg {
-					width: var(--offset);
+					width: calc(var(--offset) * 0.9);
 					height: var(--offset);
 				}
 
@@ -65,13 +65,10 @@
 				}
 			}
 		}
-
 	}
 }
 
-
 .advantages {
-
 	&-info {
 		display: flex;
 		align-items: stretch;
@@ -95,9 +92,7 @@
 			& b {
 				color: var(--color-text-secondary);
 			}
-
 		}
-
 
 		& p {
 			margin-bottom: calc(var(--offset) * 3);
@@ -107,9 +102,7 @@
 			margin-bottom: calc(var(--offset) * 4);
 		}
 	}
-
 }
-
 
 .advantages-info__desc {
 	display: grid;
@@ -123,7 +116,8 @@
 	}
 
 	& svg {
-		width: calc(var(--offset) * 1.5);
+		width: calc(var(--offset) * 1.2);
+		height: calc(var(--offset) * 1);
 	}
 
 	& p {

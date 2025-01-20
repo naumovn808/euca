@@ -20,7 +20,7 @@
 
 		& h1 {
 			font-weight: 600;
-			font-size: calc(var(--fz) * 2.5);
+			font-size: calc(var(--fz) * 3);
 			line-height: 91%;
 			letter-spacing: -0.06em;
 			color: var(--color-text-primary);
@@ -29,7 +29,7 @@
 
 		& p {
 			font-weight: 500;
-			font-size: calc(var(--fz) * 0.9);
+			font-size: calc(var(--fz) * 1.2);
 			line-height: 128%;
 			letter-spacing: -0.06em;
 			color: var(--color-text-primary);
