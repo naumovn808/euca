@@ -69,4 +69,14 @@ async function init() {
 		}
 	}
 
+	if (document.querySelector('.catalog-inner__info')) {
+		try {
+			const { sliderCatalog } = await import(/* webpackChunkName: "sliderCatalog" */ "./sliders/catalog-slider.js");
+			sliderCatalog();
+
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
 }
