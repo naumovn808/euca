@@ -1,0 +1,27 @@
+.partners {
+	min-height: 50vh;
+	position: relative;
+	padding: var(--offset-s);
+	background-color: var(--colot-text-primary);
+}
+
+.partner-slider {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.partners-sliders__container {
+	& button {
+		color: #fff;
+	}
+}
+
+.swiper-container {
+	overflow: hidden;
+}
+
+.swiper-wrapper {
+	display: flex;
+	align-items: center;
+}

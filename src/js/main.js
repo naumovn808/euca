@@ -79,4 +79,13 @@ async function init() {
 		}
 	}
 
+	if (document.querySelector('.partners')) {
+        try {
+          await import('./sliders/partners.js').then(({ sliderPartners }) => sliderPartners()); // <-- await перед импортом
+        } catch (e) {
+          console.error("Error loading module", e);
+        }
+    }
+
+
 }

@@ -39,7 +39,7 @@
 
 		& svg:nth-of-type(2) {
 			fill: var(--color-text-primary);
-			height: var(--offset);
+			height: calc(var(--offset) * 1.2);
 			width: calc(var(--offset) * 9);
 		}
 	}
