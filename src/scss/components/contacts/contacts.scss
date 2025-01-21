@@ -1,0 +1,71 @@
+.contacts {
+	min-height: 80vh;
+	padding: var(--offset-l) var(--offset-s) var(--offset-xl);
+	display: flex;
+	align-items: stretch;
+
+
+	&__info {
+		width: 50%;
+		padding-right: var(--offset-s);
+		display: flex;
+		flex-direction: column;
+
+		& h1 {
+			margin-bottom: calc(var(--offset) * 2);
+		}
+
+		& b {
+			font-weight: 500;
+			font-size: var(--fz);
+			display: block;
+			margin-bottom: var(--offset);
+		}
+
+		& p {
+			font-weight: 500;
+			font-size: calc(var(--fz) * 0.8);
+			margin-bottom: calc(var(--offset) * 2);
+			color: rgba(151, 158, 178, 1);
+		}
+
+	}
+}
+
+.contacts__cards {
+	padding-top: calc(var(--offset) * 2);
+	border-top: 0.05em solid rgba(151, 158, 178, 1);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	& .welcome-card b {
+		margin-bottom: 0;
+	}
+}
+
+.map {
+	position: relative;
+	width: 50%;
+	overflow: hidden;
+	border-radius: 0.5em;
+	max-height: 50vh;
+
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+}
+
+.my-marker {
+	width: calc(var(--offset) * 1.5) !important;
+	height: calc(var(--offset) * 1.5) !important;
+	z-index: 1;
+	object-fit: contain !important;
+	cursor: pointer;
+	pointer-events: all;
+}

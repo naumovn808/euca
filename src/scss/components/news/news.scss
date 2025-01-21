@@ -1,0 +1,129 @@
+.news {
+	&-card {
+
+		&__btn {
+			font-weight: 600;
+			font-size: calc(var(--fz) * 0.8);
+			letter-spacing: -0.04em;
+			color: var(--color-text-primary);
+			padding: calc(var(--offset) * 0.5) var(--offset);
+			border-radius: 2em;
+			box-shadow: 0 0 0 0.05em var(--color-text-primary);
+			transition-duration: 0.5s;
+			transition-property: background-color, box-shadow;
+
+			&:hover,
+			&:focus {
+				background-color: var(--color-text-secondary);
+				box-shadow: 0 0 0 0.05em var(--color-text-secondary);
+			}
+		}
+	}
+
+	&-cards {
+		min-height: 50vh;
+		padding: var(--offset-s);
+		padding-bottom: var(--offset-xl);
+
+		&__buttons {
+			margin: 0 auto;
+			width: fit-content;
+			display: flex;
+			gap: var(--offset);
+			align-items: center;
+			margin-bottom: calc(var(--offset) * 2);
+		}
+
+
+		&__content {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: var(--offset);
+			row-gap: calc(var(--offset) * 0.5);
+			margin-bottom: var(--offset);
+
+			& .news-image {
+				height: 50%;
+				margin-bottom: var(--offset);
+			}
+
+			& .news-card {
+				padding-right: 0;
+
+				& b {
+					color: var(--color-text-primary);
+					font-size: var(--fz);
+				}
+
+				& p {
+					margin-bottom: var(--offset);
+				}
+
+				.news-date svg {
+					fill: #787B83;
+					width: calc(var(--offset) * 0.8);
+					height: calc(var(--offset) * 0.8);
+				}
+			}
+		}
+	}
+}
+
+.show-more {
+	width: fit-content;
+	margin: 0 auto;
+	display: block;
+}
+
+.news-head__info h1 {
+	margin-top: var(--offset);
+	max-width: 80%;
+}
+
+.news-inner__desc {
+	display: flex;
+	flex-direction: column;
+	min-height: 50vh;
+	padding: var(--offset-s);
+	padding-right: calc(var(--offset) * 20);
+	padding-bottom: var(--offset-xl);
+
+	& b {
+		font-weight: 600;
+		font-size: calc(var(--fz) * 1.4);
+		display: block;
+		margin-bottom: var(--offset);
+	}
+
+	& p {
+		font-size: calc(var(--fz) * 0.9);
+		margin-bottom: calc(var(--offset) * 3);
+		opacity: 0.85;
+	}
+
+	& ol,
+	ul {
+
+		display: flex;
+		flex-direction: column;
+		gap: var(--offset);
+		margin-bottom: calc(var(--offset) * 2);
+		padding-right: var(--offset-l);
+
+		& li {
+			font-weight: 400;
+			font-size: calc(var(--fz) * 0.9);
+			line-height: 1.2;
+			opacity: 0.85;
+		}
+
+	}
+
+	& ol li {
+		list-style: decimal;
+	}
+
+	& ul li {
+		list-style: disc;
+	}
+}

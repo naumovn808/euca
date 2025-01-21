@@ -98,5 +98,40 @@ async function init() {
 	}
 
 
+	async function initMap() {
+
+
+		if (document.getElementById('map')) {
+
+			try {
+
+				const { Map } = await import(/* webpackChunkName: "map" */ './map/map.js');
+				const map = new Map({
+					container: document.getElementById('map'),
+					center: COORDINATES,
+					zoom: 15,
+					marker: urlPin
+				});
+
+				map.init();
+
+			} catch (e) {
+				console.error("Error loading module", e);
+			}
+		}
+	}
+
+	setTimeout(() => {
+
+		initMap();
+
+	}, 100)
+
+
+
+
+
+
+
 
 }

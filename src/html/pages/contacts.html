@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../components/includes/head.html', { 'title': 'Контакты' })
+<script async src="https://api-maps.yandex.ru/v3/?apikey=49817d12-35af-402e-82b9-91b83b18ac74&lang=ru_RU"></script>
+
+<body>
+	@@include('../components/includes/sprite.html')
+	@@include('../components/header.html')
+	<main class="main-wrapper">
+		@@include('../components/contacts/contacts.html')
+	</main>
+	@@include('../components/footer.html')
+	@@include('../components/includes/script.html')
+
+	<script>
+
+		let urlPin = "./images/svg/map-pin.svg";
+
+		const COORDINATES = [69.23323003743187, 41.38296804890838];
+
+
+	</script>
+
+</body>
+
+</html>
