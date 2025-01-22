@@ -130,7 +130,24 @@ async function init() {
 
 
 
+	if (document.querySelector('input[type="password"]')) {
+		try {
+			const { togglePasswordVisibility } = await import(/* webpackChunkName: "togglePasswordVisibility" */ './helpers/toggleVisability.js')
+			togglePasswordVisibility();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
 
+
+	if (document.querySelector('.modal')) {
+		try {
+			const { setupModals } = await import(/* webpackChunkName: "setupModals" */ './modals/modals.js')
+			setupModals();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
 
 
 

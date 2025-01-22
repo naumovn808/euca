@@ -118,6 +118,7 @@
 	& svg {
 		width: calc(var(--offset) * 1.2);
 		height: calc(var(--offset) * 1);
+		fill: var(--color-text-secondary);
 	}
 
 	& p {

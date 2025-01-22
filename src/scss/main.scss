@@ -17,6 +17,7 @@
 @import "./components/about/questions.scss";
 @import "./components/news/news.scss";
 @import "./components/contacts/contacts.scss";
+@import "./components/modals.scss";
 
 * {
 	box-sizing: border-box;
@@ -35,6 +36,10 @@ body {
 	font-size: var(--fz);
 	position: relative;
 	min-height: 100vh;
+
+	&.modal-open {
+		overflow: hidden;
+	}
 }
 
 :root {
