@@ -149,6 +149,22 @@ async function init() {
 		}
 	}
 
+	if (document.querySelector('.side-bar')) {
+		try {
+			const { sideBarLinks } = await import(/* webpackChunkName: "sideBarLinks" */ './helpers/side-bar-links.js')
+			sideBarLinks();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
 
+	if (document.querySelector('.profile-notifications')) {
+		try {
+			const { modalNotification } = await import(/* webpackChunkName: "modalNotification" */ './helpers/modal-notifications.js')
+			modalNotification();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
 
 }
