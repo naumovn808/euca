@@ -1,17 +1,15 @@
 <div class="side-bar">
 	<a href="./index.html" aria-label="на главную страннцу" class="nav__logo">
 		<picture>
-			<source srcset="./images/svg/logo.svg">
-			<img src="./images/svg/logo.svg" width="230" height="50" alt="логотип компании">
+			<source srcset="./images/svg/logo.svg" />
+			<img src="./images/svg/logo.svg" width="230" height="50" alt="логотип компании" />
 		</picture>
 	</a>
-
 
 	<!-- side-bar__menu-row класс current добавить для выбранной странницы -->
 
 	<ul class="side-bar__menu">
 		<li>
-
 			<div class="side-bar__menu-row">
 				<svg width="18" height="16">
 					<use xlink:href="#cargo"></use>
@@ -22,7 +20,9 @@
 
 			<ul class="dropdown-menu">
 				<li><a href="">Ваши грузы</a></li>
-				<li><a href="">Грузы в работе <span class="menu-count">1</span></a></li>
+				<li>
+					<a href="">Грузы в работе <span class="menu-count">1</span></a>
+				</li>
 				<li><a href="">Архив грузов</a></li>
 			</ul>
 		</li>
@@ -36,7 +36,9 @@
 				<span></span>
 			</div>
 			<ul class="dropdown-menu">
-				<li><a href="">Согласование <span class="menu-count">1</span></a></li>
+				<li>
+					<a href="">Согласование <span class="menu-count">1</span></a>
+				</li>
 				<li><a href="">В исполнении</a></li>
 				<li><a href="">Документы и оплата</a></li>
 				<li><a href="">Архив</a></li>
@@ -57,9 +59,11 @@
 				<svg width="16" height="16">
 					<use xlink:href="#message"></use>
 				</svg>
-				<a href="#">Сообщения<div class="menu-count">1</div></a>
+				<a href="./messages.html">
+					Сообщения
+					<div class="menu-count">1</div>
+				</a>
 			</div>
-
 		</li>
 
 		<li>
@@ -71,14 +75,13 @@
 				<span></span>
 			</div>
 			<ul class="dropdown-menu">
-
-				<li><a href="">Настройки профиля</a></li>
-				<li><a href="">Настройки компании</a>
+				<li><a href="./profile-settings.html">Настройки профиля</a></li>
+				<li>
+					<a href="./profile-company-settings.html">Настройки компании</a>
 					<div class="menu-count">1</div>
 				</li>
-				<li><a href="">Тарифы</a></li>
-				<li><a href="">Управление подпиской</a></li>
-
+				<li><a href="./tarifs.html">Тарифы</a></li>
+				<li><a href="./manage-tarifs.html">Управление подпиской</a></li>
 			</ul>
 		</li>
 	</ul>

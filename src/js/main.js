@@ -167,4 +167,13 @@ async function init() {
 		}
 	}
 
+	if (document.querySelector('textarea')) {
+		try {
+			const { autoResizeTextarea } = await import(/* webpackChunkName: "autoResizeTextarea" */ './helpers/autoResizeTextarea.js')
+			autoResizeTextarea();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
 }

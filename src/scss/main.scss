@@ -19,6 +19,7 @@
 @import "./components/contacts/contacts.scss";
 @import "./components/modals.scss";
 @import "./components/profile/profile.scss";
+@import "./components/profile/tarifs.scss";
 
 * {
 	box-sizing: border-box;
@@ -46,16 +47,16 @@ body {
 :root {
 	/* colors */
 	--color-default-black: #000;
-	--color-bg-primary: #0B1117;
-	--color-bg-secondary: #141F2A;
+	--color-bg-primary: #0b1117;
+	--color-bg-secondary: #141f2a;
 
-	--color-icon: #353B3D;
+	--color-icon: #353b3d;
 
 	--color-text-primary: #fff;
-	--color-text-secondary: #FC4739;
+	--color-text-secondary: #fc4739;
 	--color-text-black: #000;
-	--color-text-dark: #353B3D;
-	--color-text-gray: #979EB2;
+	--color-text-dark: #353b3d;
+	--color-text-gray: #979eb2;
 
 	--ffI: "Inter";
 

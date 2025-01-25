@@ -60,7 +60,7 @@
 	}
 
 	&::before {
-		content: '';
+		content: "";
 		display: block;
 		position: absolute;
 		left: 0;
@@ -71,7 +71,7 @@
 	}
 
 	& svg {
-		width: vavr(--offset);
+		width: var(--offset);
 		height: var(--offset);
 		fill: rgba(120, 123, 131, 1);
 		transition-duration: 0.5s;
@@ -97,7 +97,7 @@
 		left: -20%;
 		height: 100%;
 		top: 0;
-		content: '';
+		content: "";
 		background-color: rgba(33, 43, 55, 1);
 		position: absolute;
 		z-index: -1;
@@ -114,7 +114,6 @@
 	&.open svg {
 		fill: var(--color-text-primary);
 	}
-
 
 	&.open::before {
 		opacity: 1;
@@ -148,7 +147,6 @@
 		transition-property: fill;
 	}
 
-
 	& b,
 	& a {
 		font-weight: 400;
@@ -163,6 +161,10 @@
 		display: flex;
 		gap: 0.5em;
 		align-items: flex-start;
+
+		&.current {
+			color: var(--color-text-primary);
+		}
 	}
 
 	& span {
@@ -195,8 +197,6 @@
 	transition-duration: 0.5s;
 	transition-property: height, padding;
 
-
-
 	&.open {
 		height: auto;
 		overflow: visible;
@@ -208,7 +208,6 @@
 		align-items: flex-start;
 		justify-content: space-between;
 		gap: 0.5em;
-
 	}
 
 	& li a {
@@ -219,6 +218,10 @@
 		transition-property: color;
 		position: relative;
 		z-index: 1;
+
+		&.current {
+			color: var(--color-text-primary);
+		}
 
 		&:hover,
 		&:focus {
@@ -237,6 +240,7 @@
 	border-radius: 50%;
 	background-color: var(--color-text-secondary);
 	color: var(--color-text-primary);
+	line-height: 1;
 }
 
 .side-bar__menu-row.current {
@@ -252,7 +256,6 @@
 		fill: var(--color-text-primary);
 	}
 }
-
 
 .profile-settings {
 	background-color: rgba(245, 245, 245, 1);
@@ -280,7 +283,6 @@
 	}
 }
 
-
 .profile-notifications {
 	width: calc(var(--offset) * 2.2);
 	height: calc(var(--offset) * 2.2);
@@ -294,7 +296,7 @@
 
 	&::after {
 		box-sizing: border-box;
-		content: '';
+		content: "";
 		display: block;
 		position: absolute;
 		top: calc(var(--offset) * 0.5);
@@ -323,9 +325,7 @@
 	}
 }
 
-
 .notifications-modal {
-
 	position: absolute;
 	right: 0;
 	transform: translateX(44%);
@@ -360,7 +360,6 @@
 	}
 }
 
-
 .notifications-modal__head {
 	display: flex;
 	align-items: center;
@@ -381,7 +380,6 @@
 			text-decoration: underline;
 		}
 
-
 		&.has-read {
 			color: #94c898;
 
@@ -390,7 +388,7 @@
 				top: 20%;
 				left: -15%;
 
-				content: '';
+				content: "";
 				display: block;
 				width: 0.7em;
 				height: 0.5em;
@@ -516,7 +514,6 @@
 			text-decoration: underline;
 		}
 	}
-
 }
 
 .notifications-modal__link {
@@ -550,6 +547,206 @@
 .time {
 	font-weight: 400;
 	font-size: calc(var(--fz) * 0.6);
-	line-height: 170%;
+	line-height: 1.2;
 	color: #787b83;
+}
+
+.profile-content {
+	padding: var(--offset) calc(var(--offset) * 2);
+	margin-bottom: calc(var(--offset) * 2);
+
+	&__wrapper {
+		background-color: var(--color-text-primary);
+		border-radius: 1em;
+		padding: var(--offset);
+		height: 100%;
+	}
+
+	&__name {
+		display: flex;
+		align-items: center;
+		gap: calc(var(--offset) * 0.5);
+		margin-bottom: calc(var(--offset) * 2);
+	}
+
+	&__image {
+		width: calc(var(--offset) * 4);
+		height: calc(var(--offset) * 4);
+		border-radius: 50%;
+		overflow: hidden;
+		background-color: #f5f5f5;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--offset) * 0.3);
+
+		& p {
+			font-weight: 400;
+			font-size: calc(var(--fz) * 0.8);
+			color: #656565;
+		}
+
+		& b {
+			font-weight: 500;
+			font-size: calc(var(--fz) * 1.5);
+			letter-spacing: -0.02em;
+			color: #191919;
+		}
+
+		& label {
+			font-weight: 400;
+			font-size: calc(var(--fz) * 0.7);
+			color: #2e3645;
+			padding: 0.3em 2em 0.3em 0.6em;
+			border-radius: 2em;
+			background-color: #fde7e5;
+			cursor: pointer;
+			background-image: url("../images/svg/upload.svg");
+			background-repeat: no-repeat;
+			background-position: 96% center;
+			background-size: 0.8em;
+			transition-duration: 0.5s;
+			transition-property: color;
+
+			&:hover,
+			&:focus {
+				color: #656565;
+			}
+		}
+
+		& input {
+			opacity: 0;
+			position: relative;
+			z-index: -1;
+		}
+	}
+
+	&__form {
+	}
+}
+
+.form-wrapper {
+	display: flex;
+	align-items: flex-start;
+	gap: calc(var(--offset) * 2);
+}
+
+.form-buttons {
+	display: flex;
+	align-items: center;
+	gap: var(--offset);
+	margin-top: calc(var(--offset) * 2);
+}
+
+.form-btn {
+	width: fit-content;
+}
+
+.left-col {
+	width: 100%;
+	max-width: calc(var(--offset) * 20);
+}
+
+.right-col {
+	width: 100%;
+	max-width: calc(var(--offset) * 20);
+}
+
+.input__row-profile {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: calc(var(--offset) * 0.5);
+	margin-bottom: var(--offset);
+	position: relative;
+
+	& label {
+		width: 100%;
+		font-weight: 600;
+		font-size: calc(var(--fz) * 0.8);
+		color: #2e3645;
+		position: relative;
+	}
+
+	& input {
+		width: 100%;
+		background-color: #f5f5f5;
+		padding: calc(var(--offset) * 0.5) var(--offset);
+		border-radius: 2em;
+		font-weight: 400;
+		font-size: calc(var(--fz) * 0.8);
+		color: #2e3645;
+		border: none;
+		outline: none;
+
+		&::placeholder {
+			font-weight: 400;
+			font-size: calc(var(--fz) * 0.8);
+			color: #656565;
+		}
+	}
+
+	& textarea {
+		width: 100%;
+		background-color: #f5f5f5;
+		padding: calc(var(--offset) * 0.5) var(--offset);
+		border-radius: 2em;
+		font-weight: 400;
+		font-size: calc(var(--fz) * 0.8);
+		color: #2e3645;
+		border: none;
+		outline: none;
+
+		&::placeholder {
+			font-weight: 400;
+			font-size: calc(var(--fz) * 0.8);
+			color: #656565;
+		}
+	}
+}
+
+.form-btn-white {
+	color: #787b83;
+	box-shadow: 0 0 0 0.05em #787b83;
+	background-color: var(--color-text-primary);
+	transition-duration: 0.5s;
+	transition-property: color;
+}
+
+.add-field {
+	width: calc(var(--offset) * 1.6);
+	height: calc(var(--offset) * 1.6);
+	box-shadow: 0 0 0 0.05em #c8c8c8;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: 45%;
+	right: -10%;
+	transition-duration: 0.5s;
+	transition-property: box-shadow;
+	&:hover,
+	&:focus {
+		box-shadow: 0 0 0 0.05em var(--color-text-secondary);
+	}
+
+	&:hover svg,
+	&:focus svg {
+		stroke: var(--color-text-secondary);
+	}
+
+	& svg {
+		width: calc(var(--offset) * 0.5);
+		height: calc(var(--offset) * 0.5);
+		stroke: #c8c8c8;
+		transition-duration: 0.5s;
+		transition-property: stroke;
+	}
 }
