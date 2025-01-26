@@ -176,4 +176,15 @@ async function init() {
 		}
 	}
 
+
+	if (document.querySelector('.chat-window')) {
+		try {
+			const { chatScroll } = await import(/* webpackChunkName: "chatScroll" */ './helpers/chat-scroll.js')
+			chatScroll();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
+
 }
