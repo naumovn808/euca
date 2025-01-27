@@ -6273,10 +6273,21 @@ input[type=number]::-ms-clear {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0;
+}
+.notifications-head button:hover svg {
+  fill: #fc4739;
+  fill: var(--color-text-secondary);
 }
 .notifications-head button svg {
   width: 0.8em;
   height: 0.8em;
+  fill: #fff;
+  fill: var(--color-text-primary);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: fill;
+  transition-property: fill;
 }
 
 .notifications__list {
@@ -6325,6 +6336,181 @@ input[type=number]::-ms-clear {
   line-height: 1.5;
   text-align: center;
   color: #656565;
+}
+
+.delete__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(245, 245, 245);
+  width: calc(max(calc(1.25 * 1vw), 15px) * 2);
+  width: calc(var(--offset) * 2);
+  height: calc(max(calc(1.25 * 1vw), 15px) * 2);
+  height: calc(var(--offset) * 2);
+  border: none;
+  border-radius: 50%;
+  padding: 0.5em;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  margin-right: auto;
+}
+.delete__btn:hover, .delete__btn:focus {
+  background-color: #fc4739;
+  background-color: var(--color-text-secondary);
+}
+.delete__btn:hover svg, .delete__btn:focus svg {
+  stroke: #fff;
+  stroke: var(--color-text-primary);
+}
+.delete__btn svg {
+  width: max(calc(1.25 * 1vw), 15px);
+  width: var(--offset);
+  height: max(calc(1.25 * 1vw), 15px);
+  height: var(--offset);
+  stroke: #0b1117;
+  stroke: var(--color-bg-primary);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: stroke;
+  transition-property: stroke;
+}
+
+.pagination-notifications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+.pagination-notifications p {
+  font-weight: 400;
+  font-size: calc(max(calc(1 * 1vw), 15px) * 0.8);
+  font-size: calc(var(--fz) * 0.8);
+  color: #787b83;
+}
+
+.links-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.links-pagination button {
+  padding: 0.5em;
+}
+.links-pagination button svg {
+  width: calc(max(calc(1.25 * 1vw), 15px) * 0.8);
+  width: calc(var(--offset) * 0.8);
+  height: calc(max(calc(1.25 * 1vw), 15px) * 0.8);
+  height: calc(var(--offset) * 0.8);
+  stroke: #787b83;
+  fill: none;
+}
+.links-pagination button:hover svg {
+  stroke: #fc4739;
+  stroke: var(--color-text-secondary);
+  fill: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: stroke;
+  transition-property: stroke;
+}
+
+.filter-notifications {
+  cursor: pointer;
+  position: relative;
+  min-width: calc(max(calc(1.25 * 1vw), 15px) * 5);
+  min-width: calc(var(--offset) * 5);
+}
+.filter-notifications select {
+  border: none;
+  -webkit-box-shadow: 0 0 0 0.05em #787b83;
+          box-shadow: 0 0 0 0.05em #787b83;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  font-weight: 400;
+  font-size: calc(max(calc(1 * 1vw), 15px) * 0.8);
+  font-size: calc(var(--fz) * 0.8);
+  letter-spacing: -0.04em;
+  color: #c8c8c8;
+  cursor: pointer;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../images/svg/select.svg") no-repeat 90% center;
+  background-size: calc(max(calc(1.25 * 1vw), 15px) * 0.6);
+  background-size: calc(var(--offset) * 0.6);
+}
+
+.notifications-table {
+  width: 100%;
+  margin-top: max(calc(1.25 * 1vw), 15px);
+  margin-top: var(--offset);
+  height: 70vh;
+  overflow-y: auto;
+}
+.notifications-table tbody tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 0.05em solid #e5e5e5;
+}
+.notifications-table tbody tr:hover, .notifications-table tbody tr:focus {
+  background-color: #fde7e5;
+}
+.notifications-table tbody tr a {
+  margin-right: auto;
+  display: block;
+  padding: calc(max(calc(1.25 * 1vw), 15px) * 0.6) 0;
+  padding: calc(var(--offset) * 0.6) 0;
+}
+.notifications-table tbody tr td, .notifications-table tbody tr a {
+  font-weight: 400;
+  font-size: calc(max(calc(1 * 1vw), 15px) * 0.8);
+  font-size: calc(var(--fz) * 0.8);
+  color: #656565;
+}
+.notifications-table tbody tr td b, .notifications-table tbody tr a b {
+  font-weight: 500;
+}
+.notifications-table tbody tr td strong, .notifications-table tbody tr a strong {
+  font-weight: 600;
+  font-size: calc(max(calc(1 * 1vw), 15px) * 0.9);
+  font-size: calc(var(--fz) * 0.9);
+  line-height: 106%;
+  color: #0b1117;
+}
+
+.table-checkbox {
+  font-weight: 700;
+  font-size: calc(max(calc(1 * 1vw), 15px) * 0.8);
+  font-size: calc(var(--fz) * 0.8);
+  color: #191919;
+  cursor: pointer;
+  margin-right: calc(max(calc(1.25 * 1vw), 15px) * 4);
+  margin-right: calc(var(--offset) * 4);
+  margin-left: calc(max(calc(1.25 * 1vw), 15px) * 0.5);
+  margin-left: calc(var(--offset) * 0.5);
 }
 
 * {
