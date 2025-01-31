@@ -1,0 +1,505 @@
+<!-- <div class="profile-settings">
+	<header class="profile-header">
+		<h1>Заказы вам, согласование</h1>
+
+		<div class="profile-notifications has-notifications">
+			<svg width="16" height="18">
+				<use xlink:href="#notifications"></use>
+			</svg>
+
+			<div class="notifications-modal">
+				<div class="tr">
+					<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z"
+							fill="white"
+						/>
+					</svg>
+				</div>
+
+				<div class="notifications-modal__head">
+					 <span class="read has-read">Все прочитано</span>
+
+					<a href="#" class="read">Сделать прочитаным</a>
+
+					<div class="notifications-modal__btn">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<div class="notifications-modal__content">
+					<div class="notifications-modal__card">
+						<svg width="20" height="20">
+							<use xlink:href="#ntf"></use>
+						</svg>
+						<p>OOO TS1 взял груз: Санкт-Петербург-Улан-Удэ, 10т, 10 м2, Ставка-127188 руб</p>
+						<div class="notifications-modal__botom">
+							<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+							<span class="time">11:15</span>
+						</div>
+					</div>
+
+					<div class="notifications-modal__card">
+						<svg width="20" height="20">
+							<use xlink:href="#ntf"></use>
+						</svg>
+						<p>OOO Северные грузы предлагает груз Санкт-Петербург - Москва</p>
+						<p>за <strong>1000 000 руб</strong></p>
+						<p>Автомашины, 10 т, закр. + терм., загрузка с 26 авг</p>
+						<p>Предлжение действует до 21:06 мск</p>
+						<a href="#" class="notifications-modal__link">Подробнее</a>
+					</div>
+
+					<div class="notifications-modal__card">
+						<svg width="20" height="20">
+							<use xlink:href="#ntf"></use>
+						</svg>
+						<b>Встречное предложение на груз: <span>№AZE2477</span></b>
+						<p>Автомобиль(ли), Санкт-Петербург - Улан-Удэ, 10т, 10м2, закр., изтерм, реф., 6сен</p>
+						<p><span>Ставка:</span> 25000 руб не б/нал, 23000 руб б/нал с НДС, 23000 руб/нал без НДС</p>
+						<p><span>Фирма:</span> “TS1,OOO”</p>
+						<p><span>Контакт: </span></p>
+						<p>Иван</p>
+						<a href="#">Написать сообщение</a>
+						<p>Санкт-Петербург, Моб: <a href="">+000 00 000-00-00</a></p>
+						<p>Email: <a href="">email@example.com</a></p>
+						<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="profile" href="./profile-messages.html">
+			<picture>
+				<source srcset="./images/profile.avif" />
+				<img src="./images/profile.png" alt="автар пользователя" width="50" height="50" />
+			</picture>
+			<div class="profile__info">
+				<b>Имя Фамилия</b>
+				<span>Клиент</span>
+			</div>
+		</a>
+	</header>
+
+	<main class="profile-content">
+
+		<div class="order-head">
+			<form class="form-order">
+				<label for="name">
+					<select name="name" id="name">
+						<option value="" hidden>Имя</option>
+						<option value="">Имя1</option>
+						<option value="">Имя2</option>
+						<option value="">Имя3</option>
+					</select>
+				</label>
+
+				<label for="from">
+					<svg width="12" height="16">
+						<use xlink:href="#map"></use>
+					</svg>
+
+					<input type="text" id="from" placeholder="Откуда" name="from" />
+				</label>
+
+				<label for="to">
+					<svg width="12" height="16">
+						<use xlink:href="#map"></use>
+					</svg>
+
+					<input type="text" id="to" placeholder="Откуда" name="to" />
+				</label>
+
+				<label for="more" class="more">
+					<select name="more" id="more" class="more">
+						<option value="" hidden>Еще</option>
+						<option value="" hidden>фильтры</option>
+					</select>
+				</label>
+			</form>
+			<button class="form-btn">
+				<svg width="14" height="14">
+					<use xlink:href="#plus"></use>
+				</svg>
+
+				Добавить заявку водителю
+			</button>
+		</div>
+
+		<div class="order-info">
+			<div class="order-info__head">
+				<p>ТC/ Информация о грузе</p>
+				<p>Документы/ставка</p>
+				<p>Водитель/контрагент</p>
+				<p class="order-info__end">Статус/ дата изм</p>
+			</div>
+
+			<div class="order-info-content">
+				<div class="order-info__card">
+					<div class="order-info-col">
+						<h5 class="car-head">#aze2478</h5>
+						<p>
+							Санкт-Петербург
+							<strong>Москва</strong>
+							<svg width="10" height="10">
+								<use xlink:href="#arrow-right"></use>
+							</svg>
+							<small>709км</small>
+						</p>
+						<p><strong>10/</strong>Автомашины <strong>26-28 авг</strong> отд.машина</p>
+
+						<div class="road">
+							<svg width="18" height="14">
+								<use xlink:href="#dark-car"></use>
+							</svg>
+							Санкт-Петербург
+
+							<svg width="8" height="10" class="arrow-road">
+								<use xlink:href="#arrow-right"></use>
+							</svg>
+
+							<svg width="18" height="14">
+								<use xlink:href="#blue-car"></use>
+							</svg>
+							Улан-удЭ
+						</div>
+					</div>
+
+					<div class="order-info-col">
+						<p class="car-head"><strong>100 000</strong> руб с НДС</p>
+					</div>
+
+					<div class="order-info-col">
+						<b class="car-head">Северные грузы,ООО</b>
+						<div class="stars">
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+						</div>
+						<span>Татьяна, +7(000)000000</span>
+					</div>
+
+					<div class="order-info-col order-info__end">
+						<b class="green car-head">Новое предложение</b>
+						<span>сегодня в 20:06</span>
+					</div>
+				</div>
+
+				<div class="order-info__card order-info__buttom">
+					<div class="order-info-col">
+						<p>
+							<svg width="19" height="16">
+								<use xlink:href="#ts"></use>
+							</svg>
+
+							<span>ТС не выбрано</span>
+						</p>
+					</div>
+					<div class="order-info-col"></div>
+
+					<div class="order-info-col">
+						<p>
+							<svg width="16" height="16">
+								<use xlink:href="#human"></use>
+							</svg>
+
+							<span>Водитель не выбран</span>
+						</p>
+					</div>
+
+					<div class="order-info-col order-info-bottom__end">
+						<div>
+							<p class="time">
+								<span>Предложение <br />действует еще</span>
+							</p>
+							<p>
+								<svg width="11" height="13">
+									<use xlink:href="#order-time"></use>
+								</svg>
+								36:26
+							</p>
+						</div>
+						<div class="order-buttons">
+							<button class="form-btn">Взять груз</button>
+							<button class="close-order-card">
+								<svg width="14" height="14">
+									<use xlink:href="#close"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</div> -->
+
+<div class="profile-settings">
+	<header class="profile-header">
+		<h1>Заказы от вас, согласование</h1>
+
+		<div class="profile-notifications has-notifications">
+			<svg width="16" height="18">
+				<use xlink:href="#notifications"></use>
+			</svg>
+
+			<div class="notifications-modal">
+				<div class="tr">
+					<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z"
+							fill="white"
+						/>
+					</svg>
+				</div>
+
+				<div class="notifications-modal__head">
+					<!-- <span class="read has-read">Все прочитано</span> -->
+
+					<a href="#" class="read">Сделать прочитаным</a>
+
+					<div class="notifications-modal__btn">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<div class="notifications-modal__content">
+					<div class="notifications-modal__card">
+						<svg width="20" height="20">
+							<use xlink:href="#ntf"></use>
+						</svg>
+						<p>OOO TS1 взял груз: Санкт-Петербург-Улан-Удэ, 10т, 10 м2, Ставка-127188 руб</p>
+						<div class="notifications-modal__botom">
+							<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+							<span class="time">11:15</span>
+						</div>
+					</div>
+
+					<div class="notifications-modal__card">
+						<svg width="20" height="20">
+							<use xlink:href="#ntf"></use>
+						</svg>
+						<p>OOO Северные грузы предлагает груз Санкт-Петербург - Москва</p>
+						<p>за <strong>1000 000 руб</strong></p>
+						<p>Автомашины, 10 т, закр. + терм., загрузка с 26 авг</p>
+						<p>Предлжение действует до 21:06 мск</p>
+						<a href="#" class="notifications-modal__link">Подробнее</a>
+					</div>
+
+					<div class="notifications-modal__card">
+						<svg width="20" height="20">
+							<use xlink:href="#ntf"></use>
+						</svg>
+						<b>Встречное предложение на груз: <span>№AZE2477</span></b>
+						<p>Автомобиль(ли), Санкт-Петербург - Улан-Удэ, 10т, 10м2, закр., изтерм, реф., 6сен</p>
+						<p><span>Ставка:</span> 25000 руб не б/нал, 23000 руб б/нал с НДС, 23000 руб/нал без НДС</p>
+						<p><span>Фирма:</span> “TS1,OOO”</p>
+						<p><span>Контакт: </span></p>
+						<p>Иван</p>
+						<a href="#">Написать сообщение</a>
+						<p>Санкт-Петербург, Моб: <a href="">+000 00 000-00-00</a></p>
+						<p>Email: <a href="">email@example.com</a></p>
+						<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="profile" href="./profile-messages.html">
+			<picture>
+				<source srcset="./images/profile.avif" />
+				<img src="./images/profile.png" alt="автар пользователя" width="50" height="50" />
+			</picture>
+			<div class="profile__info">
+				<b>Имя Фамилия</b>
+				<span>Клиент</span>
+			</div>
+		</a>
+	</header>
+
+	<main class="profile-content">
+		<!-- <div class="order-empty">
+			<picture>
+				<source srcset="./images/empty-order.avif" />
+				<img src="./images/empty-order.jpg" alt="нет заказов" width="90" height="80">
+			</picture>
+			<p>Получите заказ напрямую от грузовладельца или возьмите груз в поиске</p>
+			<a href="#">Узнать больше</a>
+		</div> -->
+
+		<div class="order-head">
+			<form class="form-order">
+				<label for="name">
+					<select name="name" id="name">
+						<option value="" hidden>Имя</option>
+						<option value="">Имя1</option>
+						<option value="">Имя2</option>
+						<option value="">Имя3</option>
+					</select>
+				</label>
+
+				<label for="from">
+					<svg width="12" height="16">
+						<use xlink:href="#map"></use>
+					</svg>
+
+					<input type="text" id="from" placeholder="Откуда" name="from" />
+				</label>
+
+				<label for="to">
+					<svg width="12" height="16">
+						<use xlink:href="#map"></use>
+					</svg>
+
+					<input type="text" id="to" placeholder="Откуда" name="to" />
+				</label>
+
+				<label for="more" class="more">
+					<select name="more" id="more" class="more">
+						<option value="" hidden>Еще</option>
+						<option value="" hidden>фильтры</option>
+					</select>
+				</label>
+			</form>
+			<button class="form-btn">
+				<svg width="14" height="14">
+					<use xlink:href="#plus"></use>
+				</svg>
+
+				Добавить заявку водителю
+			</button>
+		</div>
+
+		<div class="order-info">
+			<div class="order-info__head">
+				<p>ТC/ Информация о грузе</p>
+				<p>Документы/ставка</p>
+				<p>Водитель/контрагент</p>
+				<p class="order-info__end">Статус/ дата изм</p>
+			</div>
+
+			<div class="order-info-content">
+				<div class="order-info__card">
+					<div class="order-info-col">
+						<h5 class="car-head">#aze2478</h5>
+						<p>
+							Санкт-Петербург
+							<strong>Москва</strong>
+							<svg width="10" height="10">
+								<use xlink:href="#arrow-right"></use>
+							</svg>
+							<small>709км</small>
+						</p>
+						<p><strong>10/</strong>Автомашины <strong>26-28 авг</strong> отд.машина</p>
+
+						<div class="road">
+							<svg width="18" height="14">
+								<use xlink:href="#dark-car"></use>
+							</svg>
+							Санкт-Петербург
+
+							<svg width="8" height="10" class="arrow-road">
+								<use xlink:href="#arrow-right"></use>
+							</svg>
+
+							<svg width="18" height="14">
+								<use xlink:href="#blue-car"></use>
+							</svg>
+							Улан-удЭ
+						</div>
+					</div>
+
+					<div class="order-info-col">
+						<p class="car-head"><strong>100 000</strong> руб с НДС</p>
+					</div>
+
+					<div class="order-info-col">
+						<b class="car-head">Северные грузы,ООО</b>
+						<div class="stars">
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+						</div>
+						<span>Татьяна, +7(000)000000</span>
+					</div>
+
+					<div class="order-info-col order-info__end">
+						<b class="green car-head">Новое предложение</b>
+						<span>сегодня в 20:06</span>
+					</div>
+				</div>
+
+				<div class="order-info__card order-info__buttom">
+					<div class="order-info-col">
+						<p>
+							<svg width="19" height="16">
+								<use xlink:href="#ts"></use>
+							</svg>
+
+							<span>ТС не выбрано</span>
+						</p>
+					</div>
+					<div class="order-info-col"></div>
+
+					<div class="order-info-col">
+						<p>
+							<svg width="16" height="16">
+								<use xlink:href="#human"></use>
+							</svg>
+
+							<span>Водитель не выбран</span>
+						</p>
+					</div>
+
+					<div class="order-info-col order-info-bottom__end">
+						<div>
+							<p class="time">
+								<span>Предложение <br />действует еще</span>
+							</p>
+							<p>
+								<svg width="11" height="13">
+									<use xlink:href="#order-time"></use>
+								</svg>
+								36:26
+							</p>
+						</div>
+						<div class="order-buttons">
+							<button class="form-btn">Взять груз</button>
+							<button class="close-order-card">
+								<svg width="14" height="14">
+									<use xlink:href="#close"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</div>
