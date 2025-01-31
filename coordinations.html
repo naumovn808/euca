@@ -292,9 +292,11 @@
 	</button>
 </div>
 
-			<div class="profile-settings">
+			
+
+<div class="profile-settings">
 	<header class="profile-header">
-		<h1>Уведомления</h1>
+		<h1>Заказы от вас, согласование</h1>
 
 		<div class="has-notifications profile-notifications">
 			<svg width="16" height="18">
@@ -374,77 +376,168 @@
 	</header>
 
 	<main class="profile-content">
-
-
 		
 
-		<div class="notifications__list">
+		<div class="order-head">
+			<form class="form-order">
+				<label for="name">
+					<select name="name" id="name">
+						<option value="" hidden>Имя</option>
+						<option value="">Имя1</option>
+						<option value="">Имя2</option>
+						<option value="">Имя3</option>
+					</select>
+				</label>
 
-			<form>
+				<label for="from">
+					<svg width="12" height="16">
+						<use xlink:href="#map"></use>
+					</svg>
 
+					<input type="text" id="from" placeholder="Откуда" name="from">
+				</label>
 
-				<div class="notifications-head">
+				<label for="to">
+					<svg width="12" height="16">
+						<use xlink:href="#map"></use>
+					</svg>
 
+					<input type="text" id="to" placeholder="Откуда" name="to">
+				</label>
 
-					<a href="./notifications.html" aria-label="вернуться обратно" class="delete__btn go-back">
-						<svg width="13" height="12">
-							<use xlink:href="#arrow-left"></use>
-						</svg>
-					</a>
+				<label for="more" class="more">
+					<select name="more" id="more" class="more">
+						<option value="" hidden>Еще</option>
+						<option value="" hidden>фильтры</option>
+					</select>
+				</label>
+			</form>
+			<button class="form-btn">
+				<svg width="14" height="14">
+					<use xlink:href="#plus"></use>
+				</svg>
 
-					<button class="delete__btn">
-						<svg width="14" height="17">
-							<use xlink:href="#delete"></use>
-						</svg>
-					</button>
+				Добавить заявку водителю
+			</button>
+		</div>
 
+		<div class="order-info">
+			<div class="order-info__head">
+				<p>ТC/ Информация о грузе</p>
+				<p>Документы/ставка</p>
+				<p>Водитель/контрагент</p>
+				<p class="order-info__end">Статус/ дата изм</p>
+			</div>
 
-					<div class="pagination-notifications">
-						<p>14 из 23</p>
-						<div class="links-pagination">
-							<button>
-								<svg width="7" height="12">
-									<use xlink:href="#pag-left"></use>
+			<div class="order-info-content">
+				<div class="order-info__card">
+					<div class="order-info-col">
+						<h5 class="car-head">#aze2478</h5>
+						<p>
+							Санкт-Петербург
+							<strong>Москва</strong>
+							<svg width="10" height="10">
+								<use xlink:href="#arrow-right"></use>
+							</svg>
+							<small>709км</small>
+						</p>
+						<p><strong>10/</strong>Автомашины <strong>26-28 авг</strong> отд.машина</p>
+
+						<div class="road">
+							<svg width="18" height="14">
+								<use xlink:href="#dark-car"></use>
+							</svg>
+							Санкт-Петербург
+
+							<svg width="8" height="10" class="arrow-road">
+								<use xlink:href="#arrow-right"></use>
+							</svg>
+
+							<svg width="18" height="14">
+								<use xlink:href="#blue-car"></use>
+							</svg>
+							Улан-удЭ
+						</div>
+					</div>
+
+					<div class="order-info-col">
+						<p class="car-head"><strong>100 000</strong> руб с НДС</p>
+					</div>
+
+					<div class="order-info-col">
+						<b class="car-head">Северные грузы,ООО</b>
+						<div class="stars">
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+							<svg width="13" height="13">
+								<use xlink:href="#star"></use>
+							</svg>
+						</div>
+						<span>Татьяна, +7(000)000000</span>
+					</div>
+
+					<div class="order-info-col order-info__end">
+						<b class="car-head green">Новое предложение</b>
+						<span>сегодня в 20:06</span>
+					</div>
+				</div>
+
+				<div class="order-info__card order-info__buttom">
+					<div class="order-info-col">
+						<p>
+							<svg width="19" height="16">
+								<use xlink:href="#ts"></use>
+							</svg>
+
+							<span>ТС не выбрано</span>
+						</p>
+					</div>
+					<div class="order-info-col"></div>
+
+					<div class="order-info-col">
+						<p>
+							<svg width="16" height="16">
+								<use xlink:href="#human"></use>
+							</svg>
+
+							<span>Водитель не выбран</span>
+						</p>
+					</div>
+
+					<div class="order-info-col order-info-bottom__end">
+						<div>
+							<p class="time">
+								<span>Предложение <br>действует еще</span>
+							</p>
+							<p>
+								<svg width="11" height="13">
+									<use xlink:href="#order-time"></use>
 								</svg>
-							</button>
-							<button>
-								<svg width="7" height="12">
-									<use xlink:href="#pag-right"></use>
+								36:26
+							</p>
+						</div>
+						<div class="order-buttons">
+							<button class="form-btn">Взять груз</button>
+							<button class="close-order-card">
+								<svg width="14" height="14">
+									<use xlink:href="#close"></use>
 								</svg>
 							</button>
 						</div>
 					</div>
 				</div>
-
-
-			</form>
-
-
-			<div class="notifications-inner">
-				<h3>Встречное предложение на груз</h3>
-				<div class="notifications-inner__user">
-					<picture>
-						<source srcset="./images/user-default.avif">
-						<img src="./images/user-default.jpg" alt="user" width="50" height="50">
-					</picture>
-					<div class="notifications-inner__user-info">
-						<b>Имя Фамилия</b>
-						<span>кому: мне</span>
-					</div>
-				</div>
-
-				<div class="notifications-inner__content">
-					<p>Встречное предложение на груз: <small>№AZE2477,</small></p>
-					<p>Lorem ipsum dolor sit amet consectetur. Tempus est pellentesque cursus lobortis.</p>
-
-					<button class="form-btn">Одобрить заявку</button>
-
-					<button class="notifications-btn">Отклонить заявку</button>
-				</div>
 			</div>
 		</div>
-
-
 	</main>
 </div>
 
