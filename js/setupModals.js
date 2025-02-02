@@ -19,6 +19,7 @@ function setupModals() {
     button.addEventListener("click", () => {
       const targetModalId = button.dataset.modalTarget;
       const targetModal = document.querySelector(`[data-modal="${targetModalId}"]`);
+      console.log("test");
       if (targetModal) {
         modals.forEach((modal) => {
           if (modal !== targetModal && modal.classList.contains("open")) {
@@ -30,7 +31,7 @@ function setupModals() {
         }
         targetModal.classList.toggle("open");
         activeModal = targetModal.classList.contains("open") ? targetModal : null;
-        if (activeModal) {
+        if (activeModal && targetModalId !== "dropdown") {
           document.body.classList.add("modal-open");
         } else {
           document.body.classList.remove("modal-open");
