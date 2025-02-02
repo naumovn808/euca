@@ -19,6 +19,7 @@ function setupModals() {
     button.addEventListener("click", () => {
       const targetModalId = button.dataset.modalTarget;
       const targetModal = document.querySelector(`[data-modal="${targetModalId}"]`);
+      console.log("test");
       if (targetModal) {
         modals.forEach((modal) => {
           if (modal !== targetModal && modal.classList.contains("open")) {

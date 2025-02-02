@@ -6658,7 +6658,7 @@ __webpack_require__.r(__webpack_exports__);
 class Map {
   constructor(data) {
     this.container = data.container ? data.container : document.getElementById(`map`);
-    this.center = data.center ? data.center : [69.279737, 41.311158];
+    this.center = data.center ? data.center : [69.23323003743187, 41.38296804890838];
     this.zoom = data.zoom ? data.zoom : _config__WEBPACK_IMPORTED_MODULE_0__.config.START_ZOOM;
     this.YMap = null;
     this.YMapDefaultSchemeLayer = null;

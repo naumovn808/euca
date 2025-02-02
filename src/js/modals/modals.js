@@ -7,6 +7,7 @@ export function setupModals() {
 		button.addEventListener('click', () => {
 			const targetModalId = button.dataset.modalTarget;
 			const targetModal = document.querySelector(`[data-modal="${targetModalId}"]`);
+			console.log('test');
 
 			if (targetModal) {
 
@@ -94,5 +95,6 @@ export function setupModals() {
 
 
 	})
+
 
 }
