@@ -101,19 +101,20 @@ async function init() {
 	async function initMap() {
 
 
-		if (document.getElementById('map')) {
+		if (document.getElementById('myMap')) {
 
 			try {
 
 				const { Map } = await import(/* webpackChunkName: "map" */ './map/map.js');
 				const map = new Map({
-					container: document.getElementById('map'),
+					container: document.getElementById('myMap'),
 					center: COORDINATES,
 					zoom: 15,
 					marker: urlPin
 				});
 
 				map.init();
+
 
 			} catch (e) {
 				console.error("Error loading module", e);

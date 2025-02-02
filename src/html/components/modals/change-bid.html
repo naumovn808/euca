@@ -1,0 +1,50 @@
+<div class="modal-overlay" data-modal="modal-change-bid">
+	<div class="modal modal-change-bid">
+		<b>Редактировать ставку</b>
+		<p>Выберите один из способов оплаты и укажите сумму</p>
+
+		<form action="" method="post">
+			<div class="choise-cash">
+				<input type="radio" name="payment" id="cash_nds" />
+				<label for="cash_nds"> С НДС, безнал </label>
+
+				<input type="radio" name="payment" id="cash_no_nds" />
+				<label for="cash_no_nds"> Без НДС, безнал </label>
+
+				<input type="radio" name="payment" id="cash_cash" />
+				<label for="cash_cash">Наличными</label>
+			</div>
+
+			<div class="cost">
+				<p><strong>*Введите ставку</strong></p>
+
+				<label for="sum">
+					<input type="number" class="sum" placeholder="4000"/>
+				</label>
+
+				<label for="val">
+					<select name="" id="">
+						<option value="sum">СУМ</option>
+						<option value="$">$</option>
+						<option value="RUB">RUB</option>
+					</select>
+				</label>
+
+				<label class="on-card">
+					<input type="checkbox" />
+					на карту
+				</label>
+			</div>
+
+			<div class="create-order-buttons take-load-buttons">
+				<button type="button" class="form-btn" data-modal-close="modal-change-road">Сохранить</button>
+				<button type="button" class="take-load-cansel" data-modal-close="modal-change-road">Отмена</button>
+			</div>
+		</form>
+
+		<button class="modal-close" type="button" data-modal-close="modal-change-bid">
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+</div>

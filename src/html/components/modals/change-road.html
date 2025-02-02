@@ -1,0 +1,73 @@
+<div class="modal-overlay" data-modal="modal-change-road">
+	<div class="modal modal-change-road">
+		<b>Редактировать маршрут</b>
+
+		<form action="" method="post">
+			<div class="change-road__row">
+				<p><strong>Загрузка*</strong></p>
+				<label for="">
+					<input type="text" placeholder="Санкт-Петербург, РФ" />
+				</label>
+				<label for="">
+					<input type="text" placeholder="50.432542 30.435777F" />
+				</label>
+
+				<svg width="20" height="26">
+					<use xlink:href="#map"></use>
+				</svg>
+			</div>
+
+			<div class="change-road__text">
+				<p>Добавить точку маршрута:</p>
+				<button>
+					<svg width="18" height="14">
+						<use xlink:href="#order-plus"></use>
+					</svg>
+					Загрузка
+				</button>
+				<button>
+					<svg width="18" height="14">
+						<use xlink:href="#order-plus"></use>
+					</svg>
+					Разгрузка
+				</button>
+				<button>
+					<svg width="18" height="14">
+						<use xlink:href="#order-plus"></use>
+					</svg>
+					Ехать через
+				</button>
+				<button>
+					<svg width="18" height="14">
+						<use xlink:href="#order-plus"></use>
+					</svg>
+					Таможня
+				</button>
+			</div>
+
+			<div class="change-road__row">
+				<p><strong>Разгрузка*</strong></p>
+				<label for="">
+					<input type="text" placeholder="Москва, Москва(регион), Росс" />
+				</label>
+				<label for="">
+					<input type="text" placeholder="Газетный переулок, 3 стр 2" />
+				</label>
+
+				<svg width="20" height="26">
+					<use xlink:href="#map"></use>
+				</svg>
+			</div>
+
+			<div class="create-order-buttons take-load-buttons">
+				<button type="button" class="form-btn" data-modal-close="modal-change-bid">Сохранить</button>
+				<button type="button" class="take-load-cansel" data-modal-close="modal-change-bid">Отмена</button>
+			</div>
+		</form>
+
+		<button class="modal-close" type="button" data-modal-close="modal-change-road">
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+</div>

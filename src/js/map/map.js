@@ -2,7 +2,7 @@ import { config } from "./config";
 
 export class Map {
 	constructor(data) {
-		this.container = data.container ? data.container : document.getElementById(`map`);
+		this.container = data.container ? data.container : document.getElementById(`myMap`);
 		this.center = data.center ? data.center : [69.23323003743187, 41.38296804890838];
 		this.zoom = data.zoom ? data.zoom : config.START_ZOOM;
 
@@ -19,7 +19,6 @@ export class Map {
 
 	async init() {
 		await ymaps3.ready;
-
 		this.YMap = ymaps3.YMap;
 		this.YMapDefaultSchemeLayer = ymaps3.YMapDefaultSchemeLayer;
 		this.YMapDefaultFeaturesLayer = ymaps3.YMapDefaultFeaturesLayer;

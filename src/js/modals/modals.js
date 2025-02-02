@@ -10,7 +10,6 @@ export function setupModals() {
 			console.log('test');
 
 			if (targetModal) {
-
 				modals.forEach(modal => {
 					if (modal !== targetModal && modal.classList.contains('open')) {
 						modal.classList.remove('open');
@@ -24,7 +23,8 @@ export function setupModals() {
 
 				activeModal = targetModal.classList.contains('open') ? targetModal : null;
 
-				if (activeModal) {
+
+				if (activeModal && targetModalId !== 'dropdown') {
 					document.body.classList.add('modal-open');
 				} else {
 					document.body.classList.remove('modal-open');
@@ -34,7 +34,6 @@ export function setupModals() {
 			}
 		});
 	});
-
 	modals.forEach(modal => {
 		modal.addEventListener('click', (event) => {
 			if (event.target.classList.contains('modal-overlay')) {
