@@ -64,13 +64,11 @@
 			color: rgba(46, 54, 69, 0.6);
 		}
 	}
-
 }
 
 .modal-register {
 	width: calc(max(24rem, 35vw));
 }
-
 
 .input__row {
 	display: flex;
@@ -108,7 +106,6 @@
 			&:hover {
 				background-color: rgba(253, 231, 229, 1);
 			}
-
 		}
 
 		&.error input {
@@ -142,7 +139,6 @@
 		}
 	}
 }
-
 
 .btn-hide {
 	position: absolute;
@@ -183,7 +179,7 @@
 	margin-bottom: var(--offset);
 	margin-top: calc(var(--offset) * 0.8);
 
-	& input:checked+label::after {
+	& input:checked + label::after {
 		display: block;
 	}
 
@@ -203,7 +199,7 @@
 			left: -35%;
 			top: 40%;
 			transform: translateY(-50%);
-			content: '';
+			content: "";
 			display: block;
 			width: calc(var(--offset) * 0.6);
 			height: calc(var(--offset) * 0.6);
@@ -216,7 +212,7 @@
 			left: -35%;
 			top: 40%;
 			transform: translateY(-50%);
-			content: '';
+			content: "";
 			display: none;
 			width: calc(var(--offset) * 0.6);
 			height: calc(var(--offset) * 0.6);
@@ -256,7 +252,7 @@
 	color: var(--color-text-primary);
 	font-weight: 700;
 	font-size: calc(var(--fz) * 0.9);
-	padding: calc(var(--offset) * 0.6);
+	padding: calc(var(--offset) * 0.4) calc(var(--offset) * 0.8);
 	transition-duration: 0.5s;
 	transition-property: box-shadow, background-color;
 	margin-bottom: calc(var(--offset) * 0.8);

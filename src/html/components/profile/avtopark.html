@@ -1,0 +1,140 @@
+<div class="profile-settings">
+	<header class="profile-header">
+		<h1>Автопарк</h1>
+
+		<div class="profile-notifications has-notifications">
+			<svg width="16" height="18">
+				<use xlink:href="#notifications"></use>
+			</svg>
+
+			<div class="notifications-modal">
+				<div class="tr">
+					<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z"
+							fill="white"
+						/>
+					</svg>
+				</div>
+
+				<div class="notifications-modal__head">
+					<!-- <span class="read has-read">Все прочитано</span> -->
+
+					<a href="#" class="read">Сделать прочитаным</a>
+
+					<div class="notifications-modal__btn">
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<div class="notifications-modal__content">
+					<div class="notifications-modal__card">
+						<svg width="20" height="20">
+							<use xlink:href="#ntf"></use>
+						</svg>
+						<p>OOO TS1 взял груз: Санкт-Петербург-Улан-Удэ, 10т, 10 м2, Ставка-127188 руб</p>
+						<div class="notifications-modal__botom">
+							<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+							<span class="time">11:15</span>
+						</div>
+					</div>
+
+					<div class="notifications-modal__card">
+						<svg width="20" height="20">
+							<use xlink:href="#ntf"></use>
+						</svg>
+						<p>OOO Северные грузы предлагает груз Санкт-Петербург - Москва</p>
+						<p>за <strong>1000 000 руб</strong></p>
+						<p>Автомашины, 10 т, закр. + терм., загрузка с 26 авг</p>
+						<p>Предлжение действует до 21:06 мск</p>
+						<a href="#" class="notifications-modal__link">Подробнее</a>
+					</div>
+
+					<div class="notifications-modal__card">
+						<svg width="20" height="20">
+							<use xlink:href="#ntf"></use>
+						</svg>
+						<b>Встречное предложение на груз: <span>№AZE2477</span></b>
+						<p>Автомобиль(ли), Санкт-Петербург - Улан-Удэ, 10т, 10м2, закр., изтерм, реф., 6сен</p>
+						<p><span>Ставка:</span> 25000 руб не б/нал, 23000 руб б/нал с НДС, 23000 руб/нал без НДС</p>
+						<p><span>Фирма:</span> “TS1,OOO”</p>
+						<p><span>Контакт: </span></p>
+						<p>Иван</p>
+						<a href="#">Написать сообщение</a>
+						<p>Санкт-Петербург, Моб: <a href="">+000 00 000-00-00</a></p>
+						<p>Email: <a href="">email@example.com</a></p>
+						<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a class="profile" href="./profile-messages.html">
+			<picture>
+				<source srcset="./images/profile.avif" />
+				<img src="./images/profile.png" alt="автар пользователя" width="50" height="50" />
+			</picture>
+			<div class="profile__info">
+				<b>Имя Фамилия</b>
+				<span>Клиент</span>
+			</div>
+		</a>
+	</header>
+
+	<main class="profile-content">
+		<div class="notifications-head">
+			<button class="form-btn" data-modal-target="add-ts">Добавить</button>
+		</div>
+		<!--
+		<div class="avtopark-empty">
+			<picture>
+				<source srcset="./images/avtopark.avif" />
+				<img src="./images/avtopark.png" alt="empty" width="85" height="85" />
+			</picture>
+			<p>Добаввьте транспорт в автопрарк. Это повысит доверие у потенциальных партнеров и упростит оформление Заказов и документов</p>
+			<button class="form-btn" data-modal-target="add-ts">Добавить</button>
+		</div> -->
+
+		<div class="drivers__list">
+			<div class="drivers-content">
+				<div class="ts-head">
+					<p><strong>Получите отметку “Реальный перевозчик” </strong>и станьте заметнее для заказчиков.</p>
+					<a href="#">Узнать подробнее</a>
+				</div>
+				<h5>Автопроезд (сцепка)</h5>
+
+				<div class="drivers-card ts-card">
+					<picture>
+						<source srcset="./images/driver-card.avif" />
+						<img src="./images/driver-card.png" alt="водитель" width="90" height="90" />
+					</picture>
+
+					<div class="ts__info">
+						<b>Ванхул 50 (92 кw) O 000 OO 03 RUS</b>
+						<span>тентованный, 8 т</span>
+					</div>
+
+					<button>Редактировать</button>
+					<button>Удалить</button>
+				</div>
+
+				<div class="drivers-card ts-card">
+					<picture>
+						<source srcset="./images/driver-card.avif" />
+						<img src="./images/driver-card.png" alt="водитель" width="90" height="90" />
+					</picture>
+
+					<div class="ts__info">
+						<b>Ванхул 50 (92 кw) O 000 OO 03 RUS</b>
+						<span>тентованный, 8 т</span>
+					</div>
+
+					<button>Редактировать</button>
+					<button>Удалить</button>
+				</div>
+
+			</div>
+		</div>
+	</main>
+</div>
