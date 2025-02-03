@@ -426,7 +426,6 @@
 	</header>
 
 	<main class="profile-content">
-
 		<form class="add-goods">
 			<div class="add-goods__head">
 				<b>Добавить груз</b>
@@ -437,8 +436,138 @@
 			</div>
 
 			<div class="add-goods__main">
+				<div class="add-gods__left">
+					<div class="add-goods__inputs">
+						<b>*Груз</b>
+						<div>
+							<div class="add-goods__inputs__row">
+								<label for="name">
+									<input type="text" name="name" id="name" class="add-input input-search" placeholder="Выберите или введите свое">
+								</label>
+								<label for="weight">
+									<input class="add-input input-small" type="number" id="weight" placeholder="вес">
+								</label>
+								<label for="t">
+									<select name="" id="" class="add-input input-small input-select">
+										<option value="0" hidden>T</option>
+									</select>
+								</label>
+								<label for="value" class="label-value">
+									<input class="add-input input-small input-value" type="number" id="value" placeholder="обьем">
+									<span>М<sup>3</sup></span>
+								</label>
+								<span>В расчете на одну машину</span>
+							</div>
 
-				<div class="add-gods__left"></div>
+							<div class="drivers-tags">
+								<button>
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									Заполнить из шаблона
+								</button>
+								<button>
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									Габариты и диаметр
+								</button>
+								<button>
+									<svg width="12" height="12">
+										<use xlink:href="#plus"></use>
+									</svg>
+									Еще груз
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="add-goods__inputs">
+						<b>*Когда</b>
+						<div>
+							<div class="add-goods__inputs__row">
+								<label for="ready">
+									<select class="add-input input-select label-big">
+										<option value="" hidden>Готов к загрузке</option>
+									</select>
+								</label>
+								<label for="date" class="add-input input-date">
+									выберите дату
+									<input type="date" id="date">
+								</label>
+								+
+								<label for="t">
+									<select name="" id="" class="add-input input-small input-select">
+										<option value="0" hidden>0 дн.</option>
+									</select>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="add-goods__wrapper">
+						<div class="add-gods-ponts"></div>
+						<div class="add-goods__inputs no-border">
+							<b>*Загрузка</b>
+							<div>
+								<div class="add-goods__inputs__row">
+									<label for="place">
+										<input type="text" name="place" id="place" class="add-input input-search" placeholder="Населенный пункт">
+									</label>
+									<label for="adress">
+										<input class="add-input input-big" type="adress" id="adress" placeholder="Адрес в населенном пункте">
+									</label>
+									<svg width="16" height="18">
+										<use xlink:href="#map"></use>
+									</svg>
+								</div>
+
+								<div class="drivers-tags">
+									<button>
+										<svg width="12" height="12">
+											<use xlink:href="#plus"></use>
+										</svg>
+										Время загрузки
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row-text">
+							<b>Добавить точку маршрута:</b>
+							<button type="button">+ Загрузка</button>
+							<button type="button">+ Разгрузка</button>
+							<button type="button">+ Ехать через</button>
+							<button type="button">+ Таможня</button>
+						</div>
+
+						<div class="add-goods__inputs">
+							<b>*Загрузка</b>
+							<div>
+								<div class="add-goods__inputs__row">
+									<label for="place">
+										<input type="text" name="place" id="place" class="add-input input-search" placeholder="Населенный пункт">
+									</label>
+									<label for="adress">
+										<input class="add-input input-big" type="adress" id="adress" placeholder="Адрес в населенном пункте">
+									</label>
+									<svg width="16" height="18">
+										<use xlink:href="#map"></use>
+									</svg>
+								</div>
+
+								<div class="drivers-tags">
+									<button>
+										<svg width="12" height="12">
+											<use xlink:href="#plus"></use>
+										</svg>
+										Дата и время
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<div class="add-goods__right">
 					<div class="side-bar__goods">
@@ -486,7 +615,9 @@
 
 						<div class="side-bar__goods-info">
 							<b>Транспорт</b>
-							<p><strong>отд. машиной <br>1 машина</strong></p>
+							<p>
+								<strong>отд. машиной <br>1 машина</strong>
+							</p>
 						</div>
 					</div>
 					<div class="side-bar__goods">
@@ -500,7 +631,6 @@
 							<b>Оплата</b>
 							<p>не заполнено</p>
 						</div>
-
 					</div>
 
 					<div class="side-bar__goods active">
@@ -512,9 +642,11 @@
 
 						<div class="side-bar__goods-info">
 							<b>Дополнительно</b>
-							<p><strong>Fillip Fillipov Filipovich,<br> +9989(909) 037045</strong></p>
+							<p>
+								<strong>Fillip Fillipov Filipovich,<br>
+									+9989(909) 037045</strong>
+							</p>
 						</div>
-
 					</div>
 
 					<div class="side-bar__goods active">
@@ -528,18 +660,20 @@
 							<b>Площадки</b>
 							<p><strong>Биржа EUCA ALLIANCE</strong></p>
 						</div>
-
 					</div>
 
 					<button class="add-goods__btn">Опублковать груз</button>
 					<button class="add-goods__link">Сохранить как шаблон</button>
 				</div>
-
 			</div>
 		</form>
-
-
 	</main>
+
+	<script>
+		document.querySelector(".input-date").addEventListener("click", function () {
+			this.querySelector("input").showPicker();
+		});
+	</script>
 </div>
 
 		</div>
