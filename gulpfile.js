@@ -30,13 +30,6 @@ const handleImages = images.bind(null, isBuild, browserSyncInstance);
 const handleSprite = createSprite.bind(null, isBuild, browserSyncInstance);
 
 
-const replacePaths = () => {
-	return gulp.src('dist/**/*.html')
-		.pipe(replace('/', './'))
-		.pipe(gulp.dest('build'));
-};
-
-
 /**
  * Последовательная обработка шрифтов
  * */
