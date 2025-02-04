@@ -1,7 +1,6 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import { filePaths } from './gulp/config/paths.js';
-import replace from 'gulp-replace';
 
 /**
  * Импорт задач
@@ -63,7 +62,7 @@ const mainTasks = gulp.series(fonts, devTasks);
  * Построение сценариев выполнения задач
  * */
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, handleServer));
-const build = gulp.series(reset, mainTasks, replacePaths);
+const build = gulp.series(reset, mainTasks);
 const deployZIP = gulp.series(reset, mainTasks, zip);
 const deployFTP = gulp.series(reset, mainTasks, ftpDeploy);
 

@@ -298,6 +298,7 @@
 	align-items: center;
 	gap: 0.5em;
 	margin-left: calc(var(--offset) * 5.5);
+
 	& b {
 		font-weight: 600;
 		font-size: calc(var(--fz) * 0.8);
@@ -330,5 +331,257 @@
 		transform: translateY(-50%);
 		left: 10%;
 		background-color: #c8c8c8;
+	}
+}
+
+
+.add-inputs-cards {
+	margin-top: 1em;
+	display: flex;
+	align-items: stretch;
+	gap: 1em;
+	justify-content: space-between;
+	margin-bottom: 1em;
+
+}
+
+.add-inputs-card {
+	max-width: calc(var(--offset) * 12);
+	width: 100%;
+	background-position: 85% 25%;
+
+	& b {
+		font-weight: 600;
+		font-size: calc(var(--fz) * 0.8);
+		color: #191919;
+		margin-bottom: 1em;
+		display: block;
+	}
+}
+
+.add-inputs-card__wrapp {
+	border-radius: 0.5em;
+	border: 0.1em solid #c8c8c8;
+
+	max-height: calc(var(--offset) * 6);
+	overflow-y: auto;
+}
+
+.add-inputs-card__wrapp::-webkit-scrollbar {
+	width: calc(var(--offset) * 0.5) !important;
+	display: block;
+}
+
+.add-inputs-card__wrapp::-webkit-scrollbar-thumb {
+	background-color: #d9d9d9;
+	border-radius: 0.3em;
+}
+
+.add-inputs-card__wrapp::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(217, 217, 217), 0.5;
+}
+
+.add-inputs-card__wrapp::-webkit-scrollbar-track {
+	background: #949ba3;
+	border-radius: 0.3em;
+}
+
+.add-inputs-card_block {
+	padding: 1em;
+	padding-left: 2em;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	position: relative;
+	padding: 1em;
+
+
+	&.border {
+		&::after {
+			content: '';
+			display: block;
+			height: 60%;
+			width: 0.1em;
+			background-color: #c8c8c8;
+			position: absolute;
+			left: 6.5%;
+			top: 22%;
+		}
+	}
+
+
+
+	& label {
+		font-weight: 400;
+		font-size: calc(var(--fz) * 0.6);
+		color: #191919;
+		cursor: pointer;
+		position: relative;
+		width: fit-content;
+		display: flex;
+		align-items: center;
+
+		& input {
+			margin-right: 0.5em;
+		}
+
+		& span {
+			width: 1.1em;
+			height: 2px;
+			background-color: #c8c8c8;
+		}
+	}
+}
+
+.add-input-general {
+	margin-left: -0.5em;
+
+	&::before {
+		display: none !important;
+	}
+}
+
+
+.add-goods-more__row {
+	display: flex;
+	align-items: flex-start;
+	gap: 1em;
+	margin-bottom: 1em;
+
+	& p {
+		font-weight: 500;
+		font-size: calc(var(--fz) * 0.7);
+		color: #191919;
+		width: calc(var(--offset) * 6);
+	}
+
+	& .drivers-tags {
+		margin-left: 0;
+	}
+}
+
+.add-goods_radios {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+.add-goods_radios label {
+	display: flex;
+	align-items: center;
+	position: relative;
+	font-weight: 400;
+	font-size: calc(var(--fz) * 0.6);
+	color: #191919;
+	cursor: pointer;
+	padding-left: 2em;
+}
+
+.add-goods_radios label::before {
+	content: '';
+	width: 1em;
+	height: 1em;
+	border: 0.1em solid #c8c8c8;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.add-goods_radios input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.add-goods_radios input:checked+span::before {
+	content: '';
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	border: 0.35em solid #c8c8c8;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.add-goods-choise {
+	max-width: 50%;
+
+	& label {
+		padding: 0.5em;
+	}
+}
+
+.add-gods__left {
+	& p {
+		font-weight: 400;
+		font-size: calc(var(--fz) * 0.7);
+		color: #191919;
+	}
+}
+
+.add-goods__bid {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 0.1em solid #c8c8c8;
+
+	&-row {
+		display: flex;
+		align-items: center;
+		gap: var(--offset);
+
+		& p {
+			width: calc(var(--offset) * 6);
+		}
+
+		& input {
+			padding: 0.5em 1em;
+			border: 0.1em solid #c8c8c8;
+			border-radius: 2em;
+			font-weight: 500;
+			font-size: calc(var(--fz) * 0.7);
+			color: #191919;
+			max-width: calc(var(--offset) * 4);
+		}
+
+		& select {
+			padding: 0.5em 1em;
+			border: 0.1em solid #c8c8c8;
+			border-radius: 2em;
+			font-weight: 500;
+			font-size: calc(var(--fz) * 0.7);
+			color: #191919;
+			max-width: calc(var(--offset) * 4);
+		}
+	}
+}
+
+.add-goods__bid-inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+
+	& label {
+		font-weight: 500;
+		font-size: calc(var(--fz) * 0.6);
+		color: #191919;
+		cursor: pointer;
+	}
+}
+
+.add-goods-more__payment {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+
+	& input {
+		
 	}
 }
