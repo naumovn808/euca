@@ -1114,7 +1114,7 @@
 	top: 120%;
 	width: 100%;
 	left: 0;
-	z-index: 0;
+	z-index: -1;
 	background-color: var(--color-text-primary);
 	box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.11);
 	height: auto !important;
