@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,7 +29,7 @@
 	<meta name="theme-color" content="#0B1117">
 
 
-	<title>Информация участника</title>
+	<title>Поиск грузов</title>
 
 	<link rel="preload" href="./fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-BoldItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-BoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-MediumItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-MediumItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-SemiBoldItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-SemiBoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="./css/main.min.css" as="style">
@@ -42,8 +42,8 @@
 </head>
 
 
-<body>
-	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><symbol id="acc" viewBox="0 0 30 30">
+	<body>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><symbol id="acc" viewBox="0 0 30 30">
 <path d="M28.6903 29.3491C28.4712 29.5689 28.2091 29.7409 27.9202 29.8544C27.6314 29.9678 27.3223 30.0203 27.0122 30.0084L2.15592 28.982C1.55987 28.9572 0.998082 28.6966 0.594172 28.2576C0.190262 27.8185 -0.0227034 27.237 0.00213209 26.641C0.0269675 26.0449 0.287569 25.4832 0.726602 25.0792C1.16564 24.6753 1.74715 24.4624 2.3432 24.4872L21.4462 25.2363L1.4423 3.88165C1.2215 3.6759 1.04439 3.42779 0.92156 3.15211C0.798726 2.87643 0.732678 2.57883 0.727353 2.27707C0.722029 1.97531 0.777538 1.67557 0.890571 1.39572C1.0036 1.11588 1.17184 0.861668 1.38525 0.64826C1.59867 0.434849 1.85287 0.266607 2.13272 0.153576C2.41256 0.0405426 2.7123 -0.0149651 3.01406 -0.00964165C3.31582 -0.00431633 3.61342 0.0617294 3.8891 0.184565C4.16478 0.3074 4.4129 0.484505 4.61865 0.705313L24.615 22.0975L23.8658 2.99446C23.8415 2.39953 24.0542 1.81925 24.4573 1.38102C24.8604 0.942799 25.421 0.682457 26.0159 0.657154H26.1132C26.694 0.656689 27.2525 0.881086 27.6714 1.28331C28.0904 1.68553 28.3374 2.23433 28.3607 2.81467L29.3795 27.671C29.3875 27.9833 29.3304 28.2938 29.2117 28.5827C29.093 28.8716 28.9155 29.1327 28.6903 29.3491Z"/>
 </symbol><symbol id="add-goods" viewBox="0 0 10 7">
 <path d="M3.08703 5.65701L1.01589 3.72532C0.904285 3.62124 0.752921 3.56276 0.595093 3.56276C0.437264 3.56276 0.2859 3.62124 0.174299 3.72532C0.0626971 3.82941 0 3.97058 0 4.11778C0 4.19067 0.0153926 4.26284 0.0452989 4.33018C0.0752051 4.39752 0.119039 4.4587 0.174299 4.51024L2.66922 6.83717C2.902 7.05428 3.27803 7.05428 3.51081 6.83717L9.8257 0.947483C9.9373 0.843396 10 0.702224 10 0.555023C10 0.407822 9.9373 0.266649 9.8257 0.162562C9.7141 0.0584756 9.56274 0 9.40491 0C9.24708 0 9.09572 0.0584756 8.98411 0.162562L3.08703 5.65701Z"/>
@@ -233,458 +233,305 @@
 <path d="M15.0801 8.40015H11.9054C11.8845 9.52875 11.7353 10.6513 11.4609 11.7463C12.1866 11.9385 12.8884 12.2116 13.553 12.5606C14.4694 11.3592 15.0017 9.90909 15.0801 8.40015Z" fill="#BDBDBD"/>
 <path d="M10.7138 2.20033C10.9195 2.61759 11.0956 3.04883 11.2407 3.49083C11.8578 3.32641 12.4567 3.09985 13.0281 2.81463C12.1349 1.87065 11.0137 1.17256 9.77246 0.787598C10.1476 1.21462 10.4641 1.68971 10.7138 2.20033Z" fill="#BDBDBD"/>
 </g></symbol></svg>
-	<header class="header">
-	<nav class="nav">
-		<a href="./index.html" aria-label="на главную страннцу" class="nav__logo">
-			<picture>
-				<source srcset="./images/svg/logo.svg">
-				<img src="./images/svg/logo.svg" width="230" height="50" alt="логотип компании">
-			</picture>
-		</a>
 
-		<ul class="nav__list">
-			<li class="nav__item">
-				
-				<a class="nav__link current" href="./catalog.html">Каталог участников</a>
-			</li>
-			<li class="nav__item">
-				<a class="nav__link" href="./about.html">О нас</a>
-			</li>
-			<li class="nav__item">
-				<a class="nav__link" href="./news.html">Новости</a>
-			</li>
-			<li class="nav__item">
-				<a class="nav__link" href="./contacts.html">Контакты</a>
-			</li>
-		</ul>
-
-		<a href="#" class="nav__link nav__member">
-			<svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M21.7586 9.43913C21.7586 10.0515 21.5264 10.6216 21.0935 11.0544C19.6049 12.5431 17.6306 13.3244 15.6562 13.3244C14.8749 13.3244 14.0936 13.1977 13.3335 12.9443C13.6502 12.7015 13.9564 12.4375 14.2415 12.1524C14.3998 11.9941 14.5371 11.8357 14.6532 11.6562C14.9383 11.2444 15.1283 10.7905 15.2233 10.2943C15.2656 10.0726 15.2867 9.84029 15.2867 9.60805C15.2867 9.29132 15.2445 8.97459 15.1706 8.67898C15.3395 8.72121 15.4978 8.73177 15.6668 8.73177C16.4903 8.73177 17.2716 8.41504 17.8628 7.82381C18.7179 6.96865 20.2277 6.95807 21.0934 7.82381C21.5263 8.25665 21.7586 8.82682 21.7586 9.43913Z"/>
-				<path d="M15.6666 1.11938C13.7662 1.11938 12.2246 2.66081 12.2246 4.56136C12.2246 6.46191 13.766 8.00333 15.6666 8.00333C17.5671 8.00333 19.1086 6.46191 19.1086 4.56136C19.1086 2.66081 17.5671 1.11938 15.6666 1.11938Z"/>
-				<path d="M7.24043 0C5.0972 0 3.34473 1.742 3.34473 3.8957C3.34473 6.0494 5.08673 7.79141 7.24043 7.79141C9.39413 7.79141 11.1361 6.0494 11.1361 3.8957C11.1361 1.742 9.39413 0 7.24043 0Z"/>
-				<path d="M14.2301 9.60806C14.2301 9.75587 14.2195 9.90368 14.1984 10.0515C14.1139 10.5371 13.8922 10.9911 13.5438 11.3501L13.491 11.4029C13.0899 11.8041 12.657 12.163 12.1924 12.4692C10.746 13.4616 9.03566 14 7.24096 14C6.74473 14 6.24854 13.9578 5.77342 13.8734C5.6045 13.8522 5.43558 13.8206 5.26665 13.7783C5.0555 13.7255 4.85489 13.6728 4.66488 13.62C4.65433 13.6094 4.64377 13.6094 4.63321 13.6094C4.43261 13.5461 4.23202 13.4722 4.03144 13.3983C3.92586 13.356 3.80973 13.3138 3.70415 13.2504C3.53523 13.1871 3.3663 13.1026 3.19738 13.0076C2.88065 12.8598 2.57446 12.6698 2.27885 12.4692C1.82485 12.163 1.392 11.804 0.990807 11.4029L0.927461 11.3395C0.88523 11.2973 0.832442 11.2445 0.800768 11.1811C0.74798 11.1284 0.705749 11.0756 0.674076 11.0122C0.600172 10.9172 0.547384 10.8222 0.494595 10.7166C0.441807 10.611 0.399576 10.5054 0.367903 10.3999C0.33623 10.3049 0.315115 10.1993 0.293999 10.1043C0.283442 10.0831 0.283442 10.062 0.283442 10.0409C0.251769 9.90366 0.241211 9.75585 0.241211 9.60806C0.241211 8.93237 0.505153 8.29891 0.990824 7.81326C1.05417 7.74991 1.12807 7.68656 1.19142 7.63378C1.30755 7.53876 1.43425 7.46485 1.56096 7.39095C1.67709 7.3276 1.81434 7.26426 1.94103 7.22203C2.0994 7.15868 2.24721 7.12701 2.40557 7.10589C2.53226 7.08478 2.65896 7.07422 2.78565 7.07422C3.44022 7.07422 4.08426 7.31705 4.58046 7.81326C5.99519 9.23856 8.47616 9.23856 9.90153 7.81326C10.7989 6.91587 12.3192 6.85249 13.2905 7.64433C13.3644 7.68656 13.4277 7.74991 13.4911 7.81326L13.5122 7.83437C13.9873 8.30945 14.2301 8.94291 14.2301 9.60806Z"/>
-			</svg>
-
-			<b>Стать участником</b>
-		</a>
-
-		<a class="profile" href="./messages.html">
-			<picture>
-				<source srcset="./images/profile.avif">
-				<img src="./images/profile.png" alt="автар пользователя" width="50" height="50">
-			</picture>
-			<div class="profile__info">
-				<b>Имя Фамилия</b>
-				<span>Клиент</span>
-			</div>
-		</a>
-
-		
-
-		<div class="nav-lang">
-			<details class="nav-lang-dropdown" aria-label="языковое меню">
-				<summary class="btn-white">Ru</summary>
-				<ul class="dropdown">
-					<li class="dropdown-item">
-						<a href="#" class="dropdown-link" aria-label="английский язык"> En </a>
-					</li>
-
-					<li class="dropdown-item">
-						<a href="#" class="dropdown-link" aria-label="узбекский язык"> Uz </a>
-					</li>
-				</ul>
-			</details>
-		</div>
-	</nav>
-</header>
-
-	<main class="main-wrapper">
-		<section class="main-head main-head__inner">
-	<div class="main-inner__wrapper">
-		<div class="navigations">
-			<a href="./index.html">Главная</a>/<a href="./catalog.html">Каталог участников</a>/<a class="active" href="./catalog-inner.html">О компании участников</a>
-		</div>
-
-		<div class="main-inner__info">
-			<div class="main__inner-cards">
-				<div class="main__inner-card">
-					<div class="main-inner-card__title">Elite</div>
-					<div class="main-inner-card__desc">12-дек-2027</div>
-				</div>
-				<div class="main__inner-card">
-					<div class="main-inner-card__title number">67778</div>
-					<div class="main-inner-card__desc">Номер ID</div>
-				</div>
-			</div>
-			<div class="main__inner-image">
+		<header class="header-search profile-header">
+			<a href="./index.html" aria-label="на главную страннцу" class="nav__logo">
 				<picture>
-					<source srcset="./images/catalog-logo.avif">
-					<img src="./images/catalog-log/jpg" alt="логотип участника" width="267" height="62">
+					<source srcset="./images/svg/search-logo.svg">
+					<img src="./images/svg/logo.svg" width="230" height="50" alt="логотип компании">
 				</picture>
-			</div>
+			</a>
 
-			<h1><span class="count">15</span>Vantage Logistics Corporation</h1>
+			<ul>
+				<li>
+					<a class="current" href="./search-goods.html">Поиск грузов</a>
+				</li>
+				<li>
+					<a href="./search-transport.html">Поиск транспорта</a>
+				</li>
+			</ul>
 
-			<div class="catalog-card__tags">
-				<span>FCL</span>
-				<span>Air Freight</span>
-				<span>Customs Clearance</span>
-				<span>Express</span>
-			</div>
-
-			<a class="catalog-inner__link" href="./contacts.html">связаться</a>
-		</div>
-	</div>
-
-	<div class="catalog__image-bg">
-		<picture>
-			<source srcset="./images/catalog.jpg">
-			<img src="./images/catalog.jpg" alt="логистическая компания" width="1920" height="750">
-		</picture>
-	</div>
-</section>
-
-		<section class="catalog-inner__info">
-
-	<div class="catalog-inner__left">
-		<h3 class="catalog-inner__title title">Подробная информация </h3>
-
-		<div class="catalog-inner__card">
-			<div class="catalog-card__desc">
-				<svg width="15" height="15">
-					<use xlink:href="#planet"></use>
+			<div class="has-notifications profile-notifications">
+				<svg width="16" height="18">
+					<use xlink:href="#notifications"></use>
 				</svg>
-				<b>Местоположение:</b>
-			</div>
-			<p>Tokyo - Japan</p>
-		</div>
 
-		<div class="catalog-inner__card">
-
-			<div class="catalog-card__desc">
-				<svg width="12" height="15">
-					<use xlink:href="#location"></use>
-				</svg>
-				<b>Адрес:</b>
-
-			</div>
-			<p>Lorem ipsum dolor sit amet consectetur. Cras purus egestas mi cursus ac pharetra scelerisque mattis.
-				Metus nunc leo malesuada sit in pulvinar risus at. Sed augue blandit rhoncus pellentesque rutrum
-				tristique sit sed.
-			</p>
-		</div>
-
-		<div class="catalog-inner__card">
-
-			<div class="catalog-card__desc">
-				<svg width="15" height="15">
-					<use xlink:href="#time"></use>
-				</svg>
-				<b>Начало работы компании:</b>
-
-			</div>
-			<p>2002</p>
-		</div>
-
-		<div class="catalog-inner__card">
-			<div class="catalog-card__desc">
-				<svg width="30" height="14">
-					<use xlink:href="#people"></use>
-				</svg>
-				<b>Количество сотрудников:</b>
-
-			</div>
-			<p>101-500</p>
-		</div>
-
-		<div class="catalog-inner__card">
-
-			<div class="catalog-card__desc">
-				<svg width="15" height="15">
-					<use xlink:href="#world"></use>
-				</svg>
-				<b>Ссылка на сайт:</b>
-
-			</div>
-
-			<a href="https://www.jctrans.com">https://www.jctrans.com</a>
-		</div>
-
-	</div>
-
-	<div class="catalog-inner__right">
-
-		<div class="swiper catalog-inner__slider">
-
-
-				<button class="catalog-inner__btn catalog-btn-left" aria-label="переключение слайдов в лево">
-					<svg width="15" height="15">
-						<use xlink:href="#arrow-left"></use>
-					</svg>
-				</button>
-				<button class="catalog-inner__btn catalog-btn-right" aria-label="переключение слайдов в право">
-					<svg width="12" height="12">
-						<use xlink:href="#arrow-right"></use>
-					</svg>
-				</button>
-
-
-			<div class="swiper-wrapper catalog-inner__container">
-
-				<div class="swiper-slide catalog-inner__slide">
-					<picture>
-						<source srcset="./images/catalog-inner.avif">
-						<img srcset="./images/catalog-inner.jpg" width="997" height="503" alt="сертификат" loading="lazy">
-					</picture>
-				</div>
-
-				<div class="swiper-slide catalog-inner__slide">
-					<picture>
-						<source srcset="./images/catalog-inner.avif">
-						<img srcset="./images/catalog-inner.jpg" width="997" height="503" alt="сертификат" loading="lazy">
-					</picture>
-				</div>
-
-				<div class="swiper-slide catalog-inner__slide">
-					<picture>
-						<source srcset="./images/catalog-inner.avif">
-						<img srcset="./images/catalog-inner.jpg" width="997" height="503" alt="сертификат" loading="lazy">
-					</picture>
-				</div>
-
-			</div>
-		</div>
-
-	</div>
-
-</section>
-
-		<section class="catalog-profile">
-	<div class="catalog-profile__info">
-		<h3>Профиль компании</h3>
-		<b>
-			With 17 years of international transportation experience and 200+ employees to provide wide range of freight
-			and logistics services, we have certificate ISO 9001:2015 FIATA IATA FMC OTI-NVOCC Bond and Customs Agents
-			License, service we provide:
-		</b>
-		<p>Heavy Projects is very specialized activity</p>
-		<p>Sea freight: FMC registered #023190</p>
-		<p>Air Freight: IATA, HAWB</p>
-		<p>Ship/NVOCC Agencies: Break bulk vessel agency service; Tanker service</p>
-		<p>Customs Brokerage Services</p>
-		<p>Warehouse & Distribution</p>
-		<p>E-Commerce Logistics</p>
-		<p>Personnel relocation logistics</p>
-		<p>Insurance</p>
-		<p>Import/export license</p>
-		<p>Event and exhibition services</p>
-		<p>Duty and VAT payment on clients’ behalf</p>
-		<p>Container supplying</p>
-		<p>Consulate service</p>
-		<p>Certificate of Origin (C/O)</p>
-	</div>
-	<div class="catalog-profile__image">
-		<picture>
-			<source srcset="./images/catalog-info.avif">
-			<img src="./images/catalog-info.jpg" alt="информация о компании" width="846" height="594">
-		</picture>
-	</div>
-</section>
-
-		<section class="news">
-	<h3>Новости </h3>
-
-	<div class="swiper news-slider">
-		<div class="swiper-wrapper news-container">
-
-			<a href="./news-inner.html" aria-label="странница новости" class="swiper-slide news-slide">
-
-				<div class="news-image">
-					<picture>
-						<source srcset="./images/news/news1.avif">
-						<img src="./images/news/news1.jpg" alt="Новости" width="589" height="315" loading="lazy">
-					</picture>
-				</div>
-
-				<div class="news-desc">
-
-					<b>Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit
-						est in
-						vitae sit lorem viverra...
-					</b>
-
-					<p>
-						Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit
-						est
-						in vitae sit lorem viverra nulla...
-					</p>
-
-					<div class="news-date">
-						<svg width="18" height="16">
-							<use xlink:href="#news"></use>
+				<div class="notifications-modal">
+					<div class="tr">
+						<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z" fill="white"/>
 						</svg>
-						<span>15 января 2025</span>
+					</div>
+
+					<div class="notifications-modal__head">
+						
+
+						<a href="#" class="read">Сделать прочитаным</a>
+
+						<div class="notifications-modal__btn">
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div class="notifications-modal__content">
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<p>OOO TS1 взял груз: Санкт-Петербург-Улан-Удэ, 10т, 10 м2, Ставка-127188 руб</p>
+							<div class="notifications-modal__botom">
+								<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+								<span class="time">11:15</span>
+							</div>
+						</div>
+
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<p>OOO Северные грузы предлагает груз Санкт-Петербург - Москва</p>
+							<p>за <strong>1000 000 руб</strong></p>
+							<p>Автомашины, 10 т, закр. + терм., загрузка с 26 авг</p>
+							<p>Предлжение действует до 21:06 мск</p>
+							<a href="#" class="notifications-modal__link">Подробнее</a>
+						</div>
+
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<b>Встречное предложение на груз: <span>№AZE2477</span></b>
+							<p>Автомобиль(ли), Санкт-Петербург - Улан-Удэ, 10т, 10м2, закр., изтерм, реф., 6сен</p>
+							<p><span>Ставка:</span> 25000 руб не б/нал, 23000 руб б/нал с НДС, 23000 руб/нал без НДС</p>
+							<p><span>Фирма:</span> “TS1,OOO”</p>
+							<p><span>Контакт: </span></p>
+							<p>Иван</p>
+							<a href="#">Написать сообщение</a>
+							<p>Санкт-Петербург, Моб: <a href="">+000 00 000-00-00</a></p>
+							<p>Email: <a href="">email@example.com</a></p>
+							<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+						</div>
 					</div>
 				</div>
+			</div>
+
+			<a class="profile" href="./profile-messages.html">
+				<picture>
+					<source srcset="./images/profile.avif">
+					<img src="./images/profile.png" alt="автар пользователя" width="50" height="50">
+				</picture>
+				<div class="profile__info">
+					<b>Имя Фамилия</b>
+					<span>Клиент</span>
+				</div>
 			</a>
+		</header>
 
-			<a href="./news-inner.html" aria-label="странница новости" class="swiper-slide news-slide">
+		<main class="main-wrapper">
+			<section class="search-page">
+				<h1 class="title">Поиск грузов</h1>
 
-				<div class="news-image">
-					<picture>
-						<source srcset="./images/news/news2.avif">
-						<img src="./images/news/news2.jpg" alt="Новости" width="589" height="315" loading="lazy">
-					</picture>
+				<form action="" method class="form-search">
+					<div class="form-search-row">
+						<label for="point" class="input-check-red">
+							<input type="checkbox" id="point">
+							<span>Искать грузы в “эллипсе” маршрута</span>
+						</label>
+						<label for="length" class="input-check-red">
+							<input type="checkbox" id="length">
+							<span>Длина маршрута</span>
+						</label>
+					</div>
+
+					<div class="form-search-head">
+						<div class="form-search-inputs-wrapper">
+							<div class="form-search-inputs">
+								<label for="from">
+									<span>Откуда</span>
+									<input type="text" id="from" placeholder="Напрмиер, Москва" class="input-form">
+								</label>
+								<label for="to">
+									<span>Радиус</span>
+									<input type="number" id="to" placeholder="КМ" class="input-form">
+								</label>
+							</div>
+							<div class="form-search-inputs__bottom">
+								<select name="" id="">
+									<option value="" hidden>Выбрать список</option>
+									<option value="">список 1</option>
+									<option value="">список 2</option>
+								</select>
+
+								<label for="goods" class="input-check-red">
+									<input type="checkbox" id="goods">
+									<span>точно по Загрузке</span>
+								</label>
+							</div>
+						</div>
+
+						<svg width="23" height="23">
+							<use xlink:href="#search-arrow"></use>
+						</svg>
+
+						<div class="form-search-inputs-wrapper">
+							<div class="form-search-inputs">
+								<label for="from">
+									<span>Куда</span>
+									<input type="text" id="from" placeholder="Напрмиер, Санкт-Петербург" class="input-form">
+								</label>
+								<label for="to">
+									<span>Радиус</span>
+									<input type="number" id="to" placeholder="КМ" class="input-form">
+								</label>
+							</div>
+							<div class="form-search-inputs__bottom">
+								<select name="" id="">
+									<option value="" hidden>Выбрать список</option>
+									<option value="">список 1</option>
+									<option value="">список 2</option>
+								</select>
+
+								<label for="goods" class="input-check-red">
+									<input type="checkbox" id="goods">
+									<span>точно по Загрузке</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="form-search-inputs form-search-inputs-small">
+							<label for="from">
+								<span>Вес,т</span>
+								<input type="number" id="from" placeholder="от" class="input-form">
+							</label>
+							<label for="to">
+								<input type="number" id="to" placeholder="до" class="input-form">
+							</label>
+						</div>
+
+						<div class="form-search-inputs form-search-inputs-small">
+							<label for="from">
+								<span>Обьем3</span>
+								<input type="number" id="from" placeholder="от" class="input-form">
+							</label>
+							<label for="to">
+								<input type="number" id="to" placeholder="до" class="input-form">
+							</label>
+						</div>
+					</div>
+
+					<div class="form-search-selects">
+						<label for="sel1">
+							<select name="" id="sel1" class="input-select">
+								<option value="" hidden>Дата погрузки</option>
+								<option value="">Дата погрузки</option>
+								<option value="">Дата погрузки</option>
+							</select>
+						</label>
+
+						<label for="sel2">
+							<select name="" id="sel2" class="input-select">
+								<option value="" hidden>Тип кузова</option>
+								<option value="">Тип кузова</option>
+								<option value="">Тип кузова</option>
+							</select>
+						</label>
+
+						<label for="sel3">
+							<select name="" id="sel3" class="input-select">
+								<option value="" hidden>Наименование груза</option>
+								<option value="">Наименование груза</option>
+								<option value="">Наименование груза</option>
+							</select>
+						</label>
+
+						<label for="sel4">
+							<select name="" id="sel4" class="input-select">
+								<option value="" hidden>Тип загрузки</option>
+								<option value="">Тип загрузки</option>
+								<option value="">Тип загрузки</option>
+							</select>
+						</label>
+
+						<label for="sel5">
+							<select name="" id="sel5" class="input-select">
+								<option value="" hidden>Оплата</option>
+								<option value="">Оплата</option>
+								<option value="">Оплата</option>
+							</select>
+						</label>
+
+						<label for="sel6">
+							<select name="" id="sel6" class="input-select">
+								<option value="" hidden>Доп. параметры</option>
+								<option value="">Доп. параметры</option>
+								<option value="">Доп. параметры</option>
+							</select>
+						</label>
+
+						<label for="sel7">
+							<select name="" id="sel7" class="input-select">
+								<option value="" hidden>Габариты и догруз</option>
+								<option value="">Габариты и догруз</option>
+								<option value="">Габариты и догруз</option>
+							</select>
+						</label>
+
+						<label for="sel7">
+							<select name="" id="sel7" class="input-select">
+								<option value="" hidden>Площадки и Торги</option>
+								<option value="">Площадки и Торги</option>
+								<option value="">Площадки и Торги</option>
+							</select>
+						</label>
+
+						<label for="sel7">
+							<select name="" id="sel7" class="input-select">
+								<option value="" hidden>Поиск по фирмам</option>
+								<option value="">Поиск по фирмам</option>
+								<option value="">Поиск по фирмам</option>
+							</select>
+						</label>
+					</div>
+
+					<div class="form-search__footer">
+						<a href="#" download>
+							<svg width="15" height="20">
+								<use xlink:href="#download"></use>
+							</svg>
+							<span>Инструкция по поиску грузов</span>
+						</a>
+
+						<button class="form-btn">Найти грузы</button>
+					</div>
+				</form>
+
+				<div class="result-goods">
+					<div class="result-goods__head">
+						<h1 class="title">Найдено 103 груза</h1>
+						<div class="result-pagination">
+							<button type="button">
+								<svg width="14" height="7">
+									<use xlink:href="#pag-left"></use>
+								</svg>
+							</button>
+
+							<a class="current" href="#" aria-label="следущая странница">1</a>
+							<a href="#" aria-label="следущая странница">2</a>
+							<a href="#" aria-label="следущая странница">3</a>
+							<a href="#" aria-label="следущая странница">4</a>
+							<a href="#" aria-label="следущая странница">5</a>
+							<span>из 11</span>
+							<button type="button">
+								<svg width="14" height="7">
+									<use xlink:href="#pag-right"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
 				</div>
-
-				<b>Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit est in
-					vitae sit lorem viverra...
-				</b>
-
-				<p>
-					Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit est
-					in vitae sit lorem viverra nulla...
-				</p>
-
-				<div class="news-date">
-					<svg width="18" height="16">
-						<use xlink:href="#news"></use>
-					</svg>
-					<span>15 января 2025</span>
-				</div>
-
-			</a>
-
-
-			<a href="./news-inner.html" aria-label="странница новости" class="swiper-slide news-slide">
-
-				<div class="news-image">
-					<picture>
-						<source srcset="./images/news/news3.avif">
-						<img src="./images/news/news3.jpg" alt="Новости" width="589" height="315" loading="lazy">
-					</picture>
-				</div>
-
-				<b>Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit est in
-					vitae sit lorem viverra...
-				</b>
-
-				<p>
-					Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit est
-					in vitae sit lorem viverra nulla...
-				</p>
-
-				<div class="news-date">
-					<svg width="18" height="16">
-						<use xlink:href="#news"></use>
-					</svg>
-					<span>15 января 2025</span>
-				</div>
-
-			</a>
-
-
-			<a href="./news-inner.html" aria-label="странница новости" class="swiper-slide news-slide">
-
-				<div class="news-image">
-					<picture>
-						<source srcset="./images/news/news1.avif">
-						<img src="./images/news/news1.jpg" alt="Новости" width="589" height="315" loading="lazy">
-					</picture>
-				</div>
-
-				<b>Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit est in
-					vitae sit lorem viverra...
-				</b>
-
-				<p>
-					Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit est
-					in vitae sit lorem viverra nulla...
-				</p>
-
-				<div class="news-date">
-					<svg width="18" height="16">
-						<use xlink:href="#news"></use>
-					</svg>
-					<span>15 января 2025</span>
-				</div>
-
-			</a>
-
-
-			<a href="./news-inner.html" aria-label="странница новости" class="swiper-slide news-slide">
-
-				<div class="news-image">
-					<picture>
-						<source srcset="./images/news/news2.avif">
-						<img src="./images/news/news2.jpg" alt="Новости" width="589" height="315" loading="lazy">
-					</picture>
-				</div>
-
-				<b>Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit est in
-					vitae sit lorem viverra...
-				</b>
-
-				<p>
-					Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit est
-					in vitae sit lorem viverra nulla...
-				</p>
-
-				<div class="news-date">
-					<svg width="18" height="16">
-						<use xlink:href="#news"></use>
-					</svg>
-					<span>15 января 2025</span>
-				</div>
-
-			</a>
-
-
-			<a href="./news-inner.html" aria-label="странница новости" class="swiper-slide news-slide">
-
-				<div class="news-image">
-					<picture>
-						<source srcset="./images/news/news3.avif">
-						<img src="./images/news/news3.jpg" alt="Новости" width="589" height="315" loading="lazy">
-					</picture>
-				</div>
-
-				<b>Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit est in
-					vitae sit lorem viverra...
-				</b>
-
-				<p>
-					Lorem ipsum dolor sit amet consectetur. In lectus ultricies gravida sit nulla. Varius quis sit est
-					in vitae sit lorem viverra nulla...
-				</p>
-
-				<div class="news-date">
-					<svg width="18" height="16">
-						<use xlink:href="#news"></use>
-					</svg>
-					<span>15 января 2025</span>
-				</div>
-
-			</a>
-
-
-		</div>
-	</div>
-
-</section>
-
-		<section class="contacts-info">
-	<h3>Контакты</h3>
-	<div class="contacts-card">
-		<b>Номер телефона:</b>
-		<a href="tel:+998900000000">+ 998 90 000 00 00</a>
-	</div>
-	<div class="contacts-card">
-		<b>Email</b>
-		<a href="mailto:@textmail">@textmail</a>
-	</div>
-</section>
+			</section>
+		</main>
 
 		<footer class="footer">
 
@@ -755,11 +602,21 @@
 	</div>
 
 </footer>
+ <script src="./js/main.min.js"></script>
 
-	</main>
+	</body>
+	<div class="modal-overlay" data-modal="modal-change-tarifs">
+	<div class="modal modal-change-tarifs">
+		<b>Смена тарифа</b>
 
-	<script src="./js/main.min.js"></script>
+		<p>
+			Lorem ipsum dolor sit amet consectetur. Sagittis metus aenean convallis nulla accumsan tortor est est ornare. Pretium ornare
+			congue at egestas tellus amet arcu.
+		</p>
 
-</body>
+		<button class="form-btn">Подвердить</button>
+		<button class="tarifs-change-btn" data-modal-close="modal-change-tarifs">Отмена</button>
+	</div>
+</div>
 
 </html>
