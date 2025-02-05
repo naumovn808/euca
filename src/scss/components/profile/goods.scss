@@ -493,7 +493,7 @@
 	height: 0;
 }
 
-.add-goods_radios input:checked+span::before {
+.add-goods_radios input:checked + span::before {
 	content: "";
 	width: 1em;
 	height: 1em;
@@ -767,7 +767,7 @@
 		z-index: -1;
 		opacity: 0;
 
-		&:checked+label::before {
+		&:checked + label::before {
 			left: -2.2em;
 		}
 	}
@@ -785,7 +785,6 @@
 }
 
 .add-goods {
-
 	& input,
 	textarea,
 	select {
@@ -817,7 +816,6 @@
 
 		& input,
 		select {
-
 			font-size: calc(var(--fz) * 0.8);
 		}
 	}
@@ -844,7 +842,7 @@
 	width: 100%;
 
 	&::after {
-		content: '';
+		content: "";
 		display: block;
 		width: 1em;
 		height: 1em;
@@ -857,7 +855,7 @@
 	}
 
 	&::before {
-		content: '';
+		content: "";
 		display: none;
 		width: 1em;
 		height: 1em;
@@ -880,9 +878,7 @@
 		position: absolute;
 		z-index: -1;
 	}
-
 }
-
 
 .check-offer:has(input:checked)::before {
 	display: block;
@@ -896,13 +892,11 @@
 }
 
 .form-order__counts {
-
 	font-size: calc(var(--fz) * 0.8);
 	color: #0b1117;
 
 	& .label-small {
 		width: calc(var(--offset) * 5) !important;
-
 
 		display: flex;
 		justify-content: end;
@@ -912,7 +906,6 @@
 
 		& input {
 			padding: 0.5em 1em;
-
 		}
 
 		& span {
@@ -923,10 +916,9 @@
 			color: #0b1117;
 		}
 	}
-
 }
 
-.order-info-col a {
+.order-info a {
 	text-decoration: underline;
 }
 
@@ -964,7 +956,7 @@
 		cursor: pointer;
 		position: relative;
 
-		&:hover+span {
+		&:hover + span {
 			opacity: 1;
 			z-index: 1;
 		}
