@@ -12,6 +12,8 @@
 	flex-direction: column;
 	transform: translate(-50%, -200%);
 	transition: transform 0.5s ease-in-out;
+	max-height: 90vh;
+	overflow: auto;
 
 	& b {
 		font-weight: 600;
@@ -64,6 +66,25 @@
 			color: rgba(46, 54, 69, 0.6);
 		}
 	}
+}
+
+.modal::-webkit-scrollbar {
+	width: calc(var(--offset) * 0.5) !important;
+	display: block;
+}
+
+.modal::-webkit-scrollbar-thumb {
+	background-color: #d9d9d9;
+	border-radius: 0.3em;
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(217, 217, 217), 0.5;
+}
+
+.modals::-webkit-scrollbar-track {
+	background: #32373c;
+	border-radius: 0.3em;
 }
 
 .modal-register {
@@ -179,7 +200,7 @@
 	margin-bottom: var(--offset);
 	margin-top: calc(var(--offset) * 0.8);
 
-	& input:checked + label::after {
+	& input:checked+label::after {
 		display: block;
 	}
 

@@ -218,4 +218,14 @@ async function init() {
 			console.error(e);
 		}
 	}
+
+
+	if (document.querySelector('.show-info-contacts')) {
+		try {
+			const { showContacts } = await import(/* webpackChunkName: "showContacts" */ './helpers/show-contacts.js')
+			showContacts();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
 }

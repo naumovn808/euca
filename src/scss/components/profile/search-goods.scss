@@ -430,7 +430,7 @@
 	& th {
 		padding: 1em;
 
-		&>a {
+		&>button {
 			font-weight: 600;
 			font-size: calc(var(--fz) * 0.7);
 			letter-spacing: -0.04em;
@@ -494,4 +494,60 @@
 		box-shadow: 0 0 0.2em 0.1em #c8c8c8;
 	}
 
+}
+
+.row-flex {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.show-info-contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+
+	& p {
+		font-weight: 700 !important;
+		color: #0b1117 !important;
+
+		& a {
+			color: #7c7575;
+		}
+	}
+
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+	width: 0;
+}
+
+.show-info-contacts.show {
+	opacity: 1;
+	visibility: visible;
+	height: auto;
+	width: auto;
+}
+
+
+.show-contacts_btn.hidden {
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	padding: 0;
+}
+
+.modal-row {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+
+	& .road {
+		margin: 0;
+	}
+
+	& p {
+		margin: 0;
+	}
 }
