@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('../components/includes/head.html', { 'title': 'Поиск грузов' })
+
+	<body>
+		@@include('../components/includes/sprite.html')
+
+		<header class="profile-header header-search">
+			<a href="./index.html" aria-label="на главную страннцу" class="nav__logo">
+				<picture>
+					<source srcset="./images/svg/search-logo.svg" />
+					<img src="./images/svg/logo.svg" width="230" height="50" alt="логотип компании" />
+				</picture>
+			</a>
+
+			<ul>
+				<li>
+					<a href="./search-goods.html">Поиск грузов</a>
+				</li>
+				<li>
+					<a href="./search-transport.html">Поиск транспорта</a>
+				</li>
+			</ul>
+
+			<div class="profile-notifications has-notifications">
+				<svg width="16" height="18">
+					<use xlink:href="#notifications"></use>
+				</svg>
+
+				<div class="notifications-modal">
+					<div class="tr">
+						<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z"
+								fill="white"
+							/>
+						</svg>
+					</div>
+
+					<div class="notifications-modal__head">
+						<!-- <span class="read has-read">Все прочитано</span> -->
+
+						<a href="#" class="read">Сделать прочитаным</a>
+
+						<div class="notifications-modal__btn">
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div class="notifications-modal__content">
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<p>OOO TS1 взял груз: Санкт-Петербург-Улан-Удэ, 10т, 10 м2, Ставка-127188 руб</p>
+							<div class="notifications-modal__botom">
+								<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+								<span class="time">11:15</span>
+							</div>
+						</div>
+
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<p>OOO Северные грузы предлагает груз Санкт-Петербург - Москва</p>
+							<p>за <strong>1000 000 руб</strong></p>
+							<p>Автомашины, 10 т, закр. + терм., загрузка с 26 авг</p>
+							<p>Предлжение действует до 21:06 мск</p>
+							<button type="button" data-modal-target="get-goods" class="notifications-modal__link">Подробнее</button>
+						</div>
+
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<b>Встречное предложение на груз: <span>№AZE2477</span></b>
+							<p>Автомобиль(ли), Санкт-Петербург - Улан-Удэ, 10т, 10м2, закр., изтерм, реф., 6сен</p>
+							<p><span>Ставка:</span> 25000 руб не б/нал, 23000 руб б/нал с НДС, 23000 руб/нал без НДС</p>
+							<p><span>Фирма:</span> “TS1,OOO”</p>
+							<p><span>Контакт: </span></p>
+							<p>Иван</p>
+							<a href="#">Написать сообщение</a>
+							<p>Санкт-Петербург, Моб: <a href="">+000 00 000-00-00</a></p>
+							<p>Email: <a href="">email@example.com</a></p>
+							<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="profile" href="./messages.html">
+				<picture>
+					<source srcset="./images/profile.avif" />
+					<img src="./images/profile.png" alt="автар пользователя" width="50" height="50" />
+				</picture>
+				<div class="profile__info">
+					<b>Имя Фамилия</b>
+					<span>Клиент</span>
+				</div>
+			</a>
+		</header>
+
+		<main class="main-wrapper">
+			<section class="search-page">
+				<h1 class="title">Поиск грузов</h1>
+				<div class="search-goods__head">
+					<b>Груз Иваново - Чирчик, стройматериалы, от 13 января</b>
+					<p><strong>( Создан 13 января ) </strong>изменен 14 февраля</p>
+				</div>
+				<div class="add-goods__main">
+					<div class="add-gods__left search-goods__left">
+						<div class="route-goods">
+							<p><strong>Маршрут и груз</strong></p>
+							<div class="route-goods__card">
+								<div class="route-goods__line">
+									<svg width="18" height="14">
+										<use xlink:href="#dark-car"></use>
+									</svg>
+
+									<span></span>
+
+									<svg width="18" height="14">
+										<use xlink:href="#blue-car"></use>
+									</svg>
+
+									<span></span>
+								</div>
+								<div class="route-goods__info">
+									<div class="route-goods__info-top">
+										<p>Иваново</p>
+										<p><strong>Загрузка 16-19 янв.</strong></p>
+										<p>
+											<svg width="24" height="18">
+												<use xlink:href="#get-goods"></use>
+											</svg>
+											<strong>21.5 / 82 СТРОЙМАТЕРИАЛЫ</strong>
+										</p>
+									</div>
+									<div class="route-goods__info-bottom">
+										<p>Чирчик</p>
+										<p><strong>Разгрузка</strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="goods-map__wrapper">
+							<p><strong>Расчет расстояний</strong></p>
+							<div class="goods-map__cards">
+								<div class="goods-map__card">
+									<p>Время</p>
+									<p><strong>2 д. 3 ч. 3 мин</strong></p>
+								</div>
+								<div class="goods-map__card">
+									<p>Расход топлива</p>
+									<p><strong>917 л</strong></p>
+								</div>
+								<div class="goods-map__card">
+									<p>За платон</p>
+									<p><strong>917 сум</strong></p>
+								</div>
+							</div>
+							<div class="goods-map" id="goods-map">
+								<div class="goods-map__image">
+									<picture>
+										<source srcset="./images/goods-map.avif" />
+										<img src="./images/goods-map.jpg" width="389" height="937" alt="map" />
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div class="route-goods__bottom">
+							<p><strong>Транспорт</strong></p>
+							<p>Куда</p>
+							<p><strong>тентованный</strong></p>
+							<p>Загрузка, выгрузка</p>
+							<p><strong>боковая, задняя</strong></p>
+							<p>Доп требование</p>
+							<p><strong>отд.машина</strong></p>
+
+							<b>Комментарии</b>
+							<p><strong>шумоизоляция оплата по копиям 5 дней</strong></p>
+						</div>
+						<p><strong>Ставка</strong></p>
+						<div class="route-footer">
+							<div class="route-footer-col">
+								<p><strong>3 000 долларов,</strong> без НДС</p>
+								<p>через 5/6 дней без торга</p>
+							</div>
+							<div class="route-footer-col">
+								<p><strong>0,9 долларов/км</strong></p>
+							</div>
+							<div class="route-footer-col">
+								<button class="form-btn" data-modal-target="send-offer">Отправить предложение(2)</button>
+							</div>
+						</div>
+					</div>
+					<div class="add-goods__right company-right-info">
+						<div class="company-image">
+							<picture>
+								<source srcset="./images/company-image.avif" />
+								<img src="./images/company-image.jpg" width="90" height="90" alt="company-image" />
+							</picture>
+						</div>
+						<div class="company-ratings">
+							<div class="stars">
+								<svg width="13" height="13">
+									<use xlink:href="#star"></use>
+								</svg>
+								<svg width="13" height="13">
+									<use xlink:href="#star"></use>
+								</svg>
+								<svg width="13" height="13">
+									<use xlink:href="#star"></use>
+								</svg>
+								<svg width="13" height="13">
+									<use xlink:href="#star"></use>
+								</svg>
+								<svg width="13" height="13">
+									<use xlink:href="#star"></use>
+								</svg>
+							</div>
+						</div>
+						<b>Группа Компаний “Маршал”(МАРШАЛ,ООО)</b>
+						<p>Код: 1309554, Грузовладелец, Санкт-Петербург</p>
+						<div class="company-contacts">
+							<p>Дмитрий Б</p>
+							<a href="tel:+99890000000">+998 90 000 00 00</a>
+							<a class="company-link" href="./chat.html">Написать сообщение</a>
+							<button class="form-btn" data-modal-target="send-offer">Отправить предложение(2)</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('../components/footer.html') @@include('../components/includes/script.html')
+	</body>
+	@@include('../components/modals/change-tarifs.html')
+	@@include('../components/modals/get-goods.html')
+	@@include('../components/modals/send-offer.html')
+</html>

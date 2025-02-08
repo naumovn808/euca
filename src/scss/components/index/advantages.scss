@@ -96,10 +96,12 @@
 
 		& p {
 			margin-bottom: calc(var(--offset) * 3);
+			color: var(--color-text-primary);
 		}
 
 		& a {
 			margin-bottom: calc(var(--offset) * 4);
+			color: var(--color-text-primary);
 		}
 	}
 }
