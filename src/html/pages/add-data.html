@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('../components/includes/head.html', { 'title': 'Поиск грузов' })
+
+	<body>
+		@@include('../components/includes/sprite.html')
+
+		<header class="profile-header header-search">
+			<a href="./index.html" aria-label="на главную страннцу" class="nav__logo">
+				<picture>
+					<source srcset="./images/svg/search-logo.svg" />
+					<img src="./images/svg/logo.svg" width="230" height="50" alt="логотип компании" />
+				</picture>
+			</a>
+
+			<ul>
+				<li>
+					<a href="./search-goods.html">Поиск грузов</a>
+				</li>
+				<li>
+					<a href="./search-transport.html">Поиск транспорта</a>
+				</li>
+			</ul>
+
+			<div class="profile-notifications has-notifications">
+				<svg width="16" height="18">
+					<use xlink:href="#notifications"></use>
+				</svg>
+
+				<div class="notifications-modal">
+					<div class="tr">
+						<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z"
+								fill="white"
+							/>
+						</svg>
+					</div>
+
+					<div class="notifications-modal__head">
+						<!-- <span class="read has-read">Все прочитано</span> -->
+
+						<a href="#" class="read">Сделать прочитаным</a>
+
+						<div class="notifications-modal__btn">
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+					<div class="notifications-modal__content">
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<p>OOO TS1 взял груз: Санкт-Петербург-Улан-Удэ, 10т, 10 м2, Ставка-127188 руб</p>
+							<div class="notifications-modal__botom">
+								<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+								<span class="time">11:15</span>
+							</div>
+						</div>
+
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<p>OOO Северные грузы предлагает груз Санкт-Петербург - Москва</p>
+							<p>за <strong>1000 000 руб</strong></p>
+							<p>Автомашины, 10 т, закр. + терм., загрузка с 26 авг</p>
+							<p>Предлжение действует до 21:06 мск</p>
+							<button type="button" data-modal-target="get-goods" class="notifications-modal__link">Подробнее</button>
+						</div>
+
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<b>Встречное предложение на груз: <span>№AZE2477</span></b>
+							<p>Автомобиль(ли), Санкт-Петербург - Улан-Удэ, 10т, 10м2, закр., изтерм, реф., 6сен</p>
+							<p><span>Ставка:</span> 25000 руб не б/нал, 23000 руб б/нал с НДС, 23000 руб/нал без НДС</p>
+							<p><span>Фирма:</span> “TS1,OOO”</p>
+							<p><span>Контакт: </span></p>
+							<p>Иван</p>
+							<a href="#">Написать сообщение</a>
+							<p>Санкт-Петербург, Моб: <a href="">+000 00 000-00-00</a></p>
+							<p>Email: <a href="">email@example.com</a></p>
+							<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="profile" href="./messages.html">
+				<picture>
+					<source srcset="./images/profile.avif" />
+					<img src="./images/profile.png" alt="автар пользователя" width="50" height="50" />
+				</picture>
+				<div class="profile__info">
+					<b>Имя Фамилия</b>
+					<span>Клиент</span>
+				</div>
+			</a>
+		</header>
+
+		<main class="main-wrapper">
+			<section class="search-page">
+				<div class="search-transport__inner-head">
+					<a href="./index.html">Главная</a> / <a href="./index.html">Информация о фирме</a>
+				</div>
+				<form class="add-data-wrapper">
+					<h3>Укажите данные, чтобы продолжить</h3>
+					<label for="" class="search-city">
+						<input type="text" placeholder="Введите город" />
+						<span>Начните вводить в город, мы предложим варианты-выбирите из них</span>
+					</label>
+					<p>Вы</p>
+					<div class="choise-cash">
+						<input type="radio" name="payment" id="ooo" />
+						<label for="ooo">ООО</label>
+
+						<input type="radio" name="payment" id="ip" />
+						<label for="ip">ИП</label>
+
+						<input type="radio" name="payment" id="fiz" />
+						<label for="fiz">Физлицо</label>
+
+						<input type="radio" name="payment" id="own" />
+						<label for="own">Самозанятый</label>
+
+						<input type="radio" name="payment" id="other" />
+						<label for="other">Другое</label>
+					</div>
+					<p>Название фирмы*</p>
+					<div class="add-data-row">
+						<label for="">
+							<select name="" id="" class="input-select">
+								<option value="" hidden>ООО</option>
+							</select>
+						</label>
+						<label for="">
+							<input type="text" />
+						</label>
+					</div>
+					<label for="">
+						<select name="" id="" class="input-select">
+							<option value="" hidden>Выбрать список</option>
+						</select>
+					</label>
+
+					<div class="add-data__contacts">
+						<b>Контакт</b>
+						<p>от этого имени вы будете работать на EUCA AILLIANCE</p>
+						<div class="add-data__contacts__wrapper">
+							<div class="add-data__col1">
+								<div class="input__row">
+									<p>Ф.И.О</p>
+
+									<label for="name">
+										<input type="text" name="name" id="email" placeholder="Введите свое имя" required />
+									</label>
+								</div>
+
+								<div class="input__row">
+									<p>Email</p>
+
+									<label for="email">
+										<input type="text" name="email" id="email" placeholder="Введите свой email" required />
+									</label>
+									<span class="error-green">Будьте бдительны при работе с почтой</span>
+								</div>
+
+								<label for="hidden" class="add-data-checkbox">
+									<input type="checkbox" id="hidden" />
+									<span>Не показывать на сайте</span>
+								</label>
+
+								<div class="input__row add-data__row">
+									<p>Номер телефона</p>
+
+									<div class="iput-row__wrapper">
+										<button type="button" class="input-row__icon">
+											<img src="./images/phone-mask.png" alt="mask" />
+
+											<svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M7.33395 1.24661L4.24409 4.33647C4.17253 4.40803 4.09558 4.46305 4.01324 4.50153C3.93091 4.54 3.84049 4.55885 3.742 4.55808C3.64351 4.55731 3.55309 4.53808 3.47076 4.50037C3.38842 4.46267 3.31147 4.40765 3.23991 4.33532L0.150048 1.24546C0.107727 1.20236 0.0719462 1.15273 0.0427059 1.09656C0.014235 1.04039 -1.56405e-07 0.979984 -1.5923e-07 0.915348C-1.64881e-07 0.786074 0.0423211 0.674883 0.126964 0.581776C0.213146 0.488668 0.325876 0.442114 0.465153 0.442114L7.01769 0.442114C7.15774 0.442114 7.27047 0.489823 7.35588 0.585238C7.44129 0.680654 7.484 0.79146 7.484 0.917655C7.484 0.949974 7.43398 1.05924 7.33395 1.24545"
+													fill="#2E3645"
+												/>
+											</svg>
+										</button>
+
+										<label for="phone">
+											<input type="number" name="phone" id="phone" placeholder="+998 99 999-99-99" />
+										</label>
+									</div>
+									<span class="error-green">Никому не сообзайте коды</span>
+								</div>
+								<button class="form-btn">Продолжить</button>
+							</div>
+							<div class="add-data__col2">
+								<label for="file-input" class="label-file">
+									<b>Загрузить фото</b>
+									<span>от 64x64 пикс. 10мб</span>
+									<input type="file" multiple id="file-input" />
+								</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		@@include('../components/footer.html') @@include('../components/includes/script.html')
+	</body>
+</html>

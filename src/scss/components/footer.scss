@@ -1,5 +1,5 @@
 .footer {
-	background-color: var(--color-bg-secondary);
+	background-color: #e4e4e4;
 	border-top-left-radius: var(--offset);
 	border-top-right-radius: var(--offset);
 	overflow: hidden;
@@ -22,7 +22,7 @@
 			font-size: calc(var(--fz) * 1.6);
 			line-height: 119%;
 			letter-spacing: -0.03em;
-			color: var(--color-text-primary);
+			color: #0b1117;
 		}
 
 		& a {
@@ -31,7 +31,7 @@
 			font-size: calc(var(--fz) * 1.2);
 			line-height: 119%;
 			letter-spacing: -0.02em;
-			color: var(--color-text-primary);
+			color: #0b1117;
 		}
 	}
 
@@ -46,7 +46,7 @@
 				font-size: var(--fz);
 				line-height: 139%;
 				letter-spacing: -0.03em;
-				color: var(--color-text-primary);
+				color: #0b1117;
 			}
 		}
 	}
@@ -89,7 +89,7 @@
 	font-size: calc(var(--fz) * 0.75) !important;
 	line-height: 119%;
 	letter-spacing: -0.02em;
-	color: var(--color-text-primary);
+	color: #0b1117;
 }
 
 .footer-auth {
@@ -104,18 +104,27 @@
 	color: #fff;
 	transition-property: background-color, box-shadow;
 	transition-duration: 0.5s;
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		color: var(--color-text-secondary);
+		box-shadow: 0 0 0 0.05em var(--color-text-secondary) !important;
+	}
 }
 
 .login {
 	font-weight: 400;
 	font-size: calc(var(--fz) * 0.9);
 	letter-spacing: -0.04em;
-	box-shadow: 0 0 0 0.05em var(--color-text-primary);
+	color: #0b1117;
+	box-shadow: 0 0 0 0.05em #0b1117;
+	transition: all, 0.5s;
 
 	&:hover,
 	&:focus,
 	&:focus-within {
-		background-color: #fc4739;
+		color: var(--color-text-secondary);
 		box-shadow: 0 0 0 0.05em #fc4739;
 	}
 }

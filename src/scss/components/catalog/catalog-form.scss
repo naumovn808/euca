@@ -3,6 +3,13 @@
 	display: flex;
 	gap: var(--offset);
 	padding-top: calc(var(--offset) * 6.5);
+	width: 100%;
+}
+
+.catalog {
+	background: none;
+	display: flex;
+	flex-direction: column;
 }
 
 .filters {
@@ -18,9 +25,10 @@
 
 	& form {
 		width: 100%;
-		background-color: var(--color-bg-secondary);
+		background: none;
 		border-radius: 0.5em;
 		padding: calc(var(--offset) * 0.8);
+		box-shadow: 0 0 0 0.05em #c8c8c8;
 
 		& fieldset {
 			border: none;
@@ -33,7 +41,7 @@
 				font-weight: 600;
 				font-size: calc(var(--fz) * 0.9);
 				letter-spacing: -0.03em;
-				color: #eee;
+				color: #0b1117;
 				margin-bottom: var(--offset);
 			}
 		}
@@ -90,6 +98,7 @@
 .catalog-content {
 	flex: 0 64% 0;
 	width: 100%;
+	margin-top: 0.8em;
 }
 
 .catalog-new-members {
@@ -113,7 +122,8 @@
 		width: calc(var(--offset) * 0.9);
 		height: calc(var(--offset) * 0.9);
 		border-radius: 50%;
-		background-color: var(--color-text-primary);
+		background-color: #f5f5f5;
+		box-shadow: 0 0 0 0.05em #c8c8c8;
 		transition-duration: 0.5s;
 		transition-property: background-color;
 		cursor: pointer;
@@ -216,7 +226,7 @@ input[type="number"]::-ms-clear {
 	padding-top: 0;
 	max-height: 55vh;
 	overflow-y: auto;
-	background-color: var(--color-bg-secondary);
+	background-color: #f5f5f5;
 	border-bottom-left-radius: 0.5em;
 	border-bottom-right-radius: 0.5em;
 }
@@ -236,7 +246,7 @@ input[type="number"]::-ms-clear {
 }
 
 .members-cards::-webkit-scrollbar-track {
-	background: #32373c;
+	background: #979ea4;
 	border-radius: 0.3em;
 }
 
@@ -252,7 +262,7 @@ input[type="number"]::-ms-clear {
 	&:hover,
 	&:focus,
 	&:focus-within {
-		background-color: rgb(40, 67, 94);
+		background-color: rgb(189, 189, 189, 0.5);
 	}
 	& img {
 		width: var(--offsets);
@@ -264,7 +274,7 @@ input[type="number"]::-ms-clear {
 		font-weight: 500;
 		font-size: calc(var(--fz) * 0.9);
 		letter-spacing: -0.03em;
-		color: var(--color-text-primary);
+		color: #141f2a;
 	}
 
 	& span {
@@ -300,7 +310,7 @@ input[type="number"]::-ms-clear {
 }
 
 .catalog-content__card {
-	background-color: var(--color-bg-secondary);
+	background-color: #f5f5f5;
 	border-radius: 1em;
 	padding: calc(var(--offset) * 0.8);
 	display: flex;
@@ -347,7 +357,7 @@ input[type="number"]::-ms-clear {
 	font-weight: 600;
 	font-size: calc(var(--fz) * 0.9);
 	letter-spacing: -0.03em;
-	color: var(--color-text-primary);
+	color: #141f2a;
 	margin-bottom: calc(var(--offset) * 0.5);
 
 	& > span {
@@ -421,7 +431,7 @@ input[type="number"]::-ms-clear {
 
 	&::before {
 		width: 100%;
-		background-color: var(--color-bg-primary);
+		background-color: var(--color-text-primary);
 		content: "";
 		display: block;
 		height: 50vh;
@@ -434,6 +444,7 @@ input[type="number"]::-ms-clear {
 .search {
 	padding: 0 !important;
 	background: none !important;
+	box-shadow: none !important;
 }
 
 .pagination {
@@ -446,8 +457,9 @@ input[type="number"]::-ms-clear {
 
 	& svg {
 		width: var(--offset);
+		fill: #fff;
 		height: calc(var(--offset) * 0.7);
-		stroke: var(--color-text-primary);
+		stroke: #c8c8c8;
 		transition-duration: 0.5s;
 		transition-property: stroke;
 	}

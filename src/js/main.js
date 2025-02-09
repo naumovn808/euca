@@ -228,4 +228,13 @@ async function init() {
 			console.error("Error loading module", e);
 		}
 	}
+
+	if (document.querySelector('.search-transport__inner-tabs')) {
+		try {
+			const { searchTabs } = await import(/* webpackChunkName: "searchTabs" */ './helpers/search-tabs.js')
+			searchTabs();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	} 
 }
