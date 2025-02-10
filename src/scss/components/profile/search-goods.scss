@@ -252,6 +252,7 @@
 	gap: 0.5em;
 
 	& button {
+
 		&:hover svg,
 		&:focus svg {
 			stroke: var(--color-text-secondary);
@@ -424,7 +425,7 @@
 	& th {
 		padding: 1em;
 
-		& > button {
+		&>button {
 			font-weight: 600;
 			font-size: calc(var(--fz) * 0.7);
 			letter-spacing: -0.04em;
@@ -716,7 +717,7 @@
 .goods-map {
 	position: relative;
 	width: 100%;
-	min-height: 40vh;
+	min-height: 58vh;
 	overflow: hidden;
 	border-radius: 1em;
 
@@ -733,6 +734,7 @@
 			object-fit: cover;
 		}
 	}
+
 	&__wrapper {
 		margin-bottom: 2em;
 	}
@@ -843,6 +845,7 @@
 
 .label-checkbox {
 	padding-left: 1em;
+
 	&:has(input:checked)::before {
 		display: block;
 	}
@@ -892,6 +895,7 @@
 		width: 100%;
 		border-radius: 0.5em;
 	}
+
 	& p {
 		text-align: left;
 	}
@@ -938,8 +942,7 @@
 		margin: 0;
 	}
 
-	& button {
-	}
+	& button {}
 }
 
 .form-btn-gray {
@@ -1078,6 +1081,7 @@
 
 .search-tab-container {
 	padding: 2em 1em;
+
 	& b {
 		font-weight: 500;
 		font-size: calc(var(--fz) * 1.5);
@@ -1215,6 +1219,7 @@
 		border-radius: 2em;
 		padding: 0.5em;
 	}
+
 	span {
 		color: red;
 		font-size: calc(var(--fz) * 0.7);
@@ -1352,4 +1357,8 @@
 		position: absolute;
 		z-index: -1;
 	}
+}
+
+.search-page {
+	overflow: hidden;
 }

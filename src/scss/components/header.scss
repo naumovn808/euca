@@ -136,18 +136,9 @@
 		min-width: fit-content;
 		white-space: nowrap;
 		padding: 0.5em 1em;
-		border-radius: 2em;
 
 		&.current {
-			border-bottom: 1px solid var(--color-text-primary);
-			transition-duration: 0.5s;
-			transition-property: border-bottom, background-color, color;
-
-			&:hover,
-			&:focus,
-			&:focus-within {
-				border-bottom: 1px solid var(--color-text-secondary);
-			}
+			border-bottom: 1px solid #0b1117;
 		}
 
 		&:hover,

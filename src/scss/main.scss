@@ -212,7 +212,10 @@ html {
 .main-wrapper {
 	display: flex;
 	flex-direction: column;
-	align-items: stretch;
 	min-height: 100%;
 	width: 100vw;
+}
+
+.footer {
+	flex: 1;
 }
