@@ -41,7 +41,6 @@
 		& img {
 			width: calc(var(--offset) * 10);
 			height: calc(var(--offset) * 2.5);
-
 		}
 	}
 
@@ -137,13 +136,11 @@
 
 			@media (max-width: 1180px) {
 				display: block;
-
 			}
 
 			@media (max-width: 999px) {
 				display: none;
 			}
-
 		}
 
 		& img {
@@ -158,7 +155,6 @@
 		& img {
 			@media (max-width: 1180px) {
 				display: block;
-
 			}
 
 			@media (max-width: 999px) {
@@ -264,7 +260,6 @@
 		margin: 0 1em;
 	}
 
-
 	&:hover,
 	&:focus,
 	&:focus-within {
@@ -306,8 +301,13 @@
 
 		@media (max-width: 999px) {
 			display: flex;
-
 		}
+	}
+}
+
+.profile-header .profile__info {
+	@media (max-width: 999px) {
+		display: none;
 	}
 }
 
@@ -319,13 +319,10 @@
 	background-color: #e4e4e4;
 }
 
-
 .nav__register {
 	color: var(--color-text-primary);
 	transition-property: background-color, box-shadow, color;
-
 }
-
 
 .nav-menu {
 	width: 100%;
@@ -349,7 +346,7 @@
 	z-index: 5;
 	position: relative;
 
-	&>span {
+	& > span {
 		position: relative;
 		width: 80%;
 		height: 70%;
@@ -366,8 +363,7 @@
 			border-radius: 5em;
 			background-color: var(--color-text-secondary);
 			position: absolute;
-			transition: background-color 0.5s, top 0.3s ease 0.3s,
-				bottom 0.3s ease 0.3s, transform 0.3s ease;
+			transition: background-color 0.5s, top 0.3s ease 0.3s, bottom 0.3s ease 0.3s, transform 0.3s ease;
 		}
 
 		&::after {
@@ -378,7 +374,7 @@
 			bottom: 0;
 		}
 
-		&>span {
+		& > span {
 			display: block;
 			width: 100%;
 			height: 0.15em;
@@ -396,7 +392,7 @@
 	}
 }
 
-.nav__btn.open>span::after {
+.nav__btn.open > span::after {
 	top: 50%;
 	transform: translateY(-50%) rotate(45deg);
 	transition: top 0.3s ease, transform 0.3s ease 0.3s;
@@ -408,7 +404,7 @@
 	transition: bottom 0.3s ease, transform 0.3s ease 0.3s;
 }
 
-.nav__btn.open span>span {
+.nav__btn.open span > span {
 	opacity: 0;
 	transition: opacity 0.3s ease;
 }
@@ -437,15 +433,12 @@
 		transition-property: transform;
 		transition-duration: 0.5s;
 		overflow-y: auto;
-
 	}
 }
-
 
 .nav-menu.open {
 	transform: translateX(0);
 }
-
 
 .nav__member {
 	width: fit-content !important;
@@ -572,14 +565,11 @@ body.open {
 				}
 			}
 		}
-
 	}
-
 
 	@media (max-width: 999px) {
 		display: block;
 	}
-
 }
 
 .nav-list__icon.people {

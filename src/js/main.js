@@ -250,4 +250,13 @@ async function init() {
 			console.error("Error loading module", e);
 		}
 	}
+
+	if (document.querySelector('.side-bar')) {
+		try {
+			const { profileMenu } = await import(/* webpackChunkName: "profileMenu" */ './helpers/profile-menu.js')
+			profileMenu();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
 }

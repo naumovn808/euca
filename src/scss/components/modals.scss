@@ -32,7 +32,6 @@
 		top: 0;
 		left: 0;
 
-
 		&.open {
 			opacity: 1;
 			z-index: 20;
@@ -90,6 +89,10 @@
 
 .modal-register {
 	width: calc(max(24rem, 35vw));
+
+	@media (max-width: 580px) {
+		width: calc(max(22rem, 35vw));
+	}
 }
 
 .input__row {
@@ -125,6 +128,10 @@
 			-webkit-appearance: none;
 			-moz-appearance: none;
 
+			@media (max-width: 580px) {
+				font-size: clamp(16px, var(--fz), 24px);
+			}
+
 			&:hover {
 				background-color: rgba(253, 231, 229, 1);
 			}
@@ -154,10 +161,18 @@
 		font-size: calc(var(--fz) * 0.9);
 		color: rgba(46, 54, 69, 1);
 
+		@media (max-width: 580px) {
+			font-size: clamp(16px, var(--fz), 24px);
+		}
+
 		&::placeholder {
 			font-weight: 400;
 			font-size: calc(var(--fz) * 0.9);
 			color: rgba(156, 156, 156, 1);
+
+			@media (max-width: 580px) {
+				font-size: clamp(16px, var(--fz), 24px);
+			}
 		}
 	}
 }
@@ -201,7 +216,7 @@
 	margin-bottom: var(--offset);
 	margin-top: calc(var(--offset) * 0.8);
 
-	& input:checked+label::after {
+	& input:checked + label::after {
 		display: block;
 	}
 
