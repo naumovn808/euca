@@ -59,7 +59,7 @@ async function init() {
 		}
 	}
 
-	if (document.querySelector('.filters-range')) {
+	if (document.querySelector('.filters')) {
 		try {
 			const { filtersRange } = await import(/* webpackChunkName: "catalogTabs" */ "./filters-range.js");
 			filtersRange();
@@ -79,14 +79,6 @@ async function init() {
 		}
 	}
 
-	if (document.querySelector('.partners')) {
-		try {
-			const { sliderPartners } = await import(/* webpackChunkName: "sliderPartners" */ './sliders/partners.js')
-			sliderPartners();
-		} catch (e) {
-			console.error("Error loading module", e);
-		}
-	}
 
 	if (document.querySelector('.accordions')) {
 		try {
@@ -98,37 +90,30 @@ async function init() {
 	}
 
 
-	async function initMap() {
 
 
-		if (document.getElementById('myMap')) {
 
-			try {
+	if (document.getElementById('myMap')) {
 
-				const { Map } = await import(/* webpackChunkName: "map" */ './map/map.js');
-				const map = new Map({
-					container: document.getElementById('myMap'),
-					center: COORDINATES,
-					zoom: 15,
-					marker: urlPin
-				});
+		try {
+			const { Map } = await import(/* webpackChunkName: "map" */ './map/map.js');
+			const map = new Map({
+				container: document.getElementById('myMap'),
+				center: COORDINATES,
+				zoom: 15,
+				marker: urlPin
+			});
 
+			setTimeout(() => {
 				map.init();
+			}, 500);
 
 
-			} catch (e) {
-				console.error("Error loading module", e);
-			}
+		} catch (e) {
+			console.error("Error loading module", e);
 		}
+
 	}
-
-	setTimeout(() => {
-
-		initMap();
-
-	}, 100)
-
-
 
 
 	if (document.querySelector('input[type="password"]')) {
@@ -236,5 +221,33 @@ async function init() {
 		} catch (e) {
 			console.error("Error loading module", e);
 		}
-	} 
+	}
+
+
+	if (document.querySelector('.nav-menu')) {
+		try {
+			const { navMenu } = await import(/* webpackChunkName: "navMenu" */ './helpers/burger-menu.js')
+			navMenu();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
+	if (document.querySelector('.catalog-new-members')) {
+		try {
+			const { membersCard } = await import(/* webpackChunkName: "membersCard" */ './helpers/members.js')
+			membersCard();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
+
+	if (document.querySelector('.filters')) {
+		try {
+			const { filtersCard } = await import(/* webpackChunkName: "filtersCard" */ './helpers/members.js')
+			filtersCard();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
 }

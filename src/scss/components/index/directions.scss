@@ -1,6 +1,15 @@
 .directions {
 	padding: var(--offset-s);
-	min-height: 100vh;
+	min-height: 80vh;
+
+	@media (max-width: 1180px) {
+		padding: calc(var(--offset) * 2);
+	}
+
+
+	@media (max-width: 999px) {
+		padding: var(--offset);
+	}
 
 	&-head {
 		display: flex;
@@ -9,20 +18,29 @@
 		justify-content: space-between;
 		margin-bottom: calc(var(--offset) * 2);
 
+		@media (max-width: 999px) {
+			flex-direction: column;
+			gap: 1em;
+		}
+
 		& p {
 			font-weight: 500;
 			font-size: var(--fz);
 			line-height: 128%;
 			letter-spacing: -0.06em;
-			color: var(--color-text-primary);
+			color: #0b1117;
 		}
 	}
 
 	&-cards {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		flex-wrap: wrap;
 		gap: calc(var(--offset) * 2);
+
+		@media (max-width: 580px) {
+			gap: var(--offset);
+		}
 	}
 
 	&-card {
@@ -35,7 +53,8 @@
 		transition-property: background-color;
 		border-radius: 1em;
 		box-shadow: 0 0 0 0.05em #c8c8c8;
-		flex: 1;
+		width: calc(var(--offset) * 10);
+		height: calc(var(--offset) * 10);
 
 		&__image {
 			width: calc(var(--offset) * 4);

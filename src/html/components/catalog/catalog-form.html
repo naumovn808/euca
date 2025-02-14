@@ -1,127 +1,136 @@
-<div class="catalog-form">
-	<div class="filters">
-		<div class="sticy-wrapper">
-			<div class="navigations"><a href="./index.html">Главная</a>/<a class="active" href="./catalog.html">Каталог
-					участников</a></div>
+<div class="form-head">
+	<div class="navigations"><a href="./index.html">Главная</a>/<a class="active" href="./catalog.html">Каталог
+			участников</a></div>
 
-			<div class="catalog-tabs">
-				<div class="button-decor"></div>
-				<button type="button" class="navigations-button" data-tab="location">Расположение</button>
-				<button type="button" class="navigations-button" data-tab="name-company">Название компании</button>
-				<button type="button" class="navigations-button" data-tab="id-search">Поиск по ID</button>
+	<div class="catalog-tabs">
+		<div class="button-decor"></div>
+		<button type="button" class="navigations-button" data-tab="location">Расположение</button>
+		<button type="button" class="navigations-button" data-tab="name-company">Название компании</button>
+		<button type="button" class="navigations-button" data-tab="id-search">Поиск по ID</button>
+	</div>
+
+	<form class="search" action="" method="post">
+		<div class="input-wrapper">
+			<div class="input-row" data-input="location">
+				<label for="country">
+					<svg width="12" height="15">
+						<use xlink:href="#location"></use>
+					</svg>
+
+					<input type="text" name="" placeholder="Все города" id="country" />
+				</label>
+
+				<label for="city">
+					<svg width="12" height="15">
+						<use xlink:href="#location"></use>
+					</svg>
+
+					<input type="text" name="" placeholder="Все страны" id="city" />
+				</label>
 			</div>
 
-			<form class="search" action="" method="post">
-				<div class="input-wrapper">
-					<div class="input-row" data-input="location">
-						<label for="country">
-							<svg width="12" height="15">
-								<use xlink:href="#location"></use>
-							</svg>
+			<div class="input-row" data-input="name-company">
+				<label for="name-company">
+					<svg width="12" height="15">
+						<use xlink:href="#location"></use>
+					</svg>
 
-							<input type="text" name="" placeholder="Все города" id="country" />
-						</label>
+					<input type="text" name="" placeholder="Название компании" id="name-company" />
+				</label>
+			</div>
 
-						<label for="city">
-							<svg width="12" height="15">
-								<use xlink:href="#location"></use>
-							</svg>
+			<div class="input-row" data-input="id-search">
+				<label for="id-search">
+					<svg width="12" height="15">
+						<use xlink:href="#location"></use>
+					</svg>
 
-							<input type="text" name="" placeholder="Все страны" id="city" />
-						</label>
+					<input type="text" name="" placeholder="Расположение" id="id-search" />
+				</label>
+			</div>
+
+			<button class="search-btn" type="submit">
+				<svg width="24" height="24">
+					<use xlink:href="#search"></use>
+				</svg>
+			</button>
+		</div>
+	</form>
+</div>
+
+
+
+<div class="catalog-form">
+
+
+	<div class="filters">
+		<div class="filters-title">фильтры</div>
+
+		<div class="filters-wrapper">
+
+			<form class="filters-directions" action="" method="post">
+				<fieldset>
+					<legend>По направлениям</legend>
+
+					<input class="visually-hidden" type="checkbox" id="fcl" name="" />
+					<label for="fcl">FCL</label>
+
+					<input class="visually-hidden" type="checkbox" id="lcl" name="" />
+					<label for="lcl">LCL</label>
+
+					<input class="visually-hidden" type="checkbox" name="" id="inter" />
+					<label for="inter">Intermodal</label>
+
+					<input class="visually-hidden" type="checkbox" name="" id="special" />
+					<label for="special">Special Container</label>
+				</fieldset>
+			</form>
+
+			<form class="filters-range" action="" method="">
+				<fieldset>
+					<legend>Срок на платформе</legend>
+
+					<div class="range-wrapper">
+						<div class="range-row">
+							<span class="min-hanler"></span>
+
+							<div class="range-line"></div>
+
+							<span class="max-handler"></span>
+						</div>
+
+						<div class="numbers-row">
+							<label for="minValue">
+								<input type="number" id="minValue" name="minValue" min="0" max="15" value="3" readonly
+									onchange="updateFormData(event)" />
+							</label>
+							<label for="maxValue">
+								<input type="number" id="maxValue" name="maxValue" min="0" max="15" value="10" readonly
+									onchange="updateFormData(event)" />
+							</label>
+						</div>
 					</div>
+				</fieldset>
+			</form>
 
-					<div class="input-row" data-input="name-company">
-						<label for="name-company">
-							<svg width="12" height="15">
-								<use xlink:href="#location"></use>
-							</svg>
+			<form class="filters-directions filters-status" action="" method="post">
+				<fieldset>
+					<legend>По статусу</legend>
 
-							<input type="text" name="" placeholder="Название компании" id="name-company" />
-						</label>
-					</div>
+					<input class="visually-hidden" type="checkbox" id="free" name="" />
+					<label for="free">Free</label>
 
-					<div class="input-row" data-input="id-search">
-						<label for="id-search">
-							<svg width="12" height="15">
-								<use xlink:href="#location"></use>
-							</svg>
+					<input class="visually-hidden" type="checkbox" id="elite" name="" />
+					<label for="elite">Elite</label>
 
-							<input type="text" name="" placeholder="Расположение" id="id-search" />
-						</label>
-					</div>
+					<input class="visually-hidden" type="checkbox" name="" id="premium" />
+					<label for="premium">Premium</label>
 
-					<button class="search-btn" type="submit">
-						<svg width="24" height="24">
-							<use xlink:href="#search"></use>
-						</svg>
-					</button>
-				</div>
+					<input class="visually-hidden" type="checkbox" name="" id="vip" />
+					<label for="vip">Vip</label>
+				</fieldset>
 			</form>
 		</div>
-
-		<form class="filters-directions" action="" method="post">
-			<fieldset>
-				<legend>По направлениям</legend>
-
-				<input class="visually-hidden" type="checkbox" id="fcl" name="" />
-				<label for="fcl">FCL</label>
-
-				<input class="visually-hidden" type="checkbox" id="lcl" name="" />
-				<label for="lcl">LCL</label>
-
-				<input class="visually-hidden" type="checkbox" name="" id="inter" />
-				<label for="inter">Intermodal</label>
-
-				<input class="visually-hidden" type="checkbox" name="" id="special" />
-				<label for="special">Special Container</label>
-			</fieldset>
-		</form>
-
-		<form class="filters-range" action="" method="">
-			<fieldset>
-				<legend>Срок на платформе</legend>
-
-				<div class="range-wrapper">
-					<div class="range-row">
-						<span class="min-hanler"></span>
-
-						<div class="range-line"></div>
-
-						<span class="max-handler"></span>
-					</div>
-
-					<div class="numbers-row">
-						<label for="minValue">
-							<input type="number" id="minValue" name="minValue" min="0" max="15" value="3" readonly
-								onchange="updateFormData(event)" />
-						</label>
-						<label for="maxValue">
-							<input type="number" id="maxValue" name="maxValue" min="0" max="15" value="10" readonly
-								onchange="updateFormData(event)" />
-						</label>
-					</div>
-				</div>
-			</fieldset>
-		</form>
-
-		<form class="filters-directions filters-status" action="" method="post">
-			<fieldset>
-				<legend>По статусу</legend>
-
-				<input class="visually-hidden" type="checkbox" id="free" name="" />
-				<label for="free">Free</label>
-
-				<input class="visually-hidden" type="checkbox" id="elite" name="" />
-				<label for="elite">Elite</label>
-
-				<input class="visually-hidden" type="checkbox" name="" id="premium" />
-				<label for="premium">Premium</label>
-
-				<input class="visually-hidden" type="checkbox" name="" id="vip" />
-				<label for="vip">Vip</label>
-			</fieldset>
-		</form>
 	</div>
 
 	<div class="catalog-content">
@@ -356,6 +365,8 @@
 		</div>
 	</div>
 
+
+
 	<div class="catalog-new-members">
 		<div class="members-title">Новые участники</div>
 
@@ -456,7 +467,10 @@
 				</div>
 			</a>
 		</div>
+
 	</div>
+
+
 </div>
 
 <script>

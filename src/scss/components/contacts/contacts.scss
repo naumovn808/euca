@@ -4,12 +4,27 @@
 	display: flex;
 	align-items: stretch;
 
+	@media (max-width: 1280px) {
+		padding: calc(var(--offset) * 2);
+		margin-top: var(--offset-l);
+	}
+
+	@media (max-width : 999px) {
+		padding: var(--offset);
+		flex-direction: column;
+		margin-bottom: var(--offset-l);
+	}
+
 
 	&__info {
 		width: 50%;
 		padding-right: var(--offset-s);
 		display: flex;
 		flex-direction: column;
+
+		@media (max-width : 999px) {
+			width: 100%;
+		}
 
 		& h1 {
 			margin-bottom: calc(var(--offset) * 2);
@@ -38,6 +53,10 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 
+	@media (max-width: 780px) {
+		grid-template-columns: 1fr;
+	}
+
 	& .welcome-card b {
 		margin-bottom: 0;
 	}
@@ -49,6 +68,11 @@
 	overflow: hidden;
 	border-radius: 0.5em;
 	max-height: 50vh;
+
+	@media (max-width : 999px) {
+		width: 100%;
+		height: 40vh;
+	}
 
 	& img {
 		width: 100%;
@@ -68,4 +92,8 @@
 	object-fit: contain !important;
 	cursor: pointer;
 	pointer-events: all;
+}
+
+.ymaps3x0--controls {
+	z-index: 5 !important;
 }

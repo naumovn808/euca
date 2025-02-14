@@ -14,10 +14,15 @@
 		transition-duration: 0.5s;
 		transition-property: color;
 
+		@media (max-width: 480px) {
+			font-size: calc(var(--fz) * 0.7);
+		}
+
+
 		&:hover,
 		&:focus,
 		&:focus-within {
-			color: var(--color-text-primary);
+			color: #141f2a;
 		}
 	}
 
@@ -58,6 +63,10 @@
 	padding: calc(var(--offset) * 0.4) calc(var(--offset) * 0.6);
 	transition-duration: 0.5s;
 	transition-property: color;
+
+	@media (max-width: 580px) {
+		font-size: calc(var(--fz) * 0.7);
+	}
 
 	&:hover,
 	&:focus,

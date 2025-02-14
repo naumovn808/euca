@@ -2,6 +2,17 @@
 	padding: var(--offset-s);
 	min-height: 80vh;
 
+	@media (max-width: 1180px) {
+		padding: calc(var(--offset) * 2);
+
+	}
+
+	@media (max-width: 999px) {
+		padding: var(--offset);
+		margin-top: var(--offset);
+
+	}
+
 	& h3 {
 		margin-bottom: calc(var(--offset) * 2);
 	}
@@ -12,6 +23,11 @@
 		gap: var(--offset);
 		margin-bottom: var(--offset-xl);
 
+		@media (max-width: 780px) {
+			grid-template-columns: 1fr;
+			margin-bottom: calc(var(--offset) * 2);
+		}
+
 	}
 
 	&-card {
@@ -20,6 +36,10 @@
 		border-radius: 0.5em;
 		overflow: hidden;
 
+		@media (max-width: 999px) {
+			padding: var(--offset);
+		}
+
 		&__head {
 			display: flex;
 			align-items: center;
@@ -27,6 +47,11 @@
 			margin-bottom: calc(var(--offset) * 1.5);
 			padding-top: var(--offset);
 			border-top: 0.05em solid #979eb2;
+
+			@media (max-width: 999px) {
+				gap: var(--offset);
+				gap: var(--offset);
+			}
 
 			& svg {
 				width: calc(var(--offset) * 2);
@@ -48,6 +73,10 @@
 			display: flex;
 			flex-direction: column;
 			gap: calc(var(--offset) * 0.5);
+
+			@media (max-width: 999px) {
+				margin-left: calc(var(--offset) * 3);
+			}
 
 			& li {
 				display: grid;
@@ -80,6 +109,23 @@
 		padding: calc(var(--offset) * 2);
 		border-radius: 1em;
 		margin: 0;
+
+		@media (max-width: 999px) {
+			padding: var(--offset);
+			gap: calc(var(--offset) * 2);
+		}
+
+
+		@media (max-width: 780px) {
+			flex-direction: column;
+
+		}
+
+		& .main-head__link {
+			@media (max-width: 780px) {
+				margin: 0;
+			}
+		}
 	}
 
 	&-col {
@@ -94,6 +140,10 @@
 			letter-spacing: -0.06em;
 			color: #141f2a;
 
+			@media (max-width: 999px) {
+				font-size: calc(var(--fz) * 1.5);
+			}
+
 			& b {
 				color: var(--color-text-secondary);
 			}
@@ -102,6 +152,11 @@
 		& p {
 			margin-bottom: calc(var(--offset) * 3);
 			color: #141f2a;
+
+
+			@media (max-width: 780px) {
+				margin-bottom: var(--offset);
+			}
 		}
 
 		& a {

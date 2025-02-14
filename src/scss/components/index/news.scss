@@ -3,21 +3,42 @@
 	background-color: var(--color-text-primary);
 	border-top-left-radius: 1em;
 	border-top-right-radius: 1em;
-	min-height: 90vh;
 	display: flex;
 	flex-direction: column;
+
+	@media (max-width: 1180px) {
+		padding: calc(var(--offset) * 2);
+	}
+
+	@media (max-width: 999px) {
+		padding: var(--offset);
+		padding-right: 0;
+	}
+
 
 	&-slider {
 		overflow-x: hidden;
 		border-top-left-radius: 1em;
 		border-top-right-radius: 1em;
-		height: auto;
 		flex: 1;
+		height: 100%;
+		min-height: 40vh;
 	}
 
 	&-slide {
 		padding-right: var(--offset);
 		flex: 0 0 33.5%;
+		overflow: visible;
+		// min-height: 60vh;
+		height: max-content;
+
+		@media (max-width: 999px) {
+			flex: 0 0 50%;
+		}
+
+		@media (max-width: 580px) {
+			flex: 0 0 100%;
+		}
 
 
 		& b {
