@@ -18,7 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 function sliderCatalog() {
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".catalog-inner__slider", {
     modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation],
-    slidesPerView: 1,
+    slidesPerView: "auto",
     grabCursor: true,
     loop: true,
     autoplay: {
@@ -26,25 +26,6 @@ function sliderCatalog() {
       disableOnInteraction: false
     },
     speed: 600,
-    // breakpoints: {
-    // 	1380: {
-    // 		slidesPerView: 4,
-    // 		slidesPerGroup: 1,
-    // 	},
-    // 	1080: {
-    // 		slidesPerView: 3,
-    // 		slidesPerGroup: 1,
-    // 	},
-    // 	680: {
-    // 		slidesPerView: 2,
-    // 		slidesPerGroup: 1,
-    // 	},
-    // 	360: {
-    // 		slidesPerView: 1.1,
-    // 		slidesPerGroup: 1,
-    // 		spaceBetween: 15,
-    // 	}
-    // },
     navigation: {
       nextEl: ".catalog-btn-right",
       prevEl: ".catalog-btn-left"

@@ -19,6 +19,22 @@ function sliderNews() {
   const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".news-slider", {
     modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Autoplay],
     loop: true,
+    autoHeight: true,
+    breakpoints: {
+      1080: {
+        slidesPerView: 3,
+        slidesPerGroup: 1
+      },
+      580: {
+        slidesPerView: 2,
+        slidesPerGroup: 1
+      },
+      360: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 15
+      }
+    },
     autoplay: {
       delay: 3e3,
       disableOnInteraction: false
