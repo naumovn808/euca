@@ -280,6 +280,14 @@
 		<main class="main-wrapper">
 			<div class="profile-page">
 				<div class="side-bar">
+
+
+	<button class="nav__btn-profile" aria-label="навигационное меню">
+		<span>
+			<span></span>
+		</span>
+	</button>
+
 	<a href="./index.html" aria-label="на главную страннцу" class="nav__logo">
 		<picture>
 			<source srcset="./images/svg/logo.svg">
@@ -408,8 +416,64 @@
 		Выйти
 	</button>
 </div>
- <div class="profile-settings">
+ <div class="bottom-nav-menu">
+	<ul>
+		<li>
+			<a href="./catalog.html">
+				<svg class="nav-list__icon people" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#people"></use>
+				</svg>
+				<span>Каталог участников</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./catalog.html">
+				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#create2"></use>
+				</svg>
+
+				<span>Поиск грузов</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./messages.html">
+				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#icon-menu"></use>
+				</svg>
+				<span>Профиль</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./search-transport.html">
+				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#icon-truck"></use>
+				</svg>
+				<span>Поиск танспорта</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./contacts.html">
+				<svg width="18" height="18" aria-hidden="true">
+					<use xlink:href="#tel"></use>
+				</svg>
+				<span>Контакты</span>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div class="profile-settings">
 	<header class="profile-header">
+		<button class="nav__btn-header" aria-label="навигационное меню">
+			<span>
+				<span></span>
+			</span>
+		</button>
+
 		<h1>Заказы от вас, согласование</h1>
 
 		<div class="has-notifications profile-notifications">
@@ -552,6 +616,11 @@
 			<div class="order-info-content">
 				<div class="order-info__card order-info-second">
 					<div class="order-info-col">
+						<label for="dir" class="mobile-order-head label-order">
+							<input type="checkbox" id="dir">
+							Направления
+						</label>
+
 						<label for="num" class="label-order">
 							<input type="checkbox" id="num">
 							#AZE2478
@@ -567,27 +636,32 @@
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">загрузка</p>
 						<p class="car-head"><strong>Санкт-Петербург</strong></p>
 						<p>Lorem ipsum dolor sit amet</p>
 						<p><strong>готов 6 сен</strong></p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">ВЕС, Т / ОБЬЕМ, М3 ГРУЗ</p>
 						<p class="car-head"><strong>Улан-удЭ</strong></p>
 						<p>110 квартал, 14</p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">Транспорт</p>
 						<p class="car-head"><strong>10/10</strong>автомобиль(ли)</p>
 						<p><a href="#">застраховать груз</a></p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">ставка</p>
 						<p class="car-head"><strong>закр. + терм.</strong></p>
 						<p>загр/выгр: задн, отд.машина</p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head"></p>
 						<p class="car-head"><strong>26 124</strong>руб нал</p>
 						<p class="car-head"><strong>27 166</strong>руб с НДС</p>
 						<p class="car-head"><strong>26 124</strong>руб без НДС торг</p>
@@ -726,6 +800,7 @@
 			<div class="order-info-content">
 				<div class="order-info__card">
 					<div class="order-info-col">
+						<p class="mobile-order-head">#aze2478</p>
 						<h5 class="car-head">#aze2478</h5>
 						<p>
 							Санкт-Петербург
@@ -755,10 +830,12 @@
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">Документы/ставка</p>
 						<p class="car-head"><strong>100 000</strong> руб с НДС</p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">Водитель/контрагент</p>
 						<b class="car-head">Северные грузы,ООО</b>
 						<div class="stars">
 							<svg width="13" height="13">
@@ -781,6 +858,7 @@
 					</div>
 
 					<div class="order-info-col order-info__end">
+						<p class="mobile-order-head">Статус/ дата изм</p>
 						<b class="car-head green">Новое предложение</b>
 						<span>сегодня в 20:06</span>
 					</div>
@@ -844,6 +922,7 @@
 			<div class="order-info-content">
 				<div class="order-info__card">
 					<div class="order-info-col">
+						<p class="mobile-order-head">ТC/ Информация о грузе</p>
 						<h5 class="car-head">#aze2478</h5>
 						<p>
 							Санкт-Петербург
@@ -874,10 +953,12 @@
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">Документы/ставка</p>
 						<p class="car-head"><strong>100 000</strong> руб с НДС</p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">Водитель/контрагент</p>
 						<b class="car-head">Северные грузы,ООО</b>
 						<div class="stars">
 							<svg width="13" height="13">
@@ -900,6 +981,7 @@
 					</div>
 
 					<div class="order-info-col order-info__end">
+						<p class="mobile-order-head">Статус/ дата изм</p>
 						<b class="car-head">Ожидает одобрения</b>
 						<span>сегодня в 20:06, не просмотрено</span>
 					</div>
@@ -941,7 +1023,6 @@
 				</div>
 			</div>
 		</div>
-
 	</main>
 </div>
 
