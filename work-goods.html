@@ -417,8 +417,63 @@
 	</button>
 </div>
 
-				<div class="profile-settings">
+				<div class="bottom-nav-menu">
+	<ul>
+		<li>
+			<a href="./catalog.html">
+				<svg class="nav-list__icon people" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#people"></use>
+				</svg>
+				<span>Каталог участников</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./catalog.html">
+				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#create2"></use>
+				</svg>
+
+				<span>Поиск грузов</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./messages.html">
+				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#icon-menu"></use>
+				</svg>
+				<span>Профиль</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./search-transport.html">
+				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#icon-truck"></use>
+				</svg>
+				<span>Поиск танспорта</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./contacts.html">
+				<svg width="18" height="18" aria-hidden="true">
+					<use xlink:href="#tel"></use>
+				</svg>
+				<span>Контакты</span>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div class="profile-settings">
 	<header class="profile-header">
+		<button class="nav__btn-header" aria-label="навигационное меню">
+			<span>
+				<span></span>
+			</span>
+		</button>
 		<h1>Грузы в работе</h1>
 
 		<div class="has-notifications profile-notifications">
@@ -500,7 +555,14 @@
 
 	<main class="coorfinations-content profile-content">
 		<div class="order-head order-head-second">
+			<button type="button" class="form-btn form-btn__filters">Поиск по фильтрам</button>
+
 			<form class="form-order form-order-goods">
+				<button class="form-order-close">
+					<span></span>
+					<span></span>
+				</button>
+
 				<div class="form-order_row">
 					<label for="all" class="search-icon">
 						<svg width="12" height="16">
@@ -614,6 +676,11 @@
 			<div class="order-info-content">
 				<div class="order-info-second order-info__card">
 					<div class="order-info-col">
+						<label for="dir" class="mobile-order-head label-order">
+							<input type="checkbox" id="dir">
+							Направления
+						</label>
+
 						<label for="num" class="label-order">
 							<input type="checkbox" id="num">
 							#AZE2478
@@ -629,27 +696,32 @@
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">загрузка</p>
 						<p class="car-head"><strong>Санкт-Петербург</strong></p>
 						<p>Lorem ipsum dolor sit amet</p>
 						<p><strong>готов 6 сен</strong></p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">разгрузка</p>
 						<p class="car-head"><strong>Улан-удЭ</strong></p>
 						<p>110 квартал, 14</p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">ВЕС, Т / ОБЬЕМ, М3 ГРУЗ</p>
 						<p class="car-head"><strong>10/10</strong>автомобиль(ли)</p>
 						<p><a href="#">застраховать груз</a></p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">Транспорт</p>
 						<p class="car-head"><strong>закр. + терм.</strong></p>
 						<p>загр/выгр: задн, отд.машина</p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">ставка</p>
 						<p class="car-head"><strong>26 124</strong>руб нал</p>
 						<p class="car-head"><strong>27 166</strong>руб с НДС</p>
 						<p class="car-head"><strong>26 124</strong>руб без НДС торг</p>
@@ -732,7 +804,6 @@
 				</div>
 			</div>
 		</div>
-
 	</main>
 </div>
 
