@@ -259,4 +259,13 @@ async function init() {
 			console.error("Error loading module", e);
 		}
 	}
+
+	if (document.querySelector('.form-order')) {
+		try {
+			const { formFilter } = await import(/* webpackChunkName: "formFilter" */ './helpers/form-filters.js')
+			formFilter();
+		} catch (e) {
+			console.error("Error loading module", e);
+		}
+	}
 }

@@ -1521,6 +1521,10 @@
 .cretae-order-row {
 	& p {
 		width: 100%;
+
+		@media (max-width: 480px) {
+			width: fit-content;
+		}
 	}
 
 	& a {
