@@ -1,5 +1,62 @@
+<div class="bottom-nav-menu">
+	<ul>
+		<li>
+			<a href="./catalog.html">
+				<svg class="nav-list__icon people" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#people"></use>
+				</svg>
+				<span>Каталог участников</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./catalog.html">
+				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#create2"></use>
+				</svg>
+
+				<span>Поиск грузов</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./messages.html">
+				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#icon-menu"></use>
+				</svg>
+				<span>Профиль</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./search-transport.html">
+				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+					<use xlink:href="#icon-truck"></use>
+				</svg>
+				<span>Поиск танспорта</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="./contacts.html">
+				<svg width="18" height="18" aria-hidden="true">
+					<use xlink:href="#tel"></use>
+				</svg>
+				<span>Контакты</span>
+			</a>
+		</li>
+	</ul>
+</div>
+
 <div class="profile-settings">
 	<header class="profile-header">
+
+		<button class="nav__btn-header" aria-label="навигационное меню">
+			<span>
+				<span></span>
+			</span>
+		</button>
+
 		<h1>Заказы от вас, согласование</h1>
 
 		<div class="profile-notifications has-notifications">
@@ -143,6 +200,10 @@
 			<div class="order-info-content">
 				<div class="order-info__card order-info-second">
 					<div class="order-info-col">
+						<label for="dir" class="label-order mobile-order-head">
+							<input type="checkbox" id="dir" />
+							Направления
+						</label>
 						<label for="num" class="label-order">
 							<input type="checkbox" id="num" />
 							#AZE2478
@@ -158,27 +219,32 @@
 					</div>
 
 					<div class="order-info-col">
+							<p class="mobile-order-head">загрузка</p>
 						<p class="car-head"><strong>Санкт-Петербург</strong></p>
 						<p>Lorem ipsum dolor sit amet</p>
 						<p><strong>готов 6 сен</strong></p>
 					</div>
 
 					<div class="order-info-col">
+							<p class="mobile-order-head">разгрузка</p>
 						<p class="car-head"><strong>Улан-удЭ</strong></p>
 						<p>110 квартал, 14</p>
 					</div>
 
 					<div class="order-info-col">
+					<p class="mobile-order-head">ВЕС, Т / ОБЬЕМ, М3 ГРУЗ</p>
 						<p class="car-head"><strong>10/10</strong>автомобиль(ли)</p>
 						<p><a href="#">застраховать груз</a></p>
 					</div>
 
 					<div class="order-info-col">
+							<p class="mobile-order-head">Транспорт</p>
 						<p class="car-head"><strong>закр. + терм.</strong></p>
 						<p>загр/выгр: задн, отд.машина</p>
 					</div>
 
 					<div class="order-info-col">
+						<p class="mobile-order-head">Ставка</p>
 						<p class="car-head"><strong>26 124</strong>руб нал</p>
 						<p class="car-head"><strong>27 166</strong>руб с НДС</p>
 						<p class="car-head"><strong>26 124</strong>руб без НДС торг</p>
@@ -391,6 +457,7 @@
 			<div class="order-info-content">
 				<div class="order-info__card order-info-top">
 					<div class="order-info-col">
+							<p class="mobile-order-head">ТC/ Информация о грузе</p>
 						<div class="order-info-row">
 							<svg width="19" height="16">
 								<use xlink:href="#ts"></use>
@@ -404,6 +471,7 @@
 					</div>
 
 					<div class="order-info-col">
+							<p class="mobile-order-head">Документы/ставка</p>
 						<p class="order-info-row">
 							<svg width="18" height="14">
 								<use xlink:href="#order-plus"></use>
@@ -414,6 +482,7 @@
 					</div>
 
 					<div class="order-info-col">
+							<p class="mobile-order-head">Водитель/контрагент</p>
 						<div class="order-info-row">
 							<svg width="19" height="16">
 								<use xlink:href="#ts"></use>
@@ -427,12 +496,14 @@
 					</div>
 
 					<div class="order-info-col order-info-bottom__end">
+										<p class="mobile-order-head"></p>
 						<a href=""><strong>Заказ в исполени</strong> сегодня в 20:06, не просмотрено</a>
 					</div>
 				</div>
 
 				<div class="order-info__card order-info__buttom">
 					<div class="order-info-col">
+							<p class="mobile-order-head">Статус/ дата изм</p>
 						<h5 class="car-head">#aze2478</h5>
 						<p>
 							Санкт-Петербург
@@ -463,10 +534,12 @@
 					</div>
 
 					<div class="order-info-col">
+							<p class="mobile-order-head"></p>
 						<p class="car-head"><strong>100 000</strong> руб с НДС</p>
 					</div>
 
 					<div class="order-info-col">
+							<p class="mobile-order-head"></p>
 						<b class="car-head">Северные грузы,ООО</b>
 						<div class="stars">
 							<svg width="13" height="13">
@@ -490,6 +563,7 @@
 					</div>
 
 					<div class="order-info-col order-info__end order-info__row">
+
 						<button data-modal-target="archive-modal">отменить заказ</button>
 						<button class="more-info">завершить</button>
 

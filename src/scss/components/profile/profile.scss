@@ -1,7 +1,6 @@
 .profile-page {
 	min-height: 100vh;
 	background-color: var(--color-text-primary);
-	margin-bottom: calc(var(--offset) * 2);
 	display: flex;
 
 	@media (max-width: 999px) {
@@ -400,7 +399,6 @@
 
 .profile-settings {
 	background-color: rgba(245, 245, 245, 1);
-	margin-bottom: calc(var(--offset) * 3);
 	width: 100%;
 }
 
