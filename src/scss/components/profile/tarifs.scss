@@ -4,6 +4,19 @@
 	gap: var(--offset);
 	margin-top: calc(var(--offset) * 2.6);
 
+	@media (max-width: 1180px) {
+		margin: 0;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media (max-width: 780px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 480px) {
+		grid-template-columns: 1fr;
+	}
+
 	&-card {
 		height: auto;
 		display: flex;
@@ -15,6 +28,10 @@
 		color: #141f2a;
 		transition-duration: 0.5s;
 		transition-property: transform, color, background-color;
+
+		@media (max-width: 1180px) {
+			max-width: 100%;
+		}
 
 		&.current {
 			background-color: var(--color-text-secondary);
@@ -191,7 +208,7 @@
 		flex-direction: column;
 
 		& label {
-			width: 100%;
+			width: 95%;
 		}
 		& input {
 			width: 100%;
