@@ -249,8 +249,13 @@
 	}
 
 	@media (max-width: 580px) {
-		width: 90%;
+		width: 95%;
 	}
+
+	@media (max-width: 480px) {
+		width: 94%;
+	}
+
 }
 
 .chat-send {
