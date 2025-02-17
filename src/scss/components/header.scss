@@ -479,7 +479,7 @@ body.open {
 		order: 10;
 		margin-top: auto;
 		width: 100%;
-		margin-bottom: var(--offset-l);
+		margin-bottom: calc(var(--offset) * 10);
 	}
 }
 
@@ -576,3 +576,8 @@ body.open {
 .nav-list__icon.people {
 	width: 2em;
 }
+
+.search-goods__head {
+	margin-bottom: var(--offset);
+}
+
