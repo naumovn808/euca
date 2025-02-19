@@ -24,6 +24,11 @@ function profileMenu() {
     e.preventDefault();
     sideBar.classList.remove("open");
   });
+  document.addEventListener("click", (e) => {
+    if (!sideBar.contains(e.target) && !btnHeader.contains(e.target) && sideBar.classList.contains("open")) {
+      sideBar.classList.remove("open");
+    }
+  });
 }
 
 
