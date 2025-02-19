@@ -13405,6 +13405,7 @@ html {
   }
   .dropdown-menu {
     gap: 1em;
+    padding-left: 20%;
   }
   .dropdown-menu li a {
     font-size: calc(max(calc(1 * 1vw), 15px) * 1.2);
