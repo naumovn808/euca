@@ -8,10 +8,16 @@ export function profileMenu() {
 	btnHeader.addEventListener('click', (e) => {
 		e.preventDefault();
 		sideBar.classList.add('open');
-	})
+	});
 
 	btnProfile.addEventListener('click', (e) => {
 		e.preventDefault();
 		sideBar.classList.remove('open');
-	})
+	});
+
+	document.addEventListener('click', (e) => {
+		if (!sideBar.contains(e.target) && !btnHeader.contains(e.target) && sideBar.classList.contains('open')) {
+			sideBar.classList.remove('open');
+		}
+	});
 }

@@ -268,4 +268,13 @@ async function init() {
 			console.error("Error loading module", e);
 		}
 	}
+
+	if (document.querySelector('.go-back')) {
+		document.querySelector('.go-back').addEventListener('click', (e) => {
+			e.preventDefault();
+			window.history.back();
+		});
+	}
 }
+
+
