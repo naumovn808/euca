@@ -241,7 +241,7 @@
 		position: absolute;
 		z-index: -1;
 
-		&:checked ~ ::before {
+		&:checked~ ::before {
 			display: block;
 		}
 	}
@@ -461,8 +461,7 @@
 	border-radius: 1em;
 	padding: calc(var(--offset) * 0.5) var(--offset);
 
-	@media (max-width: 999px) {
-	}
+	@media (max-width: 999px) {}
 }
 
 .order-info__buttom {
@@ -603,6 +602,15 @@
 
 .order-buttons {
 	margin-top: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	min-width: calc(var(--offset) * 10);
+	position: relative;
+
+	& button {
+		font-size: 0.7em;
+	}
+
 }
 
 .cansel-order-card {
@@ -643,6 +651,7 @@
 
 	&:not(:last-of-type) {
 		border-right: 0.1em solid rgb(101, 101, 101, 0.5);
+
 		@media (max-width: 999px) {
 			border: none;
 		}
@@ -671,7 +680,7 @@
 
 .order-cansel-modal {
 	position: absolute;
-	top: 90%;
+	top: 110%;
 	z-index: 10;
 	right: 0;
 	display: none;
@@ -682,6 +691,19 @@
 	border-radius: 1em;
 	padding: var(--offset);
 	box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.2);
+
+	@media (max-width: 999px) {
+		right: 30%;
+		padding-right: calc(var(--offset));
+		min-width: calc(var(--offset) * 18);
+	}
+
+	@media (max-width: 580px) {
+		right: auto;
+		left: 0;
+		padding-right: calc(var(--offset));
+		min-width: calc(var(--offset) * 15);
+	}
 
 	& .tr {
 		position: absolute;
@@ -1284,9 +1306,6 @@
 	}
 }
 
-.order-icons {
-	position: relative;
-}
 
 .modal-change-bid {
 	& p {
@@ -1321,12 +1340,12 @@
 	display: none;
 }
 
-.choise-cash input:checked + label {
+.choise-cash input:checked+label {
 	background-color: #787b83;
 	color: white;
 }
 
-.choise-cash input:checked + label {
+.choise-cash input:checked+label {
 	background-color: #787b83;
 	color: white;
 }
@@ -1434,6 +1453,7 @@
 	@media (max-width: 780px) {
 		margin-left: 0;
 	}
+
 	@media (max-width: 580px) {
 		flex-direction: column;
 		align-items: flex-start;
@@ -1461,14 +1481,14 @@
 }
 
 .order-cansel-dropdown {
-	top: 150%;
+	top: 100%;
 	right: -10%;
 }
 
 .order-info__end {
 	position: relative;
 
-	& > button {
+	&>button {
 		font-size: calc(var(--fz) * 0.8);
 		text-decoration: underline;
 	}

@@ -74,8 +74,7 @@
 					<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z"
-							fill="white"
-						/>
+							fill="white" />
 					</svg>
 				</div>
 
@@ -264,9 +263,29 @@
 						<p class="car-head"><strong>27 166</strong>руб с НДС</p>
 						<p class="car-head"><strong>26 124</strong>руб без НДС торг</p>
 
-						<a class="chat-message" href="./messages.html">
+						<button class="chat-message" data-modal-target="dropdown-chat">
 							<img src="./images/svg/message.svg" alt="meassge" width="30" height="30" />
-						</a>
+						</button>
+
+						<div class="order-cansel-modal " data-modal="dropdown-chat">
+							<button class="order-close-btn" data-modal-close="dropdown-chat"></button>
+							<div class="tr">
+								<svg width="33" height="26" viewBox="0 0 33 26" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z"
+										fill="white"></path>
+								</svg>
+							</div>
+							<b>Отправить сообщение</b>
+							<form action="" method="">
+								<textarea name="" id="" style="height: auto; overflow: hidden"></textarea>
+
+								<button class="form-btn" data-modal-close="dropdown-chat">Отправить</button>
+								<button type="button" class="order-cansel" data-modal-close="dropdown-chat">Не
+									отклонять</button>
+							</form>
+						</div>
 					</div>
 				</div>
 
@@ -348,21 +367,53 @@
 							<p>Перевозчик взял груз</p>
 							<p>Вы можете оформить заявку</p>
 							<div class="order-buttons">
-								<button class="form-btn" data-modal-target="modal-create-order">Оформить</button>
+								<button class="form-btn button-text" data-modal-target="modal-create-order">Оформить</button>
 
-								<button class="cansel-order-card">Отклонить</button>
+								<button class="chat-message button-text" data-modal-target="dropdown-close">Отклонить</button>
 
 								<span>сегодня в 11:18</span>
+							</div>
+
+							<div class="order-cansel-modal order-cansel-dropdown" data-modal="dropdown-close">
+								<button class="order-close-btn" data-modal-close="dropdown-close"></button>
+								<div class="tr">
+									<svg width="33" height="26" viewBox="0 0 33 26" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z"
+											fill="white"></path>
+									</svg>
+								</div>
+								<b>Отклонить предложение</b>
+								<p>Укажите причину отмены предложения</p>
+								<form action="" method="">
+									<textarea name="" id="" style="height: auto; overflow: hidden"></textarea>
+									<b>Что сделать с грузом</b>
+
+									<label for="save">
+										Восстановить груз
+										<input type="radio" name="archiveOption" id="save" />
+									</label>
+									<label for="stay">
+										Оставить груз в Архиве
+										<input type="radio" name="archiveOption" id="stay" />
+									</label>
+
+									<button class="form-btn" data-modal-close="dropdown-close">Отклонить
+										предложение</button>
+									<button type="button" class="order-cansel" data-modal-close="dropdown-close">Не
+										отклонять</button>
+								</form>
 							</div>
 
 							<div class="order-cansel-modal">
 								<button class="order-close-btn"></button>
 								<div class="tr">
-									<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg width="33" height="26" viewBox="0 0 33 26" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
 										<path
 											d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z"
-											fill="white"
-										/>
+											fill="white" />
 									</svg>
 								</div>
 								<b>Отклонить предложение</b>
@@ -384,6 +435,7 @@
 									<button type="button" class="order-cansel">Не отклонять</button>
 								</form>
 							</div>
+
 						</div>
 					</div>
 				</div>
