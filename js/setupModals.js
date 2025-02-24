@@ -19,7 +19,6 @@ function setupModals() {
     button.addEventListener("click", () => {
       const targetModalId = button.dataset.modalTarget;
       const targetModal = document.querySelector(`[data-modal="${targetModalId}"]`);
-      console.log("test");
       if (targetModal) {
         modals.forEach((modal) => {
           if (modal !== targetModal && modal.classList.contains("open")) {
@@ -36,17 +35,11 @@ function setupModals() {
         } else {
           document.body.classList.remove("modal-open");
         }
+        if (activeModal && !activeModal.classList.contains("modal-overlay")) {
+          document.addEventListener("mousedown", outsideClickHandler);
+        }
       } else {
         console.error(`\u041C\u043E\u0434\u0430\u043B\u044C\u043D\u043E\u0435 \u043E\u043A\u043D\u043E \u0441 id "${targetModalId}" \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E.`);
-      }
-    });
-  });
-  modals.forEach((modal) => {
-    modal.addEventListener("click", (event) => {
-      if (event.target.classList.contains("modal-overlay")) {
-        modal.classList.remove("open");
-        document.body.classList.remove("modal-open");
-        activeModal = null;
       }
     });
   });
@@ -59,6 +52,7 @@ function setupModals() {
         targetModal.classList.remove("open");
         document.body.classList.remove("modal-open");
         activeModal = null;
+        document.removeEventListener("mousedown", outsideClickHandler);
       } else {
         console.error(`\u041C\u043E\u0434\u0430\u043B\u044C\u043D\u043E\u0435 \u043E\u043A\u043D\u043E \u0441 id "${targetModalId}" \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E.`);
       }
@@ -70,9 +64,10 @@ function setupModals() {
         activeModal.classList.remove("open");
         document.body.classList.remove("modal-open");
         activeModal = null;
+        document.removeEventListener("mousedown", outsideClickHandler);
       }
     } else if (event.key === "Tab") {
-      const activeModal2 = document.querySelector(".modal-overlay.open");
+      const activeModal2 = document.querySelector(".modal-overlay.open, [data-modal].open");
       if (activeModal2) {
         event.preventDefault();
         const focusableElements = activeModal2.querySelectorAll(
@@ -91,6 +86,14 @@ function setupModals() {
       }
     }
   });
+  function outsideClickHandler(event) {
+    if (activeModal && !activeModal.contains(event.target) && !activeModal.classList.contains("modal-overlay")) {
+      activeModal.classList.remove("open");
+      document.body.classList.remove("modal-open");
+      activeModal = null;
+      document.removeEventListener("mousedown", outsideClickHandler);
+    }
+  }
 }
 
 

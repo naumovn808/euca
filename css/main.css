@@ -429,8 +429,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: calc(max(calc(1.25 * 1vw), 15px) * 2);
-  gap: calc(var(--offset) * 2);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3735,7 +3733,7 @@ input[type=number]::-ms-clear {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(0.3em);
   -webkit-backdrop-filter: blur(0.3em);
 }
@@ -7618,6 +7616,7 @@ input[type=number]::-ms-clear {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5em;
+  position: relative;
 }
 
 .order-info__end {
@@ -12118,10 +12117,6 @@ input[type=number]::-ms-clear {
   z-index: -1;
 }
 
-.search-page {
-  overflow: hidden;
-}
-
 .notifications-search {
   right: calc(max(calc(1.25 * 1vw), 15px) * 8);
   right: calc(var(--offset) * 8);
@@ -13915,5 +13910,31 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (min-width: 999px){
+  .nav__link-red {
+    background-color: #fc4739;
+    background-color: var(--color-text-secondary);
+    color: #fff;
+    color: var(--color-text-primary);
+    border-radius: 2em;
+    -webkit-transition-property: background-color, color, -webkit-box-shadow;
+    transition-property: background-color, color, -webkit-box-shadow;
+    transition-property: background-color, color, box-shadow;
+    transition-property: background-color, color, box-shadow, -webkit-box-shadow;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .nav__link-red:hover, .nav__link-red:focus, .nav__link-red:focus-within {
+    background-color: #fff;
+    background-color: var(--color-text-primary);
+    color: #fc4739;
+    color: var(--color-text-secondary);
+    -webkit-box-shadow: 0 0 0 0.05em #fc4739;
+            box-shadow: 0 0 0 0.05em #fc4739;
+    -webkit-box-shadow: 0 0 0 0.05em var(--color-text-secondary);
+            box-shadow: 0 0 0 0.05em var(--color-text-secondary);
   }
 }

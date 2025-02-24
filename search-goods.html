@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +33,7 @@
 
 	<link rel="preload" href="./fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-BoldItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-BoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-Medium.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-MediumItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-MediumItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-Regular.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-SemiBoldItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="./fonts/Inter-SemiBoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 	<link rel="preload" href="./css/main.min.css" as="style">
-
+<!-- <link rel="preload" href="/js/main.min.js" as="script"> -->
 
 
 <link rel="stylesheet" href="./css/main.min.css">
@@ -42,208 +42,207 @@
 </head>
 
 
-<div class="bottom-nav-menu">
-	<ul>
-		<li>
-			<a href="./catalog.html">
-				<svg class="nav-list__icon people" width="20" height="20" aria-hidden="true">
-					<use xlink:href="#people"></use>
-				</svg>
-				<span>Каталог участников</span>
-			</a>
-		</li>
+	<div class="bottom-nav-menu">
+		<ul>
+			<li>
+				<a href="./catalog.html">
+					<svg class="nav-list__icon people" width="20" height="20" aria-hidden="true">
+						<use xlink:href="#people"></use>
+					</svg>
+					<span>Каталог участников</span>
+				</a>
+			</li>
 
-		<li>
-			<a href="./search-goods.html">
-				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
-					<use xlink:href="#create2"></use>
-				</svg>
+			<li>
+				<a href="./search-goods.html">
+					<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+						<use xlink:href="#create2"></use>
+					</svg>
 
-				<span>Поиск грузов</span>
-			</a>
-		</li>
+					<span>Поиск грузов</span>
+				</a>
+			</li>
 
-		<li>
-			<a class="current" href="./messages.html">
-				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
-					<use xlink:href="#icon-menu"></use>
-				</svg>
-				<span>Профиль</span>
-			</a>
-		</li>
+			<li>
+				<a class="current" href="./messages.html">
+					<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+						<use xlink:href="#icon-menu"></use>
+					</svg>
+					<span>Профиль</span>
+				</a>
+			</li>
 
-		<li>
-			<a href="./search-transport.html">
-				<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
-					<use xlink:href="#icon-truck"></use>
-				</svg>
-				<span>Поиск танспорта</span>
-			</a>
-		</li>
+			<li>
+				<a href="./search-transport.html">
+					<svg class="nav-list__icon" width="20" height="20" aria-hidden="true">
+						<use xlink:href="#icon-truck"></use>
+					</svg>
+					<span>Поиск танспорта</span>
+				</a>
+			</li>
 
-		<li>
-			<a href="./contacts.html">
-				<svg width="18" height="18" aria-hidden="true">
-					<use xlink:href="#tel"></use>
-				</svg>
-				<span>Контакты</span>
-			</a>
-		</li>
-	</ul>
-</div>
+			<li>
+				<a href="./contacts.html">
+					<svg width="18" height="18" aria-hidden="true">
+						<use xlink:href="#tel"></use>
+					</svg>
+					<span>Контакты</span>
+				</a>
+			</li>
+		</ul>
+	</div>
 
-<header class="header">
-	<nav class="nav">
-		<button class="nav__btn" aria-label="навигационное меню">
-			<span>
-				<span></span>
-			</span>
-		</button>
+	<header class="header">
+		<nav class="nav">
+			<button class="nav__btn" aria-label="навигационное меню">
+				<span>
+					<span></span>
+				</span>
+			</button>
 
-		<a href="./index.html" aria-label="на главную страннцу" class="nav__logo">
-			<picture>
-				<source srcset="./images/svg/search-logo.svg">
-				<img src="./images/svg/search-logo.svg" width="230" height="50" alt="логотип компании">
-			</picture>
-		</a>
-
-		<div class="nav-menu">
-			<ul class="nav__list">
-				<li class="nav__item">
-					
-					<a class="nav__link @@current" href="./catalog.html">Каталог участников</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="./search-goods.html">Поиск гузов</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="./search-transport.html">Поиск транспорта</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="./contacts.html">Контакты</a>
-				</li>
-			</ul>
-
-			<a class="profile" href="./messages.html">
+			<a href="./index.html" aria-label="на главную страннцу" class="nav__logo">
 				<picture>
-					<source srcset="./images/profile.avif">
-					<img src="./images/profile.png" alt="автар пользователя" width="50" height="50">
+					<source srcset="./images/svg/search-logo.svg">
+					<img src="./images/svg/search-logo.svg" width="230" height="50" alt="логотип компании">
 				</picture>
-				<div class="profile__info">
-					<b>Имя Фамилия</b>
-					<span>Клиент</span>
-				</div>
 			</a>
 
-			<div class="nav-menu__footer">
-				<div class="footer-contacts">
-					<b>Контакты</b>
-					<a href="https://www.google.com/maps/place/41,+Chukursay+ko'chasi+153,+100111,+%D0%A2%D0%BEshkent,+Toshkent/@41.3828312,69.2331603,17z/data=!3m1!4b1!4m5!3m4!1s0x38ae8daf24d950b1:0x5ab459c46bba630b!8m2!3d41.3828312!4d69.2331603?entry=ttu&amp;g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D" class="footer-location">г.Ташкент, Алмазарский район, улица Чукурсой, 41/153</a>
-
-					<a href="tel:+998988889605">+998 (98) 888-96-05</a>
-					<a href="mailto:info@euca-alliance.com">info@euca-alliance.com</a>
-				</div>
-
-				<ul class="footer-social">
-					<li>
-						<a href="">
-							<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M16.9006 0.0999756H7.01648C5.34887 0.101724 3.7501 0.715884 2.57092 1.80772C1.39174 2.89955 0.728451 4.37989 0.726562 5.92398V15.076C0.728451 16.6201 1.39174 18.1004 2.57092 19.1922C3.7501 20.2841 5.34887 20.8982 7.01648 20.9H16.9006C18.5683 20.8982 20.167 20.2841 21.3462 19.1922C22.5254 18.1004 23.1887 16.6201 23.1906 15.076V5.92398C23.1887 4.37989 22.5254 2.89955 21.3462 1.80772C20.167 0.715884 18.5683 0.101724 16.9006 0.0999756ZM11.9586 15.492C10.8923 15.492 9.84989 15.1992 8.96328 14.6507C8.07668 14.1021 7.38566 13.3225 6.9776 12.4103C6.56954 11.4982 6.46277 10.4944 6.6708 9.52608C6.87882 8.55773 7.3923 7.66824 8.1463 6.9701C8.90029 6.27196 9.86094 5.79651 10.9068 5.6039C11.9526 5.41128 13.0366 5.51014 14.0217 5.88797C15.0069 6.2658 15.8489 6.90564 16.4413 7.72657C17.0337 8.5475 17.3499 9.51265 17.3499 10.5C17.3483 11.8235 16.7798 13.0923 15.769 14.0282C14.7583 14.9641 13.3879 15.4905 11.9586 15.492ZM17.7992 6.33998C17.5326 6.33998 17.272 6.26678 17.0504 6.12965C16.8287 5.99252 16.656 5.79761 16.554 5.56956C16.4519 5.34152 16.4253 5.09059 16.4773 4.8485C16.5293 4.60641 16.6576 4.38404 16.8461 4.20951C17.0346 4.03497 17.2748 3.91611 17.5363 3.86796C17.7977 3.8198 18.0687 3.84452 18.315 3.93897C18.5613 4.03343 18.7718 4.19339 18.9199 4.39862C19.068 4.60386 19.147 4.84514 19.147 5.09198C19.147 5.42297 19.005 5.7404 18.7523 5.97445C18.4995 6.20849 18.1567 6.33998 17.7992 6.33998Z">
-								</path>
-							</svg>
-						</a>
+			<div class="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<!-- current -->
+						<a class="nav__link @@current" href="./catalog.html">Каталог участников</a>
 					</li>
-					<li>
-						<a href="">
-							<svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M20.9004 2.09998C22.0607 2.09998 23.0528 2.4814 23.8766 3.24425C24.7005 4.00709 25.1124 4.92567 25.1124 5.99998V19C25.1124 20.0743 24.7005 20.9929 23.8766 21.7557C23.0528 22.5186 22.0607 22.9 20.9004 22.9H18.1509V14.8427H21.0613L21.5001 11.701H18.1509V9.69685C18.1509 9.1913 18.2655 8.81213 18.4946 8.55935C18.7238 8.30657 19.1698 8.18018 19.8328 8.18018L21.6171 8.16664V5.36352C21.0028 5.28227 20.1351 5.24164 19.0138 5.24164C17.6878 5.24164 16.6275 5.60275 15.8329 6.32498C15.0383 7.0472 14.6409 8.06734 14.6409 9.38539V11.701H11.7159V14.8427H14.6409V22.9H6.86044C5.70019 22.9 4.70813 22.5186 3.88425 21.7557C3.06038 20.9929 2.64844 20.0743 2.64844 19V5.99998C2.64844 4.92567 3.06038 4.00709 3.88425 3.24425C4.70813 2.4814 5.70019 2.09998 6.86044 2.09998H20.9004Z">
-								</path>
-							</svg>
-						</a>
+					<li class="nav__item">
+						<a class="nav__link" href="./search-goods.html">Поиск гузов</a>
 					</li>
-					<li>
-						<a href="">
-							<svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M24.905 8.07647C24.905 7.88824 24.6111 6.38235 23.9252 5.72353C23.0434 4.78235 22.0637 4.68824 21.5738 4.68824H21.4758C18.4386 4.5 13.9317 4.5 13.8337 4.5C13.8337 4.5 9.22879 4.5 6.19153 4.68824H6.09355C5.60367 4.68824 4.62391 4.78235 3.74212 5.72353C3.05629 6.47647 2.76236 7.98235 2.76236 8.17059C2.76236 8.26471 2.56641 9.95882 2.56641 11.7471V13.3471C2.56641 15.1353 2.76236 16.8294 2.76236 16.9235C2.76236 17.1118 3.05629 18.6176 3.74212 19.2765C4.52593 20.1235 5.50569 20.2176 6.09355 20.3118H6.38748C8.15105 20.5 13.5397 20.5 13.7357 20.5C13.7357 20.5 18.3406 20.5 21.3779 20.3118H21.4758C21.9657 20.2176 22.9455 20.1235 23.8273 19.2765C24.5131 18.5235 24.807 17.0176 24.807 16.8294C24.807 16.7353 25.003 15.0412 25.003 13.2529V11.6529C25.101 9.95882 24.905 8.17059 24.905 8.07647ZM17.6548 12.6882L11.7762 15.7C11.6782 15.7 11.6782 15.7941 11.5802 15.7941C11.4822 15.7941 11.3843 15.7941 11.3843 15.7C11.2863 15.6059 11.1883 15.5118 11.1883 15.3235V9.20588C11.1883 9.01765 11.2863 8.92353 11.3843 8.82941C11.4822 8.73529 11.6782 8.73529 11.8742 8.82941L17.7527 11.8412C17.9487 11.9353 18.0467 12.0294 18.0467 12.2176C18.0467 12.4059 17.8507 12.5941 17.6548 12.6882Z">
-								</path>
-							</svg>
-						</a>
+					<li class="nav__item">
+						<a class="nav__link" href="./search-transport.html">Поиск транспорта</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="./contacts.html">Контакты</a>
 					</li>
 				</ul>
+
+				<a class="profile" href="./messages.html">
+					<picture>
+						<source srcset="./images/profile.avif">
+						<img src="./images/profile.png" alt="автар пользователя" width="50" height="50">
+					</picture>
+					<div class="profile__info">
+						<b>Имя Фамилия</b>
+						<span>Клиент</span>
+					</div>
+				</a>
+
+				<div class="nav-menu__footer">
+					<div class="footer-contacts">
+						<b>Контакты</b>
+						<a href="https://www.google.com/maps/place/41,+Chukursay+ko'chasi+153,+100111,+%D0%A2%D0%BEshkent,+Toshkent/@41.3828312,69.2331603,17z/data=!3m1!4b1!4m5!3m4!1s0x38ae8daf24d950b1:0x5ab459c46bba630b!8m2!3d41.3828312!4d69.2331603?entry=ttu&amp;g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D" class="footer-location">г.Ташкент, Алмазарский район, улица Чукурсой, 41/153</a>
+
+						<a href="tel:+998988889605">+998 (98) 888-96-05</a>
+						<a href="mailto:info@euca-alliance.com">info@euca-alliance.com</a>
+					</div>
+
+					<ul class="footer-social">
+						<li>
+							<a href="">
+								<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.9006 0.0999756H7.01648C5.34887 0.101724 3.7501 0.715884 2.57092 1.80772C1.39174 2.89955 0.728451 4.37989 0.726562 5.92398V15.076C0.728451 16.6201 1.39174 18.1004 2.57092 19.1922C3.7501 20.2841 5.34887 20.8982 7.01648 20.9H16.9006C18.5683 20.8982 20.167 20.2841 21.3462 19.1922C22.5254 18.1004 23.1887 16.6201 23.1906 15.076V5.92398C23.1887 4.37989 22.5254 2.89955 21.3462 1.80772C20.167 0.715884 18.5683 0.101724 16.9006 0.0999756ZM11.9586 15.492C10.8923 15.492 9.84989 15.1992 8.96328 14.6507C8.07668 14.1021 7.38566 13.3225 6.9776 12.4103C6.56954 11.4982 6.46277 10.4944 6.6708 9.52608C6.87882 8.55773 7.3923 7.66824 8.1463 6.9701C8.90029 6.27196 9.86094 5.79651 10.9068 5.6039C11.9526 5.41128 13.0366 5.51014 14.0217 5.88797C15.0069 6.2658 15.8489 6.90564 16.4413 7.72657C17.0337 8.5475 17.3499 9.51265 17.3499 10.5C17.3483 11.8235 16.7798 13.0923 15.769 14.0282C14.7583 14.9641 13.3879 15.4905 11.9586 15.492ZM17.7992 6.33998C17.5326 6.33998 17.272 6.26678 17.0504 6.12965C16.8287 5.99252 16.656 5.79761 16.554 5.56956C16.4519 5.34152 16.4253 5.09059 16.4773 4.8485C16.5293 4.60641 16.6576 4.38404 16.8461 4.20951C17.0346 4.03497 17.2748 3.91611 17.5363 3.86796C17.7977 3.8198 18.0687 3.84452 18.315 3.93897C18.5613 4.03343 18.7718 4.19339 18.9199 4.39862C19.068 4.60386 19.147 4.84514 19.147 5.09198C19.147 5.42297 19.005 5.7404 18.7523 5.97445C18.4995 6.20849 18.1567 6.33998 17.7992 6.33998Z"></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.9004 2.09998C22.0607 2.09998 23.0528 2.4814 23.8766 3.24425C24.7005 4.00709 25.1124 4.92567 25.1124 5.99998V19C25.1124 20.0743 24.7005 20.9929 23.8766 21.7557C23.0528 22.5186 22.0607 22.9 20.9004 22.9H18.1509V14.8427H21.0613L21.5001 11.701H18.1509V9.69685C18.1509 9.1913 18.2655 8.81213 18.4946 8.55935C18.7238 8.30657 19.1698 8.18018 19.8328 8.18018L21.6171 8.16664V5.36352C21.0028 5.28227 20.1351 5.24164 19.0138 5.24164C17.6878 5.24164 16.6275 5.60275 15.8329 6.32498C15.0383 7.0472 14.6409 8.06734 14.6409 9.38539V11.701H11.7159V14.8427H14.6409V22.9H6.86044C5.70019 22.9 4.70813 22.5186 3.88425 21.7557C3.06038 20.9929 2.64844 20.0743 2.64844 19V5.99998C2.64844 4.92567 3.06038 4.00709 3.88425 3.24425C4.70813 2.4814 5.70019 2.09998 6.86044 2.09998H20.9004Z"></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M24.905 8.07647C24.905 7.88824 24.6111 6.38235 23.9252 5.72353C23.0434 4.78235 22.0637 4.68824 21.5738 4.68824H21.4758C18.4386 4.5 13.9317 4.5 13.8337 4.5C13.8337 4.5 9.22879 4.5 6.19153 4.68824H6.09355C5.60367 4.68824 4.62391 4.78235 3.74212 5.72353C3.05629 6.47647 2.76236 7.98235 2.76236 8.17059C2.76236 8.26471 2.56641 9.95882 2.56641 11.7471V13.3471C2.56641 15.1353 2.76236 16.8294 2.76236 16.9235C2.76236 17.1118 3.05629 18.6176 3.74212 19.2765C4.52593 20.1235 5.50569 20.2176 6.09355 20.3118H6.38748C8.15105 20.5 13.5397 20.5 13.7357 20.5C13.7357 20.5 18.3406 20.5 21.3779 20.3118H21.4758C21.9657 20.2176 22.9455 20.1235 23.8273 19.2765C24.5131 18.5235 24.807 17.0176 24.807 16.8294C24.807 16.7353 25.003 15.0412 25.003 13.2529V11.6529C25.101 9.95882 24.905 8.17059 24.905 8.07647ZM17.6548 12.6882L11.7762 15.7C11.6782 15.7 11.6782 15.7941 11.5802 15.7941C11.4822 15.7941 11.3843 15.7941 11.3843 15.7C11.2863 15.6059 11.1883 15.5118 11.1883 15.3235V9.20588C11.1883 9.01765 11.2863 8.92353 11.3843 8.82941C11.4822 8.73529 11.6782 8.73529 11.8742 8.82941L17.7527 11.8412C17.9487 11.9353 18.0467 12.0294 18.0467 12.2176C18.0467 12.4059 17.8507 12.5941 17.6548 12.6882Z"></path>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- <button type="button" class="nav__login nav__link" data-modal-target="modal-login">Войти</button>
+
+		    <button type="button" class="nav__register nav__link" data-modal-target="modal-register">Регистрация</button> -->
 			</div>
 
-			
-		</div>
+			<div class="has-notifications profile-notifications">
+				<svg width="16" height="18">
+					<use xlink:href="#notifications"></use>
+				</svg>
 
-		<div class="has-notifications profile-notifications">
-			<svg width="16" height="18">
-				<use xlink:href="#notifications"></use>
-			</svg>
-
-			<div class="notifications-modal notifications-search">
-				<div class="tr">
-					<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z" fill="white"/>
-					</svg>
-				</div>
-
-				<div class="notifications-modal__head">
-					
-
-					<a href="#" class="read">Сделать прочитаным</a>
-
-					<div class="notifications-modal__btn">
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-
-				<div class="notifications-modal__content">
-					<div class="notifications-modal__card">
-						<svg width="20" height="20">
-							<use xlink:href="#ntf"></use>
+				<div class="notifications-modal notifications-search">
+					<div class="tr">
+						<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z" fill="white"/>
 						</svg>
-						<p>OOO TS1 взял груз: Санкт-Петербург-Улан-Удэ, 10т, 10 м2, Ставка-127188 руб</p>
-						<div class="notifications-modal__botom">
-							<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
-							<span class="time">11:15</span>
+					</div>
+
+					<div class="notifications-modal__head">
+						<!-- <span class="read has-read">Все прочитано</span> -->
+
+						<a href="#" class="read">Сделать прочитаным</a>
+
+						<div class="notifications-modal__btn">
+							<span></span>
+							<span></span>
 						</div>
 					</div>
 
-					<div class="notifications-modal__card">
-						<svg width="20" height="20">
-							<use xlink:href="#ntf"></use>
-						</svg>
-						<p>OOO Северные грузы предлагает груз Санкт-Петербург - Москва</p>
-						<p>за <strong>1000 000 руб</strong></p>
-						<p>Автомашины, 10 т, закр. + терм., загрузка с 26 авг</p>
-						<p>Предлжение действует до 21:06 мск</p>
-						<button type="button" data-modal-target="get-goods" class="notifications-modal__link">Подробнее</button>
-					</div>
+					<div class="notifications-modal__content">
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<p>OOO TS1 взял груз: Санкт-Петербург-Улан-Удэ, 10т, 10 м2, Ставка-127188 руб</p>
+							<div class="notifications-modal__botom">
+								<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+								<span class="time">11:15</span>
+							</div>
+						</div>
 
-					<div class="notifications-modal__card">
-						<svg width="20" height="20">
-							<use xlink:href="#ntf"></use>
-						</svg>
-						<b>Встречное предложение на груз: <span>№AZE2477</span></b>
-						<p>Автомобиль(ли), Санкт-Петербург - Улан-Удэ, 10т, 10м2, закр., изтерм, реф., 6сен</p>
-						<p><span>Ставка:</span> 25000 руб не б/нал, 23000 руб б/нал с НДС, 23000 руб/нал без НДС</p>
-						<p><span>Фирма:</span> “TS1,OOO”</p>
-						<p><span>Контакт: </span></p>
-						<p>Иван</p>
-						<a href="#">Написать сообщение</a>
-						<p>Санкт-Петербург, Моб: <a href="">+000 00 000-00-00</a></p>
-						<p>Email: <a href="">email@example.com</a></p>
-						<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<p>OOO Северные грузы предлагает груз Санкт-Петербург - Москва</p>
+							<p>за <strong>1000 000 руб</strong></p>
+							<p>Автомашины, 10 т, закр. + терм., загрузка с 26 авг</p>
+							<p>Предлжение действует до 21:06 мск</p>
+							<button type="button" data-modal-target="get-goods" class="notifications-modal__link">Подробнее</button>
+						</div>
+
+						<div class="notifications-modal__card">
+							<svg width="20" height="20">
+								<use xlink:href="#ntf"></use>
+							</svg>
+							<b>Встречное предложение на груз: <span>№AZE2477</span></b>
+							<p>Автомобиль(ли), Санкт-Петербург - Улан-Удэ, 10т, 10м2, закр., изтерм, реф., 6сен</p>
+							<p><span>Ставка:</span> 25000 руб не б/нал, 23000 руб б/нал с НДС, 23000 руб/нал без НДС</p>
+							<p><span>Фирма:</span> “TS1,OOO”</p>
+							<p><span>Контакт: </span></p>
+							<p>Иван</p>
+							<a href="#">Написать сообщение</a>
+							<p>Санкт-Петербург, Моб: <a href="">+000 00 000-00-00</a></p>
+							<p>Email: <a href="">email@example.com</a></p>
+							<a href="#" class="notifications-modal__link">Посмотреть предложение</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</nav>
-</header>
+		</nav>
+	</header>
 
-<body>
-	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><symbol id="acc" viewBox="0 0 30 30">
+	<body>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none"><symbol id="acc" viewBox="0 0 30 30">
 <path d="M28.6903 29.3491C28.4712 29.5689 28.2091 29.7409 27.9202 29.8544C27.6314 29.9678 27.3223 30.0203 27.0122 30.0084L2.15592 28.982C1.55987 28.9572 0.998082 28.6966 0.594172 28.2576C0.190262 27.8185 -0.0227034 27.237 0.00213209 26.641C0.0269675 26.0449 0.287569 25.4832 0.726602 25.0792C1.16564 24.6753 1.74715 24.4624 2.3432 24.4872L21.4462 25.2363L1.4423 3.88165C1.2215 3.6759 1.04439 3.42779 0.92156 3.15211C0.798726 2.87643 0.732678 2.57883 0.727353 2.27707C0.722029 1.97531 0.777538 1.67557 0.890571 1.39572C1.0036 1.11588 1.17184 0.861668 1.38525 0.64826C1.59867 0.434849 1.85287 0.266607 2.13272 0.153576C2.41256 0.0405426 2.7123 -0.0149651 3.01406 -0.00964165C3.31582 -0.00431633 3.61342 0.0617294 3.8891 0.184565C4.16478 0.3074 4.4129 0.484505 4.61865 0.705313L24.615 22.0975L23.8658 2.99446C23.8415 2.39953 24.0542 1.81925 24.4573 1.38102C24.8604 0.942799 25.421 0.682457 26.0159 0.657154H26.1132C26.694 0.656689 27.2525 0.881086 27.6714 1.28331C28.0904 1.68553 28.3374 2.23433 28.3607 2.81467L29.3795 27.671C29.3875 27.9833 29.3304 28.2938 29.2117 28.5827C29.093 28.8716 28.9155 29.1327 28.6903 29.3491Z"/>
 </symbol><symbol id="add-goods" viewBox="0 0 10 7">
 <path d="M3.08703 5.65701L1.01589 3.72532C0.904285 3.62124 0.752921 3.56276 0.595093 3.56276C0.437264 3.56276 0.2859 3.62124 0.174299 3.72532C0.0626971 3.82941 0 3.97058 0 4.11778C0 4.19067 0.0153926 4.26284 0.0452989 4.33018C0.0752051 4.39752 0.119039 4.4587 0.174299 4.51024L2.66922 6.83717C2.902 7.05428 3.27803 7.05428 3.51081 6.83717L9.8257 0.947483C9.9373 0.843396 10 0.702224 10 0.555023C10 0.407822 9.9373 0.266649 9.8257 0.162562C9.7141 0.0584756 9.56274 0 9.40491 0C9.24708 0 9.09572 0.0584756 8.98411 0.162562L3.08703 5.65701Z"/>
@@ -480,567 +479,567 @@
 <path d="M10.7138 2.20033C10.9195 2.61759 11.0956 3.04883 11.2407 3.49083C11.8578 3.32641 12.4567 3.09985 13.0281 2.81463C12.1349 1.87065 11.0137 1.17256 9.77246 0.787598C10.1476 1.21462 10.4641 1.68971 10.7138 2.20033Z"/>
 </symbol></svg>
 
-	<main class="main-wrapper profile-wrapper search-page-wrapper">
-		<section class="search-page">
-			<h1 class="title">Поиск грузов</h1>
+		<main class="main-wrapper profile-wrapper search-page-wrapper">
+			<section class="search-page">
+				<h1 class="title">Поиск грузов</h1>
 
-			<form action="" method class="form-search">
-				<div class="form-search-row">
-					<label for="point" class="input-check-red">
-						<input type="checkbox" id="point">
-						<span>Искать грузы в “эллипсе” маршрута</span>
-					</label>
-					<label for="length" class="input-check-red">
-						<input type="checkbox" id="length">
-						<span>Длина маршрута</span>
-					</label>
-				</div>
-
-				<div class="form-search-head">
-					<div class="form-search-inputs-wrapper">
-						<div class="form-search-inputs">
-							<label for="from">
-								<span>Откуда</span>
-								<input type="text" id="from" placeholder="Напрмиер, Москва" class="input-form">
-							</label>
-							<label for="to">
-								<span>Радиус</span>
-								<input type="number" id="to" placeholder="КМ" class="input-form">
-							</label>
-						</div>
-						<div class="form-search-inputs__bottom">
-							<select name="" id="">
-								<option value="" hidden>Выбрать список</option>
-								<option value="">список 1</option>
-								<option value="">список 2</option>
-							</select>
-
-							<label for="goods" class="input-check-red">
-								<input type="checkbox" id="goods">
-								<span>точно по Загрузке</span>
-							</label>
-						</div>
-					</div>
-
-					<svg width="23" height="23">
-						<use xlink:href="#search-arrow"></use>
-					</svg>
-
-					<div class="form-search-inputs-wrapper">
-						<div class="form-search-inputs">
-							<label for="from">
-								<span>Куда</span>
-								<input type="text" id="from" placeholder="Напрмиер, Санкт-Петербург" class="input-form">
-							</label>
-							<label for="to">
-								<span>Радиус</span>
-								<input type="number" id="to" placeholder="КМ" class="input-form">
-							</label>
-						</div>
-						<div class="form-search-inputs__bottom">
-							<select name="" id="">
-								<option value="" hidden>Выбрать список</option>
-								<option value="">список 1</option>
-								<option value="">список 2</option>
-							</select>
-
-							<label for="goods" class="input-check-red">
-								<input type="checkbox" id="goods">
-								<span>точно по Загрузке</span>
-							</label>
-						</div>
-					</div>
-
-					<div class="form-search-inputs form-search-inputs-small">
-						<label for="from">
-							<span>Вес,т</span>
-							<input type="number" id="from" placeholder="от" class="input-form">
+				<form action="" method class="form-search">
+					<div class="form-search-row">
+						<label for="point" class="input-check-red">
+							<input type="checkbox" id="point">
+							<span>Искать грузы в “эллипсе” маршрута</span>
 						</label>
-						<label for="to">
-							<input type="number" id="to" placeholder="до" class="input-form">
+						<label for="length" class="input-check-red">
+							<input type="checkbox" id="length">
+							<span>Длина маршрута</span>
 						</label>
 					</div>
 
-					<div class="form-search-inputs form-search-inputs-small">
-						<label for="from">
-							<span>Обьем3</span>
-							<input type="number" id="from" placeholder="от" class="input-form">
-						</label>
-						<label for="to">
-							<input type="number" id="to" placeholder="до" class="input-form">
-						</label>
-					</div>
-				</div>
+					<div class="form-search-head">
+						<div class="form-search-inputs-wrapper">
+							<div class="form-search-inputs">
+								<label for="from">
+									<span>Откуда</span>
+									<input type="text" id="from" placeholder="Напрмиер, Москва" class="input-form">
+								</label>
+								<label for="to">
+									<span>Радиус</span>
+									<input type="number" id="to" placeholder="КМ" class="input-form">
+								</label>
+							</div>
+							<div class="form-search-inputs__bottom">
+								<select name="" id="">
+									<option value="" hidden>Выбрать список</option>
+									<option value="">список 1</option>
+									<option value="">список 2</option>
+								</select>
 
-				<div class="form-search-selects">
-					<label for="sel1">
-						<select name="" id="sel1" class="input-select">
-							<option value="" hidden>Дата погрузки</option>
-							<option value="">Дата погрузки</option>
-							<option value="">Дата погрузки</option>
-						</select>
-					</label>
+								<label for="goods" class="input-check-red">
+									<input type="checkbox" id="goods">
+									<span>точно по Загрузке</span>
+								</label>
+							</div>
+						</div>
 
-					<label for="sel2">
-						<select name="" id="sel2" class="input-select">
-							<option value="" hidden>Тип кузова</option>
-							<option value="">Тип кузова</option>
-							<option value="">Тип кузова</option>
-						</select>
-					</label>
-
-					<label for="sel3">
-						<select name="" id="sel3" class="input-select">
-							<option value="" hidden>Наименование груза</option>
-							<option value="">Наименование груза</option>
-							<option value="">Наименование груза</option>
-						</select>
-					</label>
-
-					<label for="sel4">
-						<select name="" id="sel4" class="input-select">
-							<option value="" hidden>Тип загрузки</option>
-							<option value="">Тип загрузки</option>
-							<option value="">Тип загрузки</option>
-						</select>
-					</label>
-
-					<label for="sel5">
-						<select name="" id="sel5" class="input-select">
-							<option value="" hidden>Оплата</option>
-							<option value="">Оплата</option>
-							<option value="">Оплата</option>
-						</select>
-					</label>
-
-					<label for="sel6">
-						<select name="" id="sel6" class="input-select">
-							<option value="" hidden>Доп. параметры</option>
-							<option value="">Доп. параметры</option>
-							<option value="">Доп. параметры</option>
-						</select>
-					</label>
-
-					<label for="sel7">
-						<select name="" id="sel7" class="input-select">
-							<option value="" hidden>Габариты и догруз</option>
-							<option value="">Габариты и догруз</option>
-							<option value="">Габариты и догруз</option>
-						</select>
-					</label>
-
-					<label for="sel7">
-						<select name="" id="sel7" class="input-select">
-							<option value="" hidden>Площадки и Торги</option>
-							<option value="">Площадки и Торги</option>
-							<option value="">Площадки и Торги</option>
-						</select>
-					</label>
-
-					<label for="sel7">
-						<select name="" id="sel7" class="input-select">
-							<option value="" hidden>Поиск по фирмам</option>
-							<option value="">Поиск по фирмам</option>
-							<option value="">Поиск по фирмам</option>
-						</select>
-					</label>
-				</div>
-
-				<div class="form-search__footer">
-					<a href="#" download>
-						<svg width="15" height="20">
-							<use xlink:href="#download"></use>
+						<svg width="23" height="23">
+							<use xlink:href="#search-arrow"></use>
 						</svg>
-						<span>Инструкция по поиску грузов</span>
-					</a>
 
-					<button class="form-btn">Найти грузы</button>
+						<div class="form-search-inputs-wrapper">
+							<div class="form-search-inputs">
+								<label for="from">
+									<span>Куда</span>
+									<input type="text" id="from" placeholder="Напрмиер, Санкт-Петербург" class="input-form">
+								</label>
+								<label for="to">
+									<span>Радиус</span>
+									<input type="number" id="to" placeholder="КМ" class="input-form">
+								</label>
+							</div>
+							<div class="form-search-inputs__bottom">
+								<select name="" id="">
+									<option value="" hidden>Выбрать список</option>
+									<option value="">список 1</option>
+									<option value="">список 2</option>
+								</select>
+
+								<label for="goods" class="input-check-red">
+									<input type="checkbox" id="goods">
+									<span>точно по Загрузке</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="form-search-inputs form-search-inputs-small">
+							<label for="from">
+								<span>Вес,т</span>
+								<input type="number" id="from" placeholder="от" class="input-form">
+							</label>
+							<label for="to">
+								<input type="number" id="to" placeholder="до" class="input-form">
+							</label>
+						</div>
+
+						<div class="form-search-inputs form-search-inputs-small">
+							<label for="from">
+								<span>Обьем3</span>
+								<input type="number" id="from" placeholder="от" class="input-form">
+							</label>
+							<label for="to">
+								<input type="number" id="to" placeholder="до" class="input-form">
+							</label>
+						</div>
+					</div>
+
+					<div class="form-search-selects">
+						<label for="sel1">
+							<select name="" id="sel1" class="input-select">
+								<option value="" hidden>Дата погрузки</option>
+								<option value="">Дата погрузки</option>
+								<option value="">Дата погрузки</option>
+							</select>
+						</label>
+
+						<label for="sel2">
+							<select name="" id="sel2" class="input-select">
+								<option value="" hidden>Тип кузова</option>
+								<option value="">Тип кузова</option>
+								<option value="">Тип кузова</option>
+							</select>
+						</label>
+
+						<label for="sel3">
+							<select name="" id="sel3" class="input-select">
+								<option value="" hidden>Наименование груза</option>
+								<option value="">Наименование груза</option>
+								<option value="">Наименование груза</option>
+							</select>
+						</label>
+
+						<label for="sel4">
+							<select name="" id="sel4" class="input-select">
+								<option value="" hidden>Тип загрузки</option>
+								<option value="">Тип загрузки</option>
+								<option value="">Тип загрузки</option>
+							</select>
+						</label>
+
+						<label for="sel5">
+							<select name="" id="sel5" class="input-select">
+								<option value="" hidden>Оплата</option>
+								<option value="">Оплата</option>
+								<option value="">Оплата</option>
+							</select>
+						</label>
+
+						<label for="sel6">
+							<select name="" id="sel6" class="input-select">
+								<option value="" hidden>Доп. параметры</option>
+								<option value="">Доп. параметры</option>
+								<option value="">Доп. параметры</option>
+							</select>
+						</label>
+
+						<label for="sel7">
+							<select name="" id="sel7" class="input-select">
+								<option value="" hidden>Габариты и догруз</option>
+								<option value="">Габариты и догруз</option>
+								<option value="">Габариты и догруз</option>
+							</select>
+						</label>
+
+						<label for="sel7">
+							<select name="" id="sel7" class="input-select">
+								<option value="" hidden>Площадки и Торги</option>
+								<option value="">Площадки и Торги</option>
+								<option value="">Площадки и Торги</option>
+							</select>
+						</label>
+
+						<label for="sel7">
+							<select name="" id="sel7" class="input-select">
+								<option value="" hidden>Поиск по фирмам</option>
+								<option value="">Поиск по фирмам</option>
+								<option value="">Поиск по фирмам</option>
+							</select>
+						</label>
+					</div>
+
+					<div class="form-search__footer">
+						<a href="#" download>
+							<svg width="15" height="20">
+								<use xlink:href="#download"></use>
+							</svg>
+							<span>Инструкция по поиску грузов</span>
+						</a>
+
+						<button class="form-btn">Найти грузы</button>
+					</div>
+				</form>
+
+				<div class="banner__mark">
+					<img src="./images/about-info.jpg" alt="" width="" height="">
 				</div>
-			</form>
 
-			<div class="banner__mark">
+				<div class="result-goods">
+					<div class="result-goods__head">
+						<h1 class="title">Найдено 103 груза</h1>
+						<div class="result-pagination">
+							<button type="button">
+								<svg width="14" height="7">
+									<use xlink:href="#pag-left"></use>
+								</svg>
+							</button>
+
+							<a class="current" href="#" aria-label="следущая странница">1</a>
+							<a href="#" aria-label="следущая странница">2</a>
+							<a href="#" aria-label="следущая странница">3</a>
+							<a href="#" aria-label="следущая странница">4</a>
+							<a href="#" aria-label="следущая странница">5</a>
+							<span>из 11</span>
+							<button type="button">
+								<svg width="14" height="7">
+									<use xlink:href="#pag-right"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="resilts-goods__cards">
+						<table class="result-goods__card">
+							<thead>
+								<tr>
+									<th>
+										<label class="label-table">
+											<input type="checkbox">
+											<span>НАПРАВЛ</span>
+										</label>
+									</th>
+									<th>ТРАНСПОРТ</th>
+									<th>ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</th>
+									<th>МАРШРУТ</th>
+									<th>СТАВКА</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>
+										<p class="mobile-order-head">НАПРАВЛЕНИЕ</p>
+										<label class="label-table">
+											<input type="checkbox">
+											<span>UZB-TKM</span>
+										</label>
+										<br><span class="color-greed-table">1295 км</span>
+									</td>
+									<td>
+										<p class="mobile-order-head">ТРАНСПОРТ</p>
+										<strong>негаб.</strong><br><span>загрузка/выгр</span> верх.<br>отд. машина
+									</td>
+									<td>
+										<p class="mobile-order-head">ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</p>
+										<strong>63</strong> / - ТНП
+									</td>
+									<td>
+										<p class="mobile-order-head">МАРШРУТ</p>
+										<strong>Каракуль</strong><br><span>Бухарская область</span><br><i><strong>готов 13-17 января</strong></i>
+									</td>
+									<td>
+										<p class="mobile-order-head">СТАВКА</p>
+										<span>Скрыто</span>
+									</td>
+								</tr>
+								<tr class="table-footer">
+									<th class="row-flex">
+										<button type="button" class="show-contacts_btn">показать контакты и справку</button>
+
+										<div class="show-info-contacts">
+											<p>Самком-Логистика, ООО</p>
+											<p>
+												<a href="tel:+7777777777">+7 777 77 77 77</a>
+												Алина Богомолова
+											</p>
+										</div>
+									</th>
+									<th>
+										<p>доступно бесплатно после первой регистраци</p>
+									</th>
+
+									<th></th>
+									<th></th>
+
+									<th class="table-footer__buttons">
+										<div class="order-icons">
+											<button class="chat-message" data-modal-target="dropdown-chat1">
+												<img src="./images/svg/message.svg" alt="meassge" width="30" height="30">
+											</button>
+
+											<a href="./search-goods-inner.html" class="chat-message info-goods">
+												<img src="./images/svg/goods-info.svg" alt="info" width="30" height="30">
+											</a>
+
+											<button class="chat-message" data-modal-target="dropdown-close">
+												<img src="./images/svg/order-close.svg" alt="meassge" width="30" height="30">
+											</button>
+
+											<div class="order-cansel-dropdown order-cansel-modal" data-modal="dropdown-chat1">
+												<button class="order-close-btn" data-modal-close="dropdown-chat1"></button>
+												<div class="tr">
+													<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z" fill="white"></path>
+													</svg>
+												</div>
+												<b>Отправить сообщение</b>
+												<form action="" method="">
+													<textarea name="" id="" style="height: auto; overflow: hidden"></textarea>
+
+													<button class="form-btn" data-modal-close="dropdown-chat1">Отправить</button>
+													<button type="button" class="order-cansel" data-modal-close="dropdown-chat1">
+														Не отклонять
+													</button>
+												</form>
+											</div>
+										</div>
+									</th>
+								</tr>
+							</tbody>
+
+							<tbody>
+								<tr>
+									<td>
+										<p class="mobile-order-head">НАПРАВЛЕНИЕ</p>
+										<label class="label-table">
+											<input type="checkbox">
+											<span>UZB-TKM</span>
+										</label>
+										<br><span class="color-greed-table">1295 км</span>
+									</td>
+									<td>
+										<p class="mobile-order-head">ТРАНСПОРТ</p>
+										<strong>негаб.</strong><br><span>загрузка/выгр</span> верх.<br>отд. машина
+									</td>
+									<td>
+										<p class="mobile-order-head">ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</p>
+										<strong>63</strong> / - ТНП
+									</td>
+									<td>
+										<p class="mobile-order-head">МАРШРУТ</p>
+										<strong>Каракуль</strong><br><span>Бухарская область</span><br><i><strong>готов 13-17 января</strong></i>
+									</td>
+									<td>
+										<p class="mobile-order-head">СТАВКА</p>
+										<span>Скрыто</span>
+									</td>
+								</tr>
+								<tr class="table-footer">
+									<th class="row-flex">
+										<button type="button" class="show-contacts_btn">показать контакты и справку</button>
+
+										<div class="show-info-contacts">
+											<p>Самком-Логистика, ООО</p>
+											<p>
+												<a href="tel:+7777777777">+7 777 77 77 77</a>
+												Алина Богомолова
+											</p>
+										</div>
+									</th>
+									<th>
+										<p>доступно бесплатно после первой регистраци</p>
+									</th>
+
+									<th></th>
+									<th></th>
+
+									<th class="table-footer__buttons">
+										<div class="order-icons">
+											<button class="chat-message" data-modal-target="dropdown-chat2">
+												<img src="./images/svg/message.svg" alt="meassge" width="30" height="30">
+											</button>
+
+											<a href="./search-goods-inner.html" class="chat-message info-goods">
+												<img src="./images/svg/goods-info.svg" alt="info" width="30" height="30">
+											</a>
+
+											<button class="chat-message" data-modal-target="dropdown-close">
+												<img src="./images/svg/order-close.svg" alt="meassge" width="30" height="30">
+											</button>
+
+											<div class="order-cansel-dropdown order-cansel-modal" data-modal="dropdown-chat2">
+												<button class="order-close-btn" data-modal-close="dropdown-chat2"></button>
+												<div class="tr">
+													<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z" fill="white"></path>
+													</svg>
+												</div>
+												<b>Отправить сообщение</b>
+												<form action="" method="">
+													<textarea name="" id="" style="height: auto; overflow: hidden"></textarea>
+
+													<button class="form-btn" data-modal-close="dropdown-chat2">Отправить</button>
+													<button type="button" class="order-cansel" data-modal-close="dropdown-chat2">
+														Не отклонять
+													</button>
+												</form>
+											</div>
+										</div>
+									</th>
+								</tr>
+							</tbody>
+
+							<tbody>
+								<tr>
+									<td>
+										<p class="mobile-order-head">НАПРАВЛЕНИЕ</p>
+										<label class="label-table">
+											<input type="checkbox">
+											<span>UZB-TKM</span>
+										</label>
+										<br><span class="color-greed-table">1295 км</span>
+									</td>
+									<td>
+										<p class="mobile-order-head">ТРАНСПОРТ</p>
+										<strong>негаб.</strong><br><span>загрузка/выгр</span> верх.<br>отд. машина
+									</td>
+									<td>
+										<p class="mobile-order-head">ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</p>
+										<strong>63</strong> / - ТНП
+									</td>
+									<td>
+										<p class="mobile-order-head">МАРШРУТ</p>
+										<strong>Каракуль</strong><br><span>Бухарская область</span><br><i><strong>готов 13-17 января</strong></i>
+									</td>
+									<td>
+										<p class="mobile-order-head">СТАВКА</p>
+										<span>Скрыто</span>
+									</td>
+								</tr>
+								<tr class="table-footer">
+									<th class="row-flex">
+										<button type="button" class="show-contacts_btn">показать контакты и справку</button>
+
+										<div class="show-info-contacts">
+											<p>Самком-Логистика, ООО</p>
+											<p>
+												<a href="tel:+7777777777">+7 777 77 77 77</a>
+												Алина Богомолова
+											</p>
+										</div>
+									</th>
+									<th>
+										<p>доступно бесплатно после первой регистраци</p>
+									</th>
+
+									<th></th>
+									<th></th>
+
+									<th class="table-footer__buttons">
+										<div class="order-icons">
+											<button class="chat-message" data-modal-target="dropdown-chat3">
+												<img src="./images/svg/message.svg" alt="meassge" width="30" height="30">
+											</button>
+
+											<a href="./search-goods-inner.html" class="chat-message info-goods">
+												<img src="./images/svg/goods-info.svg" alt="info" width="30" height="30">
+											</a>
+
+											<button class="chat-message" data-modal-target="dropdown-close">
+												<img src="./images/svg/order-close.svg" alt="meassge" width="30" height="30">
+											</button>
+
+											<div class="order-cansel-dropdown order-cansel-modal" data-modal="dropdown-chat3">
+												<button class="order-close-btn" data-modal-close="dropdown-chat3"></button>
+												<div class="tr">
+													<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z" fill="white"></path>
+													</svg>
+												</div>
+												<b>Отправить сообщение</b>
+												<form action="" method="">
+													<textarea name="" id="" style="height: auto; overflow: hidden"></textarea>
+
+													<button class="form-btn" data-modal-close="dropdown-chat3">Отправить</button>
+													<button type="button" class="order-cansel" data-modal-close="dropdown-chat3">
+														Не отклонять
+													</button>
+												</form>
+											</div>
+										</div>
+									</th>
+								</tr>
+							</tbody>
+
+							<tbody>
+								<tr>
+									<td>
+										<p class="mobile-order-head">НАПРАВЛЕНИЕ</p>
+										<label class="label-table">
+											<input type="checkbox">
+											<span>UZB-TKM</span>
+										</label>
+										<br><span class="color-greed-table">1295 км</span>
+									</td>
+									<td>
+										<p class="mobile-order-head">ТРАНСПОРТ</p>
+										<strong>негаб.</strong><br><span>загрузка/выгр</span> верх.<br>отд. машина
+									</td>
+									<td>
+										<p class="mobile-order-head">ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</p>
+										<strong>63</strong> / - ТНП
+									</td>
+									<td>
+										<p class="mobile-order-head">МАРШРУТ</p>
+										<strong>Каракуль</strong><br><span>Бухарская область</span><br><i><strong>готов 13-17 января</strong></i>
+									</td>
+									<td>
+										<p class="mobile-order-head">СТАВКА</p>
+										<span>Скрыто</span>
+									</td>
+								</tr>
+								<tr class="table-footer">
+									<th class="row-flex">
+										<button type="button" class="show-contacts_btn">показать контакты и справку</button>
+
+										<div class="show-info-contacts">
+											<p>Самком-Логистика, ООО</p>
+											<p>
+												<a href="tel:+7777777777">+7 777 77 77 77</a>
+												Алина Богомолова
+											</p>
+										</div>
+									</th>
+									<th>
+										<p>доступно бесплатно после первой регистраци</p>
+									</th>
+
+									<th></th>
+									<th></th>
+
+									<th class="table-footer__buttons">
+										<div class="order-icons">
+											<button class="chat-message" data-modal-target="dropdown-chat4">
+												<img src="./images/svg/message.svg" alt="meassge" width="30" height="30">
+											</button>
+
+											<a href="./search-goods-inner.html" class="chat-message info-goods">
+												<img src="./images/svg/goods-info.svg" alt="info" width="30" height="30">
+											</a>
+
+											<button class="chat-message" data-modal-target="dropdown-close">
+												<img src="./images/svg/order-close.svg" alt="meassge" width="30" height="30">
+											</button>
+
+											<div class="order-cansel-dropdown order-cansel-modal" data-modal="dropdown-chat4">
+												<button class="order-close-btn" data-modal-close="dropdown-chat4"></button>
+												<div class="tr">
+													<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M14.8433 1.44929C15.6365 0.276561 17.3635 0.276559 18.1567 1.44929L32.1431 22.1293C33.0414 23.4575 32.0898 25.2498 30.4864 25.2498H2.51359C0.910168 25.2498 -0.041364 23.4575 0.856918 22.1293L14.8433 1.44929Z" fill="white"></path>
+													</svg>
+												</div>
+												<b>Отправить сообщение</b>
+												<form action="" method="">
+													<textarea name="" id="" style="height: auto; overflow: hidden"></textarea>
+
+													<button class="form-btn" data-modal-close="dropdown-chat4">Отправить</button>
+													<button type="button" class="order-cansel" data-modal-close="dropdown-chat4">
+														Не отклонять
+													</button>
+												</form>
+											</div>
+										</div>
+									</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<div class="search-page__mark">
 				<img src="./images/about-info.jpg" alt="" width="" height="">
 			</div>
+		</main>
 
-			<div class="result-goods">
-				<div class="result-goods__head">
-					<h1 class="title">Найдено 103 груза</h1>
-					<div class="result-pagination">
-						<button type="button">
-							<svg width="14" height="7">
-								<use xlink:href="#pag-left"></use>
-							</svg>
-						</button>
-
-						<a class="current" href="#" aria-label="следущая странница">1</a>
-						<a href="#" aria-label="следущая странница">2</a>
-						<a href="#" aria-label="следущая странница">3</a>
-						<a href="#" aria-label="следущая странница">4</a>
-						<a href="#" aria-label="следущая странница">5</a>
-						<span>из 11</span>
-						<button type="button">
-							<svg width="14" height="7">
-								<use xlink:href="#pag-right"></use>
-							</svg>
-						</button>
-					</div>
-				</div>
-
-				<div class="resilts-goods__cards">
-					<table class="result-goods__card">
-						<thead>
-							<tr>
-								<th>
-									<label class="label-table">
-										<input type="checkbox">
-										<span>НАПРАВЛ</span>
-									</label>
-								</th>
-								<th>ТРАНСПОРТ</th>
-								<th>ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</th>
-								<th>МАРШРУТ</th>
-								<th>СТАВКА</th>
-							</tr>
-						</thead>
-
-						<tbody>
-							<tr>
-								<td>
-									<p class="mobile-order-head">НАПРАВЛЕНИЕ</p>
-									<label class="label-table">
-										<input type="checkbox">
-										<span>UZB-TKM</span>
-									</label>
-									<br><span class="color-greed-table">1295 км</span>
-								</td>
-								<td>
-									<p class="mobile-order-head">ТРАНСПОРТ</p>
-									<strong>негаб.</strong><br><span>загрузка/выгр</span> верх.<br>отд. машина
-								</td>
-								<td>
-									<p class="mobile-order-head">ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</p>
-									<strong>63</strong> / - ТНП
-								</td>
-								<td>
-									<p class="mobile-order-head">МАРШРУТ</p>
-									<strong>Каракуль</strong><br><span>Бухарская область</span><br><i><strong>готов
-											13-17 января</strong></i>
-								</td>
-								<td>
-									<p class="mobile-order-head">СТАВКА</p>
-									<span>Скрыто</span>
-								</td>
-							</tr>
-							<tr class="table-footer">
-								<th class="row-flex">
-									<button type="button" class="show-contacts_btn">показать контакты и справку</button>
-
-									<div class="show-info-contacts">
-										<p>Самком-Логистика, ООО</p>
-										<p>
-											<a href="tel:+7777777777">+7 777 77 77 77</a>
-											Алина Богомолова
-										</p>
-									</div>
-								</th>
-								<th>
-									<p>доступно бесплатно после первой регистраци</p>
-								</th>
-
-								<th></th>
-								<th></th>
-
-								<th class="table-footer__buttons">
-									<div class="order-icons">
-										<a class="chat-message" href="./messages.html">
-											<img src="./images/svg/message.svg" alt="meassge" width="30" height="30">
-										</a>
-
-										<a href="./search-goods-inner.html" class="chat-message info-goods">
-											<img src="./images/svg/goods-info.svg" alt="info" width="30" height="30">
-										</a>
-
-										<button class="chat-message" data-modal-target="dropdown-close">
-											<img src="./images/svg/order-close.svg" alt="meassge" width="30" height="30">
-										</button>
-									</div>
-								</th>
-							</tr>
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>
-									<p class="mobile-order-head">НАПРАВЛЕНИЕ</p>
-									<label class="label-table">
-										<input type="checkbox">
-										<span>UZB-TKM</span>
-									</label>
-									<br><span class="color-greed-table">1295 км</span>
-								</td>
-								<td>
-									<p class="mobile-order-head">ТРАНСПОРТ</p>
-									<strong>негаб.</strong><br><span>загрузка/выгр</span> верх.<br>отд. машина
-								</td>
-								<td>
-									<p class="mobile-order-head">ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</p>
-									<strong>63</strong> / - ТНП
-								</td>
-								<td>
-									<p class="mobile-order-head">МАРШРУТ</p>
-									<strong>Каракуль</strong><br><span>Бухарская область</span><br><i><strong>готов
-											13-17 января</strong></i>
-								</td>
-								<td>
-									<p class="mobile-order-head">СТАВКА</p>
-									<span>Скрыто</span>
-								</td>
-							</tr>
-							<tr class="table-footer">
-								<th class="row-flex">
-									<button type="button" class="show-contacts_btn">показать контакты и справку</button>
-
-									<div class="show-info-contacts">
-										<p>Самком-Логистика, ООО</p>
-										<p>
-											<a href="tel:+7777777777">+7 777 77 77 77</a>
-											Алина Богомолова
-										</p>
-									</div>
-								</th>
-								<th>
-									<p>доступно бесплатно после первой регистраци</p>
-								</th>
-
-								<th></th>
-								<th></th>
-
-								<th class="table-footer__buttons">
-									<div class="order-icons">
-										<a class="chat-message" href="./messages.html">
-											<img src="./images/svg/message.svg" alt="meassge" width="30" height="30">
-										</a>
-
-										<a href="./search-goods-inner.html" class="chat-message info-goods">
-											<img src="./images/svg/goods-info.svg" alt="info" width="30" height="30">
-										</a>
-
-										<button class="chat-message" data-modal-target="dropdown-close">
-											<img src="./images/svg/order-close.svg" alt="meassge" width="30" height="30">
-										</button>
-									</div>
-								</th>
-							</tr>
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>
-									<p class="mobile-order-head">НАПРАВЛЕНИЕ</p>
-									<label class="label-table">
-										<input type="checkbox">
-										<span>UZB-TKM</span>
-									</label>
-									<br><span class="color-greed-table">1295 км</span>
-								</td>
-								<td>
-									<p class="mobile-order-head">ТРАНСПОРТ</p>
-									<strong>негаб.</strong><br><span>загрузка/выгр</span> верх.<br>отд. машина
-								</td>
-								<td>
-									<p class="mobile-order-head">ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</p>
-									<strong>63</strong> / - ТНП
-								</td>
-								<td>
-									<p class="mobile-order-head">МАРШРУТ</p>
-									<strong>Каракуль</strong><br><span>Бухарская область</span><br><i><strong>готов
-											13-17 января</strong></i>
-								</td>
-								<td>
-									<p class="mobile-order-head">СТАВКА</p>
-									<span>Скрыто</span>
-								</td>
-							</tr>
-							<tr class="table-footer">
-								<th class="row-flex">
-									<button type="button" class="show-contacts_btn">показать контакты и справку</button>
-
-									<div class="show-info-contacts">
-										<p>Самком-Логистика, ООО</p>
-										<p>
-											<a href="tel:+7777777777">+7 777 77 77 77</a>
-											Алина Богомолова
-										</p>
-									</div>
-								</th>
-								<th>
-									<p>доступно бесплатно после первой регистраци</p>
-								</th>
-
-								<th></th>
-								<th></th>
-
-								<th class="table-footer__buttons">
-									<div class="order-icons">
-										<a class="chat-message" href="./messages.html">
-											<img src="./images/svg/message.svg" alt="meassge" width="30" height="30">
-										</a>
-
-										<a href="./search-goods-inner.html" class="chat-message info-goods">
-											<img src="./images/svg/goods-info.svg" alt="info" width="30" height="30">
-										</a>
-
-										<button class="chat-message" data-modal-target="dropdown-close">
-											<img src="./images/svg/order-close.svg" alt="meassge" width="30" height="30">
-										</button>
-									</div>
-								</th>
-							</tr>
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>
-									<p class="mobile-order-head">НАПРАВЛЕНИЕ</p>
-									<label class="label-table">
-										<input type="checkbox">
-										<span>UZB-TKM</span>
-									</label>
-									<br><span class="color-greed-table">1295 км</span>
-								</td>
-								<td>
-									<p class="mobile-order-head">ТРАНСПОРТ</p>
-									<strong>негаб.</strong><br><span>загрузка/выгр</span> верх.<br>отд. машина
-								</td>
-								<td>
-									<p class="mobile-order-head">ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</p>
-									<strong>63</strong> / - ТНП
-								</td>
-								<td>
-									<p class="mobile-order-head">МАРШРУТ</p>
-									<strong>Каракуль</strong><br><span>Бухарская область</span><br><i><strong>готов
-											13-17 января</strong></i>
-								</td>
-								<td>
-									<p class="mobile-order-head">СТАВКА</p>
-									<span>Скрыто</span>
-								</td>
-							</tr>
-							<tr class="table-footer">
-								<th class="row-flex">
-									<button type="button" class="show-contacts_btn">показать контакты и справку</button>
-
-									<div class="show-info-contacts">
-										<p>Самком-Логистика, ООО</p>
-										<p>
-											<a href="tel:+7777777777">+7 777 77 77 77</a>
-											Алина Богомолова
-										</p>
-									</div>
-								</th>
-								<th>
-									<p>доступно бесплатно после первой регистраци</p>
-								</th>
-
-								<th></th>
-								<th></th>
-
-								<th class="table-footer__buttons">
-									<div class="order-icons">
-										<a class="chat-message" href="./messages.html">
-											<img src="./images/svg/message.svg" alt="meassge" width="30" height="30">
-										</a>
-
-										<a href="./search-goods-inner.html" class="chat-message info-goods">
-											<img src="./images/svg/goods-info.svg" alt="info" width="30" height="30">
-										</a>
-
-										<button class="chat-message" data-modal-target="dropdown-close">
-											<img src="./images/svg/order-close.svg" alt="meassge" width="30" height="30">
-										</button>
-									</div>
-								</th>
-							</tr>
-						</tbody>
-
-						<tbody>
-							<tr>
-								<td>
-									<p class="mobile-order-head">НАПРАВЛЕНИЕ</p>
-									<label class="label-table">
-										<input type="checkbox">
-										<span>UZB-TKM</span>
-									</label>
-									<br><span class="color-greed-table">1295 км</span>
-								</td>
-								<td>
-									<p class="mobile-order-head">ТРАНСПОРТ</p>
-									<strong>негаб.</strong><br><span>загрузка/выгр</span> верх.<br>отд. машина
-								</td>
-								<td>
-									<p class="mobile-order-head">ВЕС, Т/ ОБЪЕМ, М³ ГРУЗ</p>
-									<strong>63</strong> / - ТНП
-								</td>
-								<td>
-									<p class="mobile-order-head">МАРШРУТ</p>
-									<strong>Каракуль</strong><br><span>Бухарская область</span><br><i><strong>готов
-											13-17 января</strong></i>
-								</td>
-								<td>
-									<p class="mobile-order-head">СТАВКА</p>
-									<span>Скрыто</span>
-								</td>
-							</tr>
-							<tr class="table-footer">
-								<th class="row-flex">
-									<button type="button" class="show-contacts_btn">показать контакты и справку</button>
-
-									<div class="show-info-contacts">
-										<p>Самком-Логистика, ООО</p>
-										<p>
-											<a href="tel:+7777777777">+7 777 77 77 77</a>
-											Алина Богомолова
-										</p>
-									</div>
-								</th>
-								<th>
-									<p>доступно бесплатно после первой регистраци</p>
-								</th>
-
-								<th></th>
-								<th></th>
-
-								<th class="table-footer__buttons">
-									<div class="order-icons">
-										<a class="chat-message" href="./messages.html">
-											<img src="./images/svg/message.svg" alt="meassge" width="30" height="30">
-										</a>
-
-										<a href="./search-goods-inner.html" class="chat-message info-goods">
-											<img src="./images/svg/goods-info.svg" alt="info" width="30" height="30">
-										</a>
-
-										<button class="chat-message" data-modal-target="dropdown-close">
-											<img src="./images/svg/order-close.svg" alt="meassge" width="30" height="30">
-										</button>
-									</div>
-								</th>
-							</tr>
-						</tbody>
-
-
-					</table>
-				</div>
-			</div>
-		</section>
-
-		<div class="search-page__mark">
-			<img src="./images/about-info.jpg" alt="" width="" height="">
-		</div>
-
-	</main>
-
-	<footer class="footer">
+		<footer class="footer">
 	<a href="./index.html" aria-label="на главную страннцу" class="nav__logo">
 		<picture>
 			<source srcset="./images/svg/search-logo.svg">
@@ -1107,8 +1106,8 @@
 </footer>
  <script src="./js/main.min.js"></script>
 
-</body>
-<div class="modal-overlay" data-modal="modal-change-tarifs">
+	</body>
+	<div class="modal-overlay" data-modal="modal-change-tarifs">
 	<div class="modal modal-change-tarifs">
 		<b>Смена тарифа</b>
 
@@ -1250,6 +1249,5 @@
 		</button>
 	</div>
 </div>
-
 
 </html>
