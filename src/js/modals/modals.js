@@ -7,7 +7,6 @@ export function setupModals() {
 		button.addEventListener('click', () => {
 			const targetModalId = button.dataset.modalTarget;
 			const targetModal = document.querySelector(`[data-modal="${targetModalId}"]`);
-			console.log('test');
 
 			if (targetModal) {
 				modals.forEach(modal => {
@@ -23,26 +22,22 @@ export function setupModals() {
 
 				activeModal = targetModal.classList.contains('open') ? targetModal : null;
 
-
 				if (activeModal && targetModalId !== 'dropdown') {
 					document.body.classList.add('modal-open');
 				} else {
 					document.body.classList.remove('modal-open');
+				}
+
+
+				if (activeModal && !activeModal.classList.contains('modal-overlay')) {
+					document.addEventListener('mousedown', outsideClickHandler);
 				}
 			} else {
 				console.error(`Модальное окно с id "${targetModalId}" не найдено.`);
 			}
 		});
 	});
-	modals.forEach(modal => {
-		modal.addEventListener('click', (event) => {
-			if (event.target.classList.contains('modal-overlay')) {
-				modal.classList.remove('open');
-				document.body.classList.remove('modal-open');
-				activeModal = null;
-			}
-		});
-	});
+
 	const closeButtons = document.querySelectorAll('[data-modal-close]');
 
 	closeButtons.forEach(closeButton => {
@@ -54,6 +49,7 @@ export function setupModals() {
 				targetModal.classList.remove('open');
 				document.body.classList.remove('modal-open');
 				activeModal = null;
+				document.removeEventListener('mousedown', outsideClickHandler);
 			} else {
 				console.error(`Модальное окно с id "${targetModalId}" не найдено.`);
 			}
@@ -66,9 +62,10 @@ export function setupModals() {
 				activeModal.classList.remove('open');
 				document.body.classList.remove('modal-open');
 				activeModal = null;
+				document.removeEventListener('mousedown', outsideClickHandler);
 			}
 		} else if (event.key === 'Tab') {
-			const activeModal = document.querySelector('.modal-overlay.open');
+			const activeModal = document.querySelector('.modal-overlay.open, [data-modal].open');
 
 			if (activeModal) {
 				event.preventDefault();
@@ -91,9 +88,14 @@ export function setupModals() {
 				}
 			}
 		}
+	});
 
-
-	})
-
-
+	function outsideClickHandler(event) {
+		if (activeModal && !activeModal.contains(event.target) && !activeModal.classList.contains('modal-overlay')) {
+			activeModal.classList.remove('open');
+			document.body.classList.remove('modal-open');
+			activeModal = null;
+			document.removeEventListener('mousedown', outsideClickHandler);
+		}
+	}
 }

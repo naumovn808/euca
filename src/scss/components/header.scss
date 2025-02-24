@@ -48,7 +48,6 @@
 	&__list {
 		display: flex;
 		align-items: center;
-		gap: calc(var(--offset) * 2);
 		justify-content: space-between;
 		margin-left: 3em;
 		margin-right: auto;
@@ -213,6 +212,24 @@
 	}
 }
 
+.nav__link-red {
+	@media (min-width: 999px) {
+		background-color: var(--color-text-secondary);
+		color: var(--color-text-primary);
+		border-radius: 2em;
+		transition-property: background-color, color, box-shadow;
+		transition-duration: 0.5s;
+
+		&:hover,
+		&:focus,
+		&:focus-within {
+			background-color: var(--color-text-primary);
+			color: var(--color-text-secondary);
+			box-shadow: 0 0 0 0.05em var(--color-text-secondary);
+		}
+	}
+}
+
 .btn-white {
 	padding: calc(var(--offset) * 0.8);
 }
@@ -347,7 +364,7 @@
 	z-index: 5;
 	position: relative;
 
-	&>span {
+	& > span {
 		position: relative;
 		width: 80%;
 		height: 70%;
@@ -375,7 +392,7 @@
 			bottom: 0;
 		}
 
-		&>span {
+		& > span {
 			display: block;
 			width: 100%;
 			height: 0.15em;
@@ -393,7 +410,7 @@
 	}
 }
 
-.nav__btn.open>span::after {
+.nav__btn.open > span::after {
 	top: 50%;
 	transform: translateY(-50%) rotate(45deg);
 	transition: top 0.3s ease, transform 0.3s ease 0.3s;
@@ -405,7 +422,7 @@
 	transition: bottom 0.3s ease, transform 0.3s ease 0.3s;
 }
 
-.nav__btn.open span>span {
+.nav__btn.open span > span {
 	opacity: 0;
 	transition: opacity 0.3s ease;
 }
@@ -539,7 +556,7 @@ body.open {
 			gap: 0.5em;
 			min-height: 4em;
 			height: auto;
-			color:#524d4d;
+			color: #524d4d;
 
 			&.current {
 				color: var(--color-text-secondary);
