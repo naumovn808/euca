@@ -3712,7 +3712,7 @@ input[type=number]::-ms-clear {
   -webkit-transform: translate(-50%, -200%);
       -ms-transform: translate(-50%, -200%);
           transform: translate(-50%, -200%);
-  max-height: 90vh;
+  max-height: 100vh;
   overflow: auto;
 }
 .modal b {
@@ -13030,8 +13030,8 @@ html {
     height: 40vh;
   }
   .modal {
-    max-height: 70vh;
-    top: 40%;
+    max-height: 80vh;
+    top: 45%;
   }
   .profile-page {
     margin: 0;

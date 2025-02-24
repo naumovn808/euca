@@ -35,8 +35,12 @@ function setupModals() {
         } else {
           document.body.classList.remove("modal-open");
         }
-        if (activeModal && !activeModal.classList.contains("modal-overlay")) {
-          document.addEventListener("mousedown", outsideClickHandler);
+        if (activeModal) {
+          if (activeModal.classList.contains("modal-overlay")) {
+            activeModal.addEventListener("mousedown", overlayClickHandler);
+          } else {
+            document.addEventListener("mousedown", outsideClickHandler);
+          }
         }
       } else {
         console.error(`\u041C\u043E\u0434\u0430\u043B\u044C\u043D\u043E\u0435 \u043E\u043A\u043D\u043E \u0441 id "${targetModalId}" \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E.`);
@@ -52,7 +56,7 @@ function setupModals() {
         targetModal.classList.remove("open");
         document.body.classList.remove("modal-open");
         activeModal = null;
-        document.removeEventListener("mousedown", outsideClickHandler);
+        removeListeners();
       } else {
         console.error(`\u041C\u043E\u0434\u0430\u043B\u044C\u043D\u043E\u0435 \u043E\u043A\u043D\u043E \u0441 id "${targetModalId}" \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043E.`);
       }
@@ -64,7 +68,7 @@ function setupModals() {
         activeModal.classList.remove("open");
         document.body.classList.remove("modal-open");
         activeModal = null;
-        document.removeEventListener("mousedown", outsideClickHandler);
+        removeListeners();
       }
     } else if (event.key === "Tab") {
       const activeModal2 = document.querySelector(".modal-overlay.open, [data-modal].open");
@@ -87,11 +91,25 @@ function setupModals() {
     }
   });
   function outsideClickHandler(event) {
-    if (activeModal && !activeModal.contains(event.target) && !activeModal.classList.contains("modal-overlay")) {
+    if (activeModal && !activeModal.contains(event.target)) {
       activeModal.classList.remove("open");
       document.body.classList.remove("modal-open");
       activeModal = null;
-      document.removeEventListener("mousedown", outsideClickHandler);
+      removeListeners();
+    }
+  }
+  function overlayClickHandler(event) {
+    if (event.target === activeModal) {
+      activeModal.classList.remove("open");
+      document.body.classList.remove("modal-open");
+      activeModal = null;
+      removeListeners();
+    }
+  }
+  function removeListeners() {
+    document.removeEventListener("mousedown", outsideClickHandler);
+    if (activeModal) {
+      activeModal.removeEventListener("mousedown", overlayClickHandler);
     }
   }
 }
