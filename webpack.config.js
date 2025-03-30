@@ -1,28 +1,27 @@
-import path from 'path';
-import { resolve, join } from 'path';
-import { readDir } from './gulp/config/read-dir.js';
-import { fileURLToPath } from 'url';
+import path from "path";
+import { resolve, join } from "path";
+import { readDir } from "./gulp/config/read-dir.js";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-
 export const webpackConfig = async (isMode) => {
 	const paths = {
-		src: resolve('src'),
-		build: resolve('dist'),
+		src: resolve("src"),
+		build: resolve("dist"),
 	};
 
-	const context = join(paths.src, 'js');
+	const context = join(paths.src, "js");
 
 	return {
 		context,
 		entry: await readDir(context),
-		mode: isMode ? 'development' : 'production',
+		mode: isMode ? "development" : "production",
 		output: {
-			path: join(paths.build, 'js'),
-			filename: '[name].min.js',
-			chunkFilename: '[name].js',
+			path: join(paths.build, "js"),
+			filename: "[name].min.js",
+			chunkFilename: "[name].js",
 			clean: true,
 		},
 		module: {
@@ -31,8 +30,8 @@ export const webpackConfig = async (isMode) => {
 					test: /\.m?js$/,
 					exclude: /node_modules/,
 					use: {
-						loader: 'esbuild-loader',
-						options: { target: 'es2020', },
+						loader: "esbuild-loader",
+						options: { target: "es2020" },
 					},
 					resolve: {
 						fullySpecified: false,
@@ -41,19 +40,18 @@ export const webpackConfig = async (isMode) => {
 			],
 		},
 		resolve: {
-			extensions: ['.js'],
+			extensions: [".js"],
 			alias: {
-				gsap: path.resolve(__dirname, 'node_modules/gsap'),
+				gsap: path.resolve(__dirname, "node_modules/gsap"),
 			},
 		},
 		optimization: {
 			splitChunks: {
-				chunks: 'all',
+				chunks: "all",
 				name: false,
 			},
 		},
-		mode: 'development',
-		devtool: 'source-map',
-
+		mode: "development",
+		devtool: "source-map",
 	};
 };

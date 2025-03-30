@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('../components/includes/head.html', { 'title': 'Главная' })
+	@@include('../components/includes/head.html', { 'title': 'Главная' })
 
-
-<body>
-	@@include('../components/includes/sprite.html')
-	@@include('../components/header.html')
-	<main class="main-wrapper">
-		@@include('../components/index/main-head.html')
-		@@include('../components/index/directions.html')
-		@@include('../components/index/advantages.html')
-		@@include('../components/index/news.html')
-		@@include('../components/index/reviews.html')
-	</main>
-	@@include('../components/footer.html')
-	@@include('../components/includes/script.html')
-
-
-	@@include('../components/modals/login.html')
-	@@include('../components/modals/register.html')
-</body>
-
-
+	<body>
+		@@include('../components/includes/sprite.html') @@include('../components/header.html')
+		<main class="main-wrapper">
+			@@include('../components/index/main-head.html') @@include('../components/index/directions.html')
+			@@include('../components/index/advantages.html') @@include('../components/index/news.html')
+			@@include('../components/index/reviews.html')
+		</main>
+		@@include('../components/footer.html') @@include('../components/includes/script.html') @@include('../components/modals/login.html')
+		@@include('../components/modals/register.html')
+		<!-- <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+		<script>
+			const input = document.querySelector("#phone");
+			window.intlTelInput(input, {
+				loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/utils.js"),
+			});
+		</script> -->
+	</body>
 </html>

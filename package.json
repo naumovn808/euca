@@ -66,6 +66,7 @@
 		"gsap": "^3.12.7",
 		"gulp-cheerio": "^1.0.0",
 		"gulp-svgstore": "^9.0.0",
+		"intl-tel-input": "^25.3.1",
 		"mini-css-extract-plugin": "^2.9.2",
 		"replace": "^1.2.2",
 		"sharp": "^0.33.5",
